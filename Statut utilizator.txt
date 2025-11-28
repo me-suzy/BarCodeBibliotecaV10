@@ -1,0 +1,39 @@
+
+17	ILL - Împrumut interbibliotecar	20 cărți	Împrumut interbibliotecar
+
+12	Bibliotecari BARI	15 cărți	Bibliotecari din rețeaua BARI
+
+11	Personal Științific Academie	10 cărți	Personal științific al Academiei Române
+
+13	Angajați ARFI	8 cărți	Angajați ARFI
+
+16	Personal departamente	6 cărți	Personal din departamente
+
+14	Nespecifici cu domiciliu în Iași	4 cărți	Cititori nespecificați cu domiciliu în Iași (implicit pentru USER)
+
+15	Nespecifici fără domiciliu în Iași	2 cărți	Cititori nespecificați fără domiciliu în Iași
+
+
+lasam asa statutul utilizatorilor. E bun atat deocamdata. Trecem la statutul cartilor, fiindca sunt carti pe care nu orice utilizator le poate imprumuta, si nu pentru acelasi timp.
+
+01 se poate împrumuta acasă
+02 se imprumuta doar la sala
+03 colecții speciale se imprumuta doar sala pentru 1 zi
+04 nu exista fizic cartea ... deci nu se poate împrumuta
+05 se imprumuta doar 5 zile
+06 regim special pentru cărți , se pot împrumuta pe o perioadă mare de timp 6 luni, maxim 1 an
+08 nu se imprumuta
+90 cartea a fost primita, dar e inca in depozit, nu a ajuns la raft
+
+update baza de date. Apoi update statut carte la scanarea utilizatorilor. 
+
+👤 Cititor activ: Popescuffff Ion
+Cod: USER001
+🏷️ Statut: Nespecifici cu domiciliu în Iași
+📚 0 Cărți împrumutate / 4
+
+Si apoi update la formatul email de trimis notificare, in functie de statut utilizator si in functie de statut carte.
+
+<td class="td1">Se împr. numai la sală</td>
+
+
