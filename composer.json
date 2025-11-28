@@ -1,0 +1,16 @@
+{
+    "name": "biblioteca/export-pdf",
+    "description": "Biblioteca Academiei Române - Iași - Export PDF",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "setasign/fpdf": "^2.6",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Biblioteca\\": "."
+        }
+    }
+}
+
