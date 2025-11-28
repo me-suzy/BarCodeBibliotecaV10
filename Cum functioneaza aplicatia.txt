@@ -1,0 +1,319 @@
+# **Cum funcționează scanare_monitor_principal.php - EXPLICAȚIE COMPLETĂ**
+
+---
+
+## **📋 FLUXUL COMPLET PAS CU PAS:**
+
+### **PASUL 1: Scanezi CARNETUL cititorului (USER***)**
+
+```
+👉 Scanezi USER001
+    ↓
+Scanner trimite: U → S → E → R → 0 → 0 → 1 → ENTER
+    ↓
+Formularul HTML se trimite automat la server (POST)
+    ↓
+PHP primește: cod_scanat = "USER001"
+```
+
+**Ce face PHP:**
+
+1. **Verifică dacă e format USER**:
+   ```php
+   preg_match('/^USER\d+$/i', $cod_scanat) // TRUE
+   ```
+
+2. **Caută în baza de date:**
+   ```sql
+   SELECT * FROM cititori WHERE cod_bare = 'USER001'
+   ```
+
+3. **Dacă găsește cititorul:**
+   - **Salvează în sesiune** (ca să-l țină minte 2 minute):
+     ```php
+     $_SESSION['cititor_activ'] = [
+         'cod_bare' => 'USER001',
+         'nume' => 'Radu',
+         'prenume' => 'Mihai',
+         'telefon' => '0721123456',
+         'email' => 'radu@email.com'
+     ];
+     ```
+   
+   - **Înregistrează prezența** (că a venit la bibliotecă):
+     ```sql
+     INSERT INTO sesiuni_biblioteca (cod_cititor, data, ora_intrare)
+     VALUES ('USER001', '2025-11-16', '14:30:00')
+     ```
+
+4. **Afișează mesaj:**
+   ```
+   ✅ Bine ai venit, Mihai Radu!
+   ```
+
+5. **Afișează caseta verde** cu:
+   - 👤 Nume: Radu Mihai
+   - 🆔 Cod: USER001
+   - 📞 Telefon: 0721123456
+   - 📧 Email: radu@email.com
+   - ⏱️ Timer: 2:00 (countdown)
+
+---
+
+### **PASUL 2: Scanezi CARTEA (BOOK***)**
+
+```
+👉 Scanezi BOOK003
+    ↓
+Scanner trimite: B → O → O → K → 0 → 0 → 3 → ENTER
+    ↓
+Formularul HTML se trimite la server (POST)
+    ↓
+PHP primește: cod_scanat = "BOOK003"
+```
+
+**Ce face PHP:**
+
+1. **Verifică dacă e format BOOK**:
+   ```php
+   preg_match('/^BOOK\d+$/i', $cod_scanat) // TRUE
+   ```
+
+2. **Verifică dacă există cititor activ**:
+   ```php
+   if (!isset($_SESSION['cititor_activ'])) {
+       // EROARE: "⚠️ Scanează carnetul!"
+   }
+   ```
+
+3. **Dacă există cititor, caută cartea:**
+   ```sql
+   SELECT * FROM carti WHERE cod_bare = 'BOOK003'
+   ```
+   
+   **Rezultat:** 
+   - Titlu: "Groapa"
+   - Autor: "Eugen Barbu"
+   - ISBN: "9789734640560"
+   - Locație: "Raft A - Nivel 2 - Poziția 05"
+
+4. **Verifică dacă cartea e deja împrumutată:**
+   ```sql
+   SELECT i.*, c.nume, c.prenume 
+   FROM imprumuturi i
+   JOIN cititori c ON i.cod_cititor = c.cod_bare
+   WHERE i.cod_carte = 'BOOK003' AND i.status = 'activ'
+   ```
+
+---
+
+### **SITUAȚIA A: Cartea NU e împrumutată → ÎMPRUMUT NOU**
+
+```
+Cartea e liberă
+    ↓
+PHP salvează împrumutul în BD:
+    INSERT INTO imprumuturi (cod_cititor, cod_carte, status) 
+    VALUES ('USER001', 'BOOK003', 'activ')
+    ↓
+PHP trimite EMAIL automat:
+    require_once 'notificare_imprumut.php';
+    trimite_email_imprumut($pdo, 'USER001', 'BOOK003');
+    ↓
+Email trimis la: radu@email.com
+    Subiect: "📚 Confirmare Împrumut Carte"
+    Conținut: Detalii carte + Data returnare (peste 14 zile)
+    ↓
+PHP salvează în log:
+    INSERT INTO notificari (cod_cititor, tip_notificare, canal, destinatar, status)
+    VALUES ('USER001', 'imprumut', 'email', 'radu@email.com', 'trimis')
+```
+
+**Afișează mesaj:**
+```
+✅ Împrumut înregistrat cu succes!
+📕 Groapa
+Returnare recomandată: 30.11.2025
+📧 Email de confirmare trimis
+```
+
+**Afișează preview carte:**
+```
+┌─────────────────────────────────┐
+│ 📕 Detalii Carte Scanată        │
+├─────────────────────────────────┤
+│ Titlu:     Groapa               │
+│ Autor:     Eugen Barbu          │
+│ ISBN:      9789734640560        │
+│ Locație:   Raft A - Nivel 2 - 05│
+│ Secțiune:  Literatură română    │
+└─────────────────────────────────┘
+```
+
+**Actualizează statistici:**
+- Împrumuturi Active: 9 → **10**
+- Împrumuturi Azi: 10 → **11**
+
+**Adaugă în "Activitate Recentă":**
+```
+Radu Mihai
+Groapa
+📤 Împrumut
+```
+
+---
+
+### **SITUAȚIA B: Cartea E împrumutată de ACELAȘI cititor → RETURNARE**
+
+```
+Cartea e împrumutată de USER001 (același care a scanat)
+    ↓
+PHP actualizează în BD:
+    UPDATE imprumuturi
+    SET status = 'returnat', data_returnare = NOW()
+    WHERE cod_carte = 'BOOK003' AND cod_cititor = 'USER001' AND status = 'activ'
+```
+
+**Afișează mesaj:**
+```
+📥 Carte returnată cu succes!
+Groapa
+```
+
+**Actualizează statistici:**
+- Împrumuturi Active: 9 → **8**
+- Returnări Azi: 1 → **2**
+
+**Adaugă în "Activitate Recentă":**
+```
+Radu Mihai
+Groapa
+📥 Returnare
+```
+
+---
+
+### **SITUAȚIA C: Cartea e împrumutată de ALTCINEVA → EROARE**
+
+```
+Cartea e împrumutată de USER005 (Ionescu Maria)
+    ↓
+PHP NU face nimic în BD
+```
+
+**Afișează mesaj:**
+```
+❌ Cartea este împrumutată de: Ionescu Maria
+```
+
+---
+
+## **⏱️ TIMEOUT AUTOMAT (2 minute)**
+
+```javascript
+// JavaScript numără countdown
+secundeRamase = 120; // 2:00
+
+setInterval(function() {
+    secundeRamase--;
+    
+    if (secundeRamase <= 0) {
+        window.location.reload(); // Reîncarcă pagina
+        // Sesiunea PHP se șterge automat
+    }
+    
+    // Afișează: ⏱️ 1:59, 1:58, 1:57...
+}, 1000);
+```
+
+**Când expiră (0:00):**
+1. Pagina se reîncarcă automat
+2. PHP șterge sesiunea:
+   ```php
+   unset($_SESSION['cititor_activ']);
+   ```
+3. Revine la starea inițială: "⚠️ Pas 1: Scanează carnetul"
+
+---
+
+## **🔄 BUTONUL RESET**
+
+```
+Click pe "❌ RESET"
+    ↓
+Browser deschide: scanare_monitor_principal.php?reset=1
+    ↓
+PHP detectează: isset($_GET['reset'])
+    ↓
+PHP șterge sesiunea: unset($_SESSION['cititor_activ'])
+    ↓
+Redirect la: scanare_monitor_principal.php
+    ↓
+Pagină curată, fără cititor activ
+```
+
+---
+
+## **📊 STATISTICILE (se actualizează la fiecare refresh)**
+
+```php
+// La fiecare încărcare pagină, PHP contorizează:
+$stats = [
+    'total_carti' => COUNT(*) FROM carti,
+    'total_cititori' => COUNT(*) FROM cititori,
+    'imprumuturi_active' => COUNT(*) FROM imprumuturi WHERE status='activ',
+    'imprumuturi_azi' => COUNT(*) FROM imprumuturi WHERE DATE(data_imprumut)=TODAY,
+    'returnari_azi' => COUNT(*) FROM imprumuturi WHERE DATE(data_returnare)=TODAY,
+    'vizitatori_azi' => COUNT(DISTINCT cod_cititor) FROM sesiuni_biblioteca WHERE data=TODAY,
+    'intarzieri' => COUNT(*) FROM imprumuturi WHERE status='activ' AND zile>14
+];
+```
+
+---
+
+## **📜 ISTORICUL CITITORULUI (dacă există cititor activ)**
+
+```php
+// PHP ia ultimele 10 împrumuturi ale cititorului activ:
+SELECT c.titlu, c.autor, i.data_imprumut, i.status
+FROM imprumuturi i
+JOIN carti c ON i.cod_carte = c.cod_bare
+WHERE i.cod_cititor = 'USER001'
+ORDER BY i.data_imprumut DESC
+LIMIT 10
+```
+
+**Afișează:**
+```
+📚 Istoric Împrumuturi Cititor
+┌────────────────────────────┐
+│ Groapa - Eugen Barbu       │
+│ 📤 Activ - 3 zile          │
+├────────────────────────────┤
+│ Maitreyi - Mircea Eliade   │
+│ 📥 Returnat - 12 zile      │
+└────────────────────────────┘
+```
+
+---
+
+## **🎯 REZUMAT FLUX:**
+
+```
+1. Scanner → Browser → POST → PHP
+2. PHP verifică tip cod (USER/BOOK)
+3. PHP caută în MySQL
+4. PHP decide: Împrumut / Returnare / Eroare
+5. PHP salvează în BD
+6. PHP trimite email (dacă împrumut nou)
+7. PHP generează HTML nou
+8. Browser afișează rezultatul
+9. JavaScript auto-focus pe input
+10. Timeout 2 minute → reset automat
+```
+
+---
+
+**Asta e tot! Simplu și clar!** 🎯✨
+
+Ai întrebări despre vreun pas specific?
