@@ -1,0 +1,4 @@
+python-barcode>=0.15.1
+pillow>=10.0.0
+reportlab>=4.0.0
+
