@@ -1,0 +1,118 @@
+# ============================================
+# SECURITATE - Biblioteca Aplicație
+# ============================================
+# DEZACTIVAT TEMPORAR PENTRU LOCALHOST
+# Pentru a reactiva, decomentează regulile de mai jos
+
+# Dezactivează listarea directoarelor
+# Options -Indexes
+
+# Blochează accesul direct la fișiere sensibile
+# <FilesMatch "\.(sql|log|ini|conf|bak|backup|old|tmp|env)$">
+#     Order allow,deny
+#     Deny from all
+# </FilesMatch>
+
+# Blochează accesul la fișiere de configurare
+# <FilesMatch "^(config|config_security|\.htaccess|\.git|\.env)$">
+#     Order allow,deny
+#     Deny from all
+# </FilesMatch>
+
+# Protecție pentru fișiere PHP sensibile
+# <FilesMatch "^(setup|setup_database|update_database|verifica_server|check_server|ssh_client|test_|debug_|curatare_|sterge_|executa_|verificare_securitate)">
+#     Order allow,deny
+#     Deny from all
+# </FilesMatch>
+
+# Blochează accesul la directoare sensibile
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     
+#     # Blochează accesul la directoare cu backup-uri
+#     RewriteRule ^(.*/)?\.git/ - [F,L]
+#     RewriteRule ^(.*/)?backup/ - [F,L]
+#     RewriteRule ^(.*/)?build/ - [F,L]
+#     RewriteRule ^(.*/)?dist/ - [F,L]
+#     RewriteRule ^(.*/)?scripts_saved/ - [F,L]
+#     RewriteRule ^(.*/)?__pycache__/ - [F,L]
+# </IfModule>
+
+# Protecție XSS - Headers de securitate
+# <IfModule mod_headers.c>
+#     # Previne clickjacking
+#     Header always set X-Frame-Options "SAMEORIGIN"
+#     
+#     # Previne MIME type sniffing
+#     Header always set X-Content-Type-Options "nosniff"
+#     
+#     # Activează XSS Protection
+#     Header always set X-XSS-Protection "1; mode=block"
+#     
+#     # Content Security Policy (ajustat pentru aplicația ta)
+#     Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:;"
+#     
+#     # Referrer Policy
+#     Header always set Referrer-Policy "strict-origin-when-cross-origin"
+# </IfModule>
+
+# Dezactivează server signature
+# ServerSignature Off
+
+# Limitare dimensiune upload (ajustă după nevoie)
+# php_value upload_max_filesize 10M
+# php_value post_max_size 10M
+
+# Protecție împotriva atacurilor de tip "Directory Traversal"
+# <IfModule mod_rewrite.c>
+#     RewriteCond %{REQUEST_URI} (\.\./|\.\.) [NC,OR]
+#     RewriteCond %{REQUEST_URI} ^(.*/)?\.(git|svn|hg|bzr)/ [NC]
+#     RewriteRule . - [F,L]
+# </IfModule>
+
+# Dezactivează execuția PHP în directoare de upload (dacă există)
+# <DirectoryMatch "^.*/uploads/">
+#     php_flag engine off
+# </DirectoryMatch>
+
+# Protecție împotriva atacurilor de tip "SQL Injection" și "Path Traversal" în URL
+# <IfModule mod_rewrite.c>
+#     RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+#     RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+#     RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2}) [OR]
+#     RewriteCond %{QUERY_STRING} (\;|'|\"|%22).*(union|select|insert|drop|delete|update|md5|benchmark|or|and) [NC,OR]
+#     RewriteCond %{QUERY_STRING} (base64_encode|localhost|mosconfig) [NC,OR]
+#     RewriteCond %{QUERY_STRING} (boot\.ini|etc/passwd|self/environ) [NC,OR]
+#     RewriteCond %{QUERY_STRING} (thumbs?\.db|\.htaccess) [NC]
+#     RewriteRule .* - [F,L]
+# </IfModule>
+
+# Protecție împotriva atacurilor de tip "User-Agent" malicios
+# <IfModule mod_rewrite.c>
+#     RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+#     RewriteCond %{HTTP_USER_AGENT} ^(java|curl|wget|python|nikto|scan) [NC,OR]
+#     RewriteCond %{HTTP_USER_AGENT} (libwww-perl|curl|wget|python|nikto|scan|java|winhttp|clshttp|loader) [NC,OR]
+#     RewriteCond %{HTTP_USER_AGENT} (;|<|>|'|"|\)|\(|%0A|%0D|%27|%3C|%3E|%00) [NC]
+#     RewriteRule .* - [F,L]
+# </IfModule>
+
+# Protecție împotriva metodei TRACE (Cross-Site Tracing)
+# <IfModule mod_rewrite.c>
+#     RewriteCond %{REQUEST_METHOD} ^TRACE
+#     RewriteRule .* - [F,L]
+# </IfModule>
+
+# Protecție împotriva atacurilor de tip "Slowloris" (opțional)
+# <IfModule mod_reqtimeout.c>
+#     RequestReadTimeout header=20-40,MinRate=500 body=20,MinRate=500
+# </IfModule>
+
+# Protecție pentru sesiuni
+# php_value session.cookie_httponly 1
+# php_value session.cookie_secure 0
+# php_value session.use_only_cookies 1
+# php_value session.cookie_samesite Strict
+
+# Protecție împotriva atacurilor de tip "File Inclusion"
+# php_flag allow_url_include Off
+# php_flag allow_url_fopen On
