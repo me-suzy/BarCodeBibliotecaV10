@@ -1,0 +1,4 @@
+# Blochează accesul direct la log-uri
+Order allow,deny
+Deny from all
+
