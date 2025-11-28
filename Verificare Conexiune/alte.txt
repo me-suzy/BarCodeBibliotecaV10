@@ -1,0 +1,15 @@
+Ceva se intampla uneori. Deci adresa YOUR-IP-or-http://WEBSITE/ nu e valida nicodata ,imi apare asta tot timpul:
+
+This site can’t be reached
+YOUR-IP-or-http://WEBSITE refused to connect.
+Try:
+
+Checking the connection
+Checking the proxy and the firewall
+ERR_CONNECTION_REFUSED
+
+----
+
+dar Aleph  YOUR-IP-or-http://WEBSITE:8991/F/  merge (doar ca azi se intrerupe des, si nu stiu de ce)
+
+dar intrebarea, cu Putty tot cade catalogul online? DA
