@@ -1,0 +1,30 @@
+-- Verifică împrumuturile pentru USER004 (sau codul tău de cititor)
+SELECT 
+    i.id,
+    i.cod_cititor,
+    i.cod_carte,
+    i.data_imprumut,
+    i.data_returnare,
+    i.status,
+    c.titlu
+FROM imprumuturi i
+JOIN carti c ON i.cod_carte = c.cod_bare
+WHERE i.cod_cititor = 'USER004'
+ORDER BY i.data_imprumut DESC;
+
+
+-- ATENȚIE: Șterge TOATE împrumuturile cititorului (inclusiv istoricul!)
+DELETE FROM imprumuturi WHERE cod_cititor = 'USER004';
+
+-- Apoi poți șterge cititorul
+DELETE FROM cititori WHERE cod_bare = 'USER004';
+
+
+-- Șterge constrângerea veche
+ALTER TABLE imprumuturi DROP FOREIGN KEY imprumuturi_ibfk_1;
+
+-- Adaugă constrângere nouă cu DELETE CASCADE
+ALTER TABLE imprumuturi
+ADD CONSTRAINT imprumuturi_ibfk_1 
+FOREIGN KEY (cod_cititor) REFERENCES cititori (cod_bare) 
+ON DELETE CASCADE;
