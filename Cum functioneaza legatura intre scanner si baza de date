@@ -1,0 +1,765 @@
+## **EXPLICAȚIE SIMPLĂ:**
+
+**Scanner-ul NU știe NIMIC despre baza de date!** 🤯
+
+Lasă-mă să-ți explic exact cum funcționează:
+
+---
+
+## **Ce este de fapt scanner-ul:**
+
+```
+Scanner de barcode = TASTATURĂ USB SPECIALĂ
+```
+
+**Asta e tot!** El e ca și cum ai avea o tastatură care tastează FOARTE rapid.
+
+---
+
+## **Fluxul COMPLET pas-cu-pas:**
+
+### **Pasul 1: Tu deschizi pagina în browser**
+
+```
+Browser → http://localhost/scanare_mini.php
+    ↓
+Apache PHP citește fișierul scanare_mini.php
+    ↓
+Se afișează formularul HTML cu câmpul <input>
+```
+
+**În acest moment:**
+- Browser-ul afișează o pagină web cu un câmp de text
+- Cursorul e în câmpul "SCANEAZĂ..."
+- **Scanner-ul încă n-a făcut NIMIC**
+
+---
+
+### **Pasul 2: Scanezi un cod de bare (ex: USER001)**
+
+```
+👉 Țineți scanner-ul → apăsați buton → BIP!
+    ↓
+Scanner-ul CITEȘTE bara neagră de pe etichetă
+    ↓
+Scanner-ul TRANSFORMĂ bara în text: "USER001"
+    ↓
+Scanner-ul SE COMPORTĂ ca o TASTATURĂ și "tastează":
+    U → S → E → R → 0 → 0 → 1 → ENTER
+    ↓
+Textul "USER001" apare în câmpul <input>
+    ↓
+ENTER-ul trimite AUTOMAT formularul (ca și cum ai apăsa butonul Submit)
+```
+
+**În acest moment:**
+- Scanner-ul și-a terminat treaba - el doar a "tastat"
+- **NU există nicio legătură directă între scanner și PHP/MySQL**
+- E exact ca și cum TU ai fi tastat "USER001" + ENTER de la tastatură
+
+---
+
+### **Pasul 3: Browser-ul trimite datele la PHP**
+
+```
+Browser: "Am primit ENTER, trimit formularul!"
+    ↓
+Browser trimite cerere HTTP POST către server:
+    POST http://localhost/scanare_mini.php
+    cod_scanat=USER001
+    ↓
+Apache primește cererea
+    ↓
+Apache dă fișierul PHP spre procesare
+```
+
+**În acest moment:**
+- Browser-ul a trimis codul "USER001" la server
+- Scanner-ul încă NU știe nimic despre ce se întâmplă
+- E ca și cum ai fi completat un formular pe hârtie și l-ai trimis prin poștă
+
+---
+
+### **Pasul 4: PHP procesează codul**
+
+```php
+// PHP primește codul prin POST
+$cod_scanat = $_POST['cod_scanat']; // = "USER001"
+
+// PHP se conectează la MySQL
+$pdo = new PDO("mysql:host=localhost;dbname=biblioteca", "root", "");
+
+// PHP caută în baza de date
+$stmt = $pdo->prepare("SELECT * FROM cititori WHERE cod_bare = ?");
+$stmt->execute(['USER001']);
+$cititor = $stmt->fetch();
+
+// Găsește: Popescu Ion
+// Salvează în sesiune
+$_SESSION['cititor_activ'] = [
+    'nume' => 'Popescu',
+    'prenume' => 'Ion'
+];
+
+// PHP generează HTML nou cu mesajul
+echo "✅ Bine ai venit: Popescu Ion";
+```
+
+**În acest moment:**
+- PHP a căutat în MySQL și a găsit cititorul
+- Scanner-ul ÎNCĂ nu știe nimic
+- PHP generează o pagină HTML nouă
+
+---
+
+### **Pasul 5: Browser-ul afișează rezultatul**
+
+```
+PHP returnează HTML către browser
+    ↓
+Browser afișează: "✅ Bine ai venit: Popescu Ion"
+    ↓
+Tu (bibliotecar) VEZI mesajul pe ecran
+```
+
+**Scanner-ul NU vede nimic!** El doar a "tastat" și atât.
+
+---
+
+## **ANALOGIE SIMPLĂ:**
+
+Imaginează-ți că biblioteca ta funcționează așa:
+
+1. **Scanner-ul = un robot care scrie pe o foaie**
+   - Tu îi dai o carte
+   - El scrie pe foaie: "BOOK001"
+   - Apoi pune foaia în căsuța poștală
+
+2. **Browser-ul = poștașul**
+   - Ia foaia din căsuță
+   - O duce la registratură (serverul PHP)
+
+3. **PHP = registratorul**
+   - Primește foaia cu "BOOK001"
+   - Caută în registrul mare (MySQL) cine e BOOK001
+   - Găsește: "Maitreyi - Mircea Eliade"
+   - Scrie pe o foaie nouă: "Cartea Maitreyi a fost împrumutată"
+   - O trimite înapoi la poștaș
+
+4. **Browser-ul = poștașul din nou**
+   - Primește foaia cu răspuns
+   - Ți-o arată pe ecran
+
+**Robotul (scanner-ul) NU știe ce a scris registratorul!**  
+**El doar a scris "BOOK001" și atât!**
+
+---
+
+## **De ce funcționează atât de rapid?**
+
+```
+Scanner scrie → 0.5 secunde
+Browser trimite → 0.1 secunde  
+PHP caută în BD → 0.1 secunde
+Browser afișează → 0.1 secunde
+───────────────────────────────
+TOTAL: ~0.8 secunde
+```
+
+De aceea pare că scanner-ul "comunică direct" cu baza de date, dar de fapt:
+
+**Scanner → Browser → Apache → PHP → MySQL → PHP → Browser → ECRAN**
+
+---
+
+## **Testul FINAL să înțelegi:**
+
+**Experimentează așa:**
+
+1. Deschide `scanare_mini.php`
+2. **Deconectează scanner-ul complet** (scoate USB-ul)
+3. Cu **TASTATURA ta normală**, tastează: `USER001` + ENTER
+4. **VA FUNCȚIONA IDENTIC!** ✅
+
+**De ce?** Pentru că scanner-ul E o tastatură! 
+
+---
+
+## **Concluzie:**
+
+```
+Scanner = Nu știe NIMIC despre PHP/MySQL
+Scanner = Doar "tastează" textul ca o tastatură obișnuită
+PHP = Primește textul și APOI caută în baza de date
+```
+
+**Scanner-ul e un dispozitiv "prost" - el doar citește liniile negre și le transformă în litere!** 🎯
+
+Acum e clar? 😊
+
+da, deci e musai sa am pagina php deschisa. Dar aceasta pagina scanare_mini.php, trebuie sa fie in prim plan? adica sa spunem ca tipa de la biblioteca, de la intampinare clienti, verifica alte lucruri pe acelasi calculator. Si nu este focalizata pe pagina scanare_mini.php si pe alta aplicatii din calculator. In acest caz, daca nu e in prim plan scanare_mini.php , va putea sa functioneze scannerul ca sa trimita informatii in baza de date?  
+
+## **RĂSPUNS: NU, NU VA FUNCȚIONA! ❌**
+
+---
+
+## **Problema CRITICĂ:**
+
+```
+Scanner = Tastatură USB
+    ↓
+Scanează USER001
+    ↓
+"Tastează" în APLICAȚIA ACTIVĂ din acel moment
+    ↓
+Dacă Word e activ → scrie USER001 în Word 😱
+Dacă Excel e activ → scrie USER001 în Excel 😱
+Dacă Email e activ → scrie USER001 în email 😱
+```
+
+**Scanner-ul NU știe unde trebuie să scrie!** El scrie în orice aplicație e activă.
+
+---
+
+## **Testul DEMO să vezi problema:**
+
+1. Deschide `scanare_mini.php`
+2. Deschide **Word** (sau Notepad)
+3. **Click în Word** (să devină activ)
+4. Scanează un cod **SAU** tastează USER001 + ENTER
+5. **Codul va apărea în WORD, NU în browser!** 💥
+
+---
+
+## **SOLUȚII REALE:**
+
+### **Opțiunea 1: Monitor DEDICAT (CEA MAI SIGURĂ)** ⭐⭐⭐⭐⭐
+
+```
+┌─────────────────┐    ┌─────────────────┐
+│   Monitor 1     │    │   Monitor 2     │
+│   (Principal)   │    │   (Dedicat)     │
+│                 │    │                 │
+│  Word/Excel     │    │  scanare_mini   │
+│  Email          │    │  FULL-SCREEN    │
+│  Rapoarte       │    │  Always Active  │
+└─────────────────┘    └─────────────────┘
+         ↑                      ↑
+         │                      │
+    Tastatura            Scanner USB
+```
+
+**Avantaje:**
+- ✅ Funcționează 100% sigur
+- ✅ Tipa poate lucra liber pe Monitor 1
+- ✅ Scanner-ul scanează DOAR pe Monitor 2
+
+**Cost:** 300-500 lei (monitor SH 17-19")
+
+---
+
+### **Opțiunea 2: Tabletă Android/iPad dedicată** ⭐⭐⭐⭐
+
+```
+┌─────────────────┐         ┌─────────────┐
+│   PC Principal  │         │   Tabletă   │
+│                 │  WiFi   │             │
+│  Word/Excel     │◄────────┤  Browser:   │
+│  Email          │         │  scanare_   │
+│  XAMPP Running  │         │  mini.php   │
+└─────────────────┘         └─────────────┘
+                                   ↑
+                                   │ USB
+                                Scanner
+```
+
+**Setup:**
+1. XAMPP rulează pe PC
+2. Află IP-ul PC-ului: `ipconfig` → ex: 192.168.1.100
+3. Pe tabletă deschizi: `http://192.168.1.100/scanare_mini.php`
+4. Scanner conectat la PC (nu la tabletă)
+
+**Avantaje:**
+- ✅ Tabletă stă pe ghișeu, mereu activă
+- ✅ PC-ul liber complet
+- ✅ Portabil
+
+**Dezavantaj:**
+- ❌ Scanner trebuie conectat la PC, nu la tabletă
+
+---
+
+### **Opțiunea 3: Aplicație Desktop cu Global Hook** ⭐⭐⭐⭐⭐
+
+Îți creez o **aplicație Windows nativă** (Python/Electron) care:
+
+```
+Scanner scanează USER001
+    ↓
+Aplicația INTERCEPTEAZĂ input-ul GLOBAL
+    ↓
+Trimite direct la MySQL (fără browser)
+    ↓
+Afișează notificare Windows
+```
+
+**Avantaje:**
+- ✅ Funcționează în FUNDAL complet
+- ✅ NU trebuie browser deschis
+- ✅ Tipa poate lucra în orice aplicație
+
+**Dezavantaj:**
+- ❌ Mai complex de dezvoltat (1-2 ore muncă)
+
+---
+
+### **Opțiunea 4: Aplicație Web cu Always-On-Top FORȚAT** ⭐⭐⭐
+
+Modific `scanare_mini.php` să:
+- Rămână MEREU deasupra
+- Auto-focus când detectează text
+- Minimă interferență
+
+**Problema:** Tot trebuie să fie FOCUSED când scanezi!
+
+---
+
+## **RECOMANDAREA MEA pentru TINE:**
+
+Depinde de **situația reală** din bibliotecă:
+
+### **Scenariul A: Tipa scanează CONSTANT (60%+ din timp)**
+→ **Monitor dedicat** (300-500 lei)
+- Cel mai sigur
+- Cel mai profesional
+- Zero probleme
+
+### **Scenariul B: Tipa scanează OCAZIONAL (20-30% din timp)**
+→ **Aplicație desktop nativă** (îți fac eu)
+- Funcționează în fundal
+- Zero interferență
+
+### **Scenariul C: Buget foarte limitat**
+→ **Tabletă veche Android** (100-200 lei SH)
+- Stand pe ghișeu
+- Mereu activă
+
+---
+
+## **Ce alegi?**
+
+**Spune-mi:**
+1. Câți utilizatori vin pe zi? (să știu cât de des se scanează)
+2. Ce alte aplicații folosește tipa? (Word/Excel/Email/Aleph?)
+3. Ai buget pentru monitor secundar? (300-500 lei)
+
+**Apoi îți fac soluția optimă!** 🎯
+
+**SAU** vrei să-ți fac **aplicația desktop nativă** care funcționează în fundal complet? Durează ~1-2 ore să o dezvolt.
+
+deci cel mai simplu, pun un al doilea monitor. Dar acest monitor, este legat la acelasi laptop sau calculator?
+
+sau cumpar o tableta, tot vreo 500 ron.
+
+## **DA, al doilea monitor se leagă la ACELAȘI laptop/calculator!** ✅
+
+---
+
+## **OPȚIUNEA 1: Monitor secundar (500 lei)**
+
+### **Cum funcționează:**
+
+```
+┌─────────────────────────────┐
+│    LAPTOP/PC (același)      │
+│    - XAMPP                  │
+│    - MySQL                  │
+│    - Windows                │
+└──────┬──────────────┬───────┘
+       │              │
+   HDMI/VGA      HDMI/VGA
+       │              │
+       ↓              ↓
+┌─────────────┐  ┌─────────────┐
+│  Monitor 1  │  │  Monitor 2  │
+│  Principal  │  │  (NOU)      │
+│             │  │             │
+│ Word/Excel  │  │  scanare_   │
+│ Email       │  │  mini.php   │
+│ Rapoarte    │  │ FULL-SCREEN │
+└─────────────┘  └─────────────┘
+```
+
+**Ce ai nevoie:**
+1. **Cablu HDMI** sau **VGA** (în funcție de laptop)
+2. **Monitor** cu HDMI/VGA
+3. **Același PC** - doar îi legi monitorul în plus
+
+**Cum conectezi:**
+1. Legi monitorul la laptop (HDMI/VGA)
+2. Windows detectează automat
+3. **Windows Key + P** → "Extend" (Extinde desktop)
+4. Tragi browser-ul cu `scanare_mini.php` pe Monitor 2
+5. Full-screen (F11) pe Monitor 2
+6. Monitor 1 = liber pentru muncă
+
+---
+
+## **OPȚIUNEA 2: Tabletă (500 lei)**
+
+### **Cum funcționează:**
+
+```
+┌─────────────────────────────┐
+│    PC/LAPTOP Principal      │
+│    - XAMPP RUNNING          │
+│    - MySQL                  │
+│    IP: 192.168.1.100        │
+└─────────────┬───────────────┘
+              │
+         WiFi Router
+              │
+              ↓
+      ┌───────────────┐
+      │    Tabletă    │
+      │   Android     │
+      │   Browser:    │
+      │ http://192... │
+      │ scanare_mini  │
+      └───────────────┘
+```
+
+**Ce ai nevoie:**
+1. **Tabletă Android/iPad** (500 lei)
+2. **Același WiFi** pentru PC și tabletă
+3. **Stand pentru tabletă** pe ghișeu
+
+**Cum configurezi:**
+1. XAMPP rulează pe PC
+2. Găsești IP-ul PC-ului: `ipconfig` → ex: 192.168.1.100
+3. Pe tabletă deschizi: `http://192.168.1.100/scanare_mini.php`
+4. Tabletă rămâne pe ghișeu, mereu activă
+
+**Avantaj:** Tabletă touchscreen, portabilă  
+**Dezavantaj:** Trebuie WiFi stabil
+
+---
+
+## **COMPARAȚIE DETALIATĂ:**
+
+| Criteriu | Monitor Secundar | Tabletă |
+|----------|------------------|---------|
+| **Preț** | 300-500 lei | 500-800 lei |
+| **Conexiune** | 1 cablu HDMI | WiFi necesar |
+| **Viteză** | Instant (cablu) | Depinde de WiFi |
+| **Mobilitate** | Fix pe birou | Portabilă |
+| **Complexitate** | FOARTE simplu | Mediu (config IP) |
+| **Fiabilitate** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **Touch screen** | NU | DA |
+
+---
+
+## **RECOMANDAREA MEA:**
+
+### **Alege MONITOR SECUNDAR dacă:**
+- ✅ Ai laptop cu **HDMI/VGA liber**
+- ✅ Vrei **soluție simplă și sigură**
+- ✅ PC-ul stă FIX pe birou
+- ✅ **Cea mai ieftină** și **cea mai stabilă**
+
+### **Alege TABLETĂ dacă:**
+- ✅ Laptop-ul **NU are HDMI liber**
+- ✅ Vrei **mobilitate** (mutați scanner-ul prin bibliotecă)
+- ✅ Vrei **touchscreen** pentru rapoarte
+- ✅ Ai **WiFi stabil** în bibliotecă
+
+---
+
+## **VERIFICARE RAPIDĂ - Are laptop-ul HDMI?**
+
+**Verifică pe laterale:**
+- Port **HDMI** (trapez subțire) → ✅ Poți conecta monitor
+- Port **VGA** (trapez albastru cu 15 pini) → ✅ Poți conecta monitor vechi
+- Port **USB-C** → ✅ Cu adaptor USB-C to HDMI
+
+**Dacă AI port liber → MONITOR SECUNDAR = cea mai bună alegere!**
+
+---
+
+## **CE ÎNAINTE DE A CUMPĂRA:**
+
+### **Pentru monitor:**
+1. Verifică ce port AI pe laptop: HDMI/VGA/DisplayPort/USB-C
+2. Cumpără monitor cu **același port** SAU adaptor
+3. Preferabil **19-22 inch** (suficient mare să vezi)
+4. Poate fi **second-hand** (100-300 lei pe OLX)
+
+### **Pentru tabletă:**
+1. Verifică WiFi-ul bibliotecii (viteză, stabilitate)
+2. Preferabil **Android** (mai ieftin decât iPad)
+3. Minim **8 inch** pentru vizibilitate
+4. Nu trebuie performantă - doar pentru browser
+
+---
+
+## **PREȚURI REALE (România, 2025):**
+
+**Monitoare SH (OLX/Facebook Marketplace):**
+- 17" LCD: 100-200 lei
+- 19" LCD: 150-300 lei
+- 22" LED: 250-400 lei
+
+**Tablete NOI:**
+- Samsung Galaxy Tab A8: 600-800 lei
+- Lenovo Tab M10: 500-700 lei
+- Huawei MatePad: 600-900 lei
+
+**Tablete SH:**
+- Samsung Tab 10": 300-500 lei
+
+---
+
+## **VERDICTUL FINAL:**
+
+**Dacă laptop-ul are HDMI liber:**
+→ **Cumpără monitor secundar SH de 19-22" (200-300 lei)**
+→ **CEL MAI SIMPLU, CEL MAI IEFTIN, CEL MAI SIGUR** ⭐⭐⭐⭐⭐
+
+**Dacă NU are HDMI/VGA:**
+→ **Tabletă Android 10" (500-700 lei)** + îți arăt cum să configurezi IP-ul
+
+---
+
+**Spune-mi:** Are laptop-ul port HDMI/VGA liber? 🎯
+
+deocamdata, la intrare sunt calculatoare normal, cu sursa, nu laptopuri. Fiecare calculator are un monitor si o sursa
+
+## **PERFECT! Atunci soluția ta este SUPER SIMPLĂ: Monitor secundar!** ⭐⭐⭐⭐⭐
+
+---
+
+## **De ce e IDEAL pentru tine:**
+
+**Calculatoarele desktop au MULT mai multe porturi video decât laptop-urile!**
+
+```
+Placa video tipică PC desktop:
+├─ HDMI (1-2 porturi)
+├─ DisplayPort (1-2 porturi)  
+├─ DVI (1 port)
+└─ VGA (1 port - pe PC-uri vechi)
+```
+
+**Cel mai probabil ai PORTURI LIBERE!** ✅
+
+---
+
+## **PAS CU PAS - Cum verifici ce porturi ai:**
+
+### **Pasul 1: Uită-te în spatele PC-ului**
+
+Du-te la PC și caută pe **placa video** (partea de jos, unde e conectat monitorul actual):
+
+**Ce porturi cauți:**
+
+| Port | Cum arată | Descriere |
+|------|-----------|-----------|
+| **HDMI** | ![HDMI](trapez subțire) | Port **negru** trapez, 19 pini |
+| **DisplayPort** | ![DP](dreptunghi mic) | Port **negru** dreptunghi, 20 pini |
+| **DVI** | ![DVI](dreptunghi alb) | Port **alb** mare, 24 pini |
+| **VGA** | ![VGA](trapez albastru) | Port **ALBASTRU** trapez, 15 pini |
+
+---
+
+### **Pasul 2: Identifică ce AI LIBER**
+
+**Scenariul A:** Monitorul actual e conectat pe **HDMI** (cel mai comun)
+→ ✅ Ai liber: **DisplayPort, DVI sau VGA**
+
+**Scenariul B:** Monitorul actual e conectat pe **VGA** (PC vechi)
+→ ✅ Ai liber: **HDMI, DisplayPort, DVI**
+
+**Scenariul C:** Ai plăci video noi (RTX, GTX)
+→ ✅ Ai **2-3 HDMI + 1-2 DisplayPort**
+
+---
+
+## **CE MONITOR SĂ CUMPERI:**
+
+### **Opțiunea 1: Monitor cu ACELAȘI port ca al tău liber** (CEL MAI SIMPLU)
+
+**Exemplu:**
+- AI liber: **HDMI** → Cumperi monitor cu **HDMI**
+- AI liber: **VGA** → Cumperi monitor cu **VGA**
+- AI liber: **DisplayPort** → Cumperi monitor cu **DisplayPort**
+
+**Avantaj:** NU trebuie adaptor!
+
+---
+
+### **Opțiunea 2: Monitor + Adaptor** (FLEXIBIL)
+
+**Exemplu:**
+- AI liber: **DisplayPort** 
+- Cumperi: Monitor **HDMI** + adaptor **DisplayPort → HDMI** (20 lei)
+
+**Avantaj:** Mai multe opțiuni pe OLX
+
+---
+
+## **RECOMANDĂRI CONCRETE:**
+
+### **Buget MIC (150-250 lei):**
+
+**Caută pe OLX:**
+- Monitor **17-19 inch** second-hand
+- Brands: Dell, HP, Samsung, LG, Acer
+- Port: **VGA sau DVI** (cele mai ieftine)
+- Exemplu: "Dell E1916H 19 inch" - 150-200 lei
+
+**Verifică anunț:**
+- Să aibă **cablu inclus** (VGA/DVI/HDMI)
+- Fără pixeli morți
+- Funcțional 100%
+
+---
+
+### **Buget MEDIU (250-400 lei):**
+
+**Caută pe OLX/eMAG:**
+- Monitor **22-24 inch** second-hand/nou
+- Port: **HDMI** (cel mai modern)
+- LED (consumă mai puțin)
+- Exemplu: "Samsung S22F350 22 inch" - 300-350 lei
+
+---
+
+### **Buget MARE (400-600 lei):**
+
+**Nou de la eMAG/Altex:**
+- Monitor **24 inch Full HD**
+- HDMI + DisplayPort
+- LED, subțire
+- Exemplu: "ASUS VA24EHE 24 inch" - 450-550 lei
+
+---
+
+## **CONFIGURARE DUAL MONITOR - SUPER SIMPLU:**
+
+### **Pasul 1: Conectare fizică**
+
+1. **Oprește PC-ul** (recomandat, nu obligatoriu)
+2. **Conectează cablul** (HDMI/VGA/DisplayPort) de la monitor la PC
+3. **Pornește monitorul**
+4. **Pornește PC-ul**
+5. Windows detectează **automat** al doilea monitor! ✅
+
+---
+
+### **Pasul 2: Configurare Windows**
+
+**Metoda 1 - Rapid:**
+1. Apasă **Windows Key + P**
+2. Alege **"Extend"** (Extinde)
+3. Gata! ✅
+
+**Metoda 2 - Detaliat:**
+1. Click dreapta pe **Desktop** → **Display Settings**
+2. Vei vedea **Monitor 1** și **Monitor 2**
+3. Selectează **"Extend these displays"**
+4. Aranjează pozițiile (drag & drop)
+5. **Apply** → Gata! ✅
+
+---
+
+### **Pasul 3: Poziționează browser-ul**
+
+1. Deschide Chrome cu `scanare_mini.php`
+2. **Trage fereastra** pe Monitor 2 (mouse-ul trece peste margine!)
+3. Apasă **F11** (full-screen)
+4. **Monitor 2 = dedicat scanării**
+5. **Monitor 1 = liber pentru muncă**
+
+---
+
+## **SETUP FINAL:**
+
+```
+        ACELAȘI CALCULATOR
+┌─────────────────────────────────┐
+│  PC Desktop                     │
+│  - Windows                      │
+│  - XAMPP                        │
+│  - MySQL                        │
+│                                 │
+│  Placa video:                   │
+│  ├─ HDMI 1 → Monitor Principal │
+│  └─ HDMI 2 → Monitor Scanner   │
+└─────────────────────────────────┘
+         │              │
+    Cablu HDMI     Cablu HDMI
+         │              │
+         ↓              ↓
+  ┌─────────────┐  ┌─────────────┐
+  │  Monitor 1  │  │  Monitor 2  │
+  │  Principal  │  │  (NOU)      │
+  │             │  │             │
+  │ Word/Excel  │  │  scanare_   │
+  │ Email       │  │  mini.php   │
+  │ Aleph       │  │ FULL-SCREEN │
+  └─────────────┘  └─────────────┘
+       ↑                  ↑
+       │                  │
+   Tastatură          Scanner
+```
+
+---
+
+## **LISTA DE CUMPĂRĂTURI:**
+
+### **Minimă (200-250 lei):**
+- ✅ Monitor SH 19" cu VGA/DVI - **150-200 lei**
+- ✅ Cablu VGA/DVI (dacă nu e inclus) - **15-25 lei**
+- ✅ Prelungitor curent (dacă trebuie) - **20-30 lei**
+
+### **Optimă (350-450 lei):**
+- ✅ Monitor SH/NOU 22" LED cu HDMI - **300-400 lei**
+- ✅ Cablu HDMI (1.5-2m) - **25-35 lei**
+- ✅ Stand monitor (opțional) - **30-50 lei**
+
+---
+
+## **UNDE CUMPERI (România):**
+
+**Online:**
+- **OLX** - monitoare SH 100-300 lei ⭐⭐⭐⭐⭐
+- **Facebook Marketplace** - monitoare SH 100-300 lei
+- **eMAG** - monitoare noi 400-600 lei
+- **Altex** - monitoare noi 400-600 lei
+- **PCGarage** - monitoare noi 350-550 lei
+
+**Fizic:**
+- **Showroom-uri SH** din oraș (Dell, HP refurbished)
+- **Service-uri IT** (au monitoare SH)
+
+---
+
+## **RECOMANDAREA MEA FINALĂ:**
+
+**Pentru biblioteca ta:**
+
+1. **Verifică ce port AI LIBER** pe PC (spatele calculatorului)
+2. **Caută pe OLX:** "monitor 22 inch HDMI" (sau portul tău liber)
+3. **Cumpără:** Monitor SH **Dell/HP/Samsung** - **200-350 lei**
+4. **Conectează:** Cablu în PC → Monitor
+5. **Windows + P** → "Extend"
+6. **Tragi browser pe Monitor 2** → F11
+7. **GATA!** ✅
+
+**Timp instalare:** 10 minute  
+**Cost total:** 200-400 lei  
+**Fiabilitate:** 100% ⭐⭐⭐⭐⭐
+
+---
+
+**Vrei să-ți caut eu pe OLX monitoare potrivite pentru orașul tău?** Spune-mi orașul și ce porturi AI libere! 🎯
