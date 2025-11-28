@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.0">
+  <MasterData>
+    <TfrxMasterData Name="MasterData1" Height="120">
+      
+      <!-- Text header -->
+      <TfrxMemoView Name="Header" Left="10" Top="5" Width="300" Height="16"
+        Text="Biblioteca Academiei Române - Iași"
+        Font.Name="Arial" Font.Size="9"/>
+      
+      <!-- Cod de bare nativ Code128 -->
+      <TfrxBarcodeView Name="Barcode1" 
+        Left="10" 
+        Top="25" 
+        Width="250" 
+        Height="60"
+        BarType="bcCode128"
+        Expression="[BarcodeNumber]"
+        ShowText="False"
+        Zoom="1.5"
+        AutoSize="False"
+        CalcCheckSum="True"
+        Rotation="0"
+        QuietZone="3"/>
+      
+      <!-- Text cod sub barcode -->
+      <TfrxMemoView Name="CodeText" Left="10" Top="90" Width="250" Height="18"
+        Text="[BarcodeNumber]"
+        Font.Name="Arial" Font.Size="11"
+        HAlign="haCenter"/>
+        
+    </TfrxMasterData>
+  </MasterData>
+</TfrxReport>
+
