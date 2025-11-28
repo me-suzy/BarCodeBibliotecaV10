@@ -1,0 +1,22 @@
+RAPORT VERIFICARE SERVER - 2025-11-20 14:14:55.614125
+Server IP: YOUR-IP-or-http://WEBSITE
+Catalog URL: YOUR-IP-or-http://WEBSITE:8991/F
+================================================================================
+
+HTTP Test: SUCCES
+Status: HTTP 200
+
+SSH Connection: ESEC
+Eroare: WARNING - POTENTIAL SECURITY BREACH!
+The host key does not match the one Plink has cached for
+this server:
+  YOUR-IP-or-http://WEBSITE (port 22)
+This means that either the server administrator has changed
+the host key, or you have actually connected to another
+computer pretending to be the server.
+The new rsa2 key fingerprint is:
+  ssh-rsa 1024 SHA256:o8uDQLrUVHutwz+9OeFoDvrsuxy2ctj+tDiAunJp6JY
+Connection abandoned.
+FATAL ERROR: Cannot confirm a host key in batch mode
+
+Return code: 1
