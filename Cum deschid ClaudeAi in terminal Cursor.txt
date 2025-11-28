@@ -1,0 +1,100 @@
+
+1. Deschizi CMD si scrii: claude  (apoi apesi Enter sau 1 - YES)
+
+
+1. Deschizi workspace in Cursor in proiectul dorit de tine
+Deschizi un terminal nou: Ctrl+Shift+ (+)  sau te duci sus in ... (dupa butonul RUN)
+New Terminal
+APoi in terminal scrii: claude /ide
+
+Ce poți face ACUM:
+În terminal (Cursor):
+bash> Refactor this PHP code to use PDO prepared statements
+> Add error handling to all database queries
+> Create a REST API endpoint for user authentication
+Comenzi utile:
+bash/model         # Schimbă între Sonnet/Haiku
+/auto-accept   # Toggle modul auto on/off  
+/help          # Vezi toate comenzile
+/clear         # Curăță conversația
+/usage         # Vezi câte credite ai consumat
+
+
+## Cum pornești Claude Code cu auto-accept:
+
+### Pasul 1: Închide Claude Code curent
+
+Dacă ai Claude Code deschis, închide-l:
+- Apasă Esc în terminal
+- Sau Ctrl+C
+
+### Pasul 2: Pornește cu auto-accept
+
+În terminalul integrat din Cursor (Ctrl+`), scrie:
+
+```bash
+claude --auto-accept
+```
+
+SAU, pentru a combina cu IDE mode:
+
+```bash
+claude --auto-accept /ide
+```
+
+Aceasta va:
+- ✅ Porni Claude Code
+- ✅ Conecta automat la Cursor
+- ✅ Activa modul auto - nu te mai întreabă la fiecare editare
+
+---
+
+## Variante complete:
+
+### Pentru conexiune IDE cu auto-accept:
+```bash
+claude --auto-accept /ide
+```
+
+### Pentru a porni în directorul curent cu auto-accept:
+```bash
+claude --auto-accept
+```
+
+---
+
+## Ce se întâmplă când rulezi cu --auto-accept:
+
+```
+Claude Code v2.0.50
+Welcome back Neculai!
+
+Auto-accept mode enabled ✓
+Connected to Cursor.
+
+> _
+```
+
+Apoi poți da orice comandă și Claude va lucra complet autonom fără să te întrebe la fiecare modificare! 🚀
+
+---
+
+## Pentru sesiunea curentă:
+
+Dacă nu vrei să închizi Claude Code acum, poți pur și simplu să apeși 2 la întrebarea curentă și va activa auto-accept pentru această sesiune. Apoi, data viitoare când pornești Claude, folosești `claude --auto-accept /ide`.
+
+Încearcă acum! Închide Claude Code (Esc) și rulează `claude --auto-accept /ide` 🎯
+
+
+
+
+
+
+2. Tastezi asta in CMD
+
+cd e:\Carte\BB\17 - Site Leadership\Principal 2022\ro
+claude /ide
+
+Apoi apesi ENTER(yes) asta va conecta claude la Cursor
+
+
