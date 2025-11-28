@@ -1,0 +1,11 @@
+RAPORT VERIFICARE SERVER - 2025-11-20 12:58:00.778203
+Server IP: YOUR-IP-or-http://WEBSITE
+Catalog URL: YOUR-IP-or-http://WEBSITE:8991/F
+================================================================================
+
+HTTP Test: SUCCES
+Status: HTTP 200
+
+SSH Connection: ESEC
+Eroare: plink.exe nu este disponibil. Instaleaza PuTTY.
+Return code: 1
