@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.0" ... >
+  <ReportTitle>
+    <TfrxReportTitle Name="ReportTitle1" Height="60">
+      
+      <!-- Text header -->
+      <TfrxMemoView Name="Memo1" Left="20" Top="10" Width="400" Height="18"
+        Text="Biblioteca Academiei Române - Iași"
+        Font.Name="Arial" Font.Size="10" Font.Style="1"/>
+      
+      <!-- Imaginea cu codul de bare -->
+      <TfrxPictureView Name="Picture1" Left="20" Top="30" Width="250" Height="80"
+        PictureType="png"
+        Picture.LoadFromFile="[ImagePath]"
+        HightQuality="True"
+        Stretch="True"
+        KeepAspectRatio="True"/>
+      
+      <!-- Textul codului sub imagine -->
+      <TfrxMemoView Name="Memo2" Left="20" Top="115" Width="250" Height="18"
+        Text="[BarcodeNumber]"
+        Font.Name="Arial" Font.Size="12"
+        HAlign="haCenter"/>
+      
+    </TfrxReportTitle>
+  </ReportTitle>
+</TfrxReport>
+
