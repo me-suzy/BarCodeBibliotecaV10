@@ -1,0 +1,105 @@
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+= RESTART: E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca\Verificare Conexiune\monitor_aleph.py
+================================================================================
+MONITORIZARE ALEPH - Verificare continua
+Server: YOUR-IP-or-http://WEBSITE:8991/F
+Interval verificare: 30 secunde
+Apasa Ctrl+C pentru a opri
+================================================================================
+
+[2025-11-20 17:59:01] Monitorizare pornita
+[17:59:01] ESEC - Remote end closed connection without response (ora 17:59) - 1 esecuri consecutive
+[17:59:32] ESEC - Remote end closed connection without response (ora 17:59) - 2 esecuri consecutive
+[2025-11-20 18:00:02] ALEPH S-A REPORNIT! (dupa 2 esecuri consecutive)
+[18:00:02] OK - HTTP 200 (ora 18:00)
+[18:00:32] OK - HTTP 200 (ora 18:00)
+[18:01:02] OK - HTTP 200 (ora 18:01)
+[18:01:32] OK - HTTP 200 (ora 18:01)
+[18:02:02] OK - HTTP 200 (ora 18:02)
+[18:02:32] OK - HTTP 200 (ora 18:02)
+[18:03:02] OK - HTTP 200 (ora 18:03)
+[18:03:33] OK - HTTP 200 (ora 18:03)
+[18:04:03] OK - HTTP 200 (ora 18:04)
+[18:04:33] OK - HTTP 200 (ora 18:04)
+[18:05:03] OK - HTTP 200 (ora 18:05)
+[18:05:33] OK - HTTP 200 (ora 18:05)
+[18:06:03] OK - HTTP 200 (ora 18:06)
+[18:06:34] OK - HTTP 200 (ora 18:06)
+[18:07:04] OK - HTTP 200 (ora 18:07)
+[18:07:34] OK - HTTP 200 (ora 18:07)
+[18:08:04] OK - HTTP 200 (ora 18:08)
+[18:08:34] OK - HTTP 200 (ora 18:08)
+[18:09:04] OK - HTTP 200 (ora 18:09)
+[18:09:34] OK - HTTP 200 (ora 18:09)
+[2025-11-20 18:10:04] ALEPH S-A OPRIT! Eroare: Remote end closed connection without response
+[18:10:04] ESEC - Remote end closed connection without response (ora 18:10) - 1 esecuri consecutive
+[2025-11-20 18:10:35] ALEPH S-A REPORNIT! (dupa 1 esecuri consecutive)
+[18:10:35] OK - HTTP 200 (ora 18:10)
+[18:11:05] OK - HTTP 200 (ora 18:11)
+[18:11:35] OK - HTTP 200 (ora 18:11)
+[18:12:06] OK - HTTP 200 (ora 18:12)
+[18:12:36] OK - HTTP 200 (ora 18:12)
+[18:13:06] OK - HTTP 200 (ora 18:13)
+[18:13:36] OK - HTTP 200 (ora 18:13)
+[18:14:06] OK - HTTP 200 (ora 18:14)
+[18:14:36] OK - HTTP 200 (ora 18:14)
+[18:15:06] OK - HTTP 200 (ora 18:15)
+[18:15:36] OK - HTTP 200 (ora 18:15)
+[18:16:07] OK - HTTP 200 (ora 18:16)
+[18:16:37] OK - HTTP 200 (ora 18:16)
+[18:17:07] OK - HTTP 200 (ora 18:17)
+[18:17:37] OK - HTTP 200 (ora 18:17)
+[18:18:08] OK - HTTP 200 (ora 18:18)
+[18:18:38] OK - HTTP 200 (ora 18:18)
+[18:19:08] OK - HTTP 200 (ora 18:19)
+[18:19:38] OK - HTTP 200 (ora 18:19)
+[18:20:08] OK - HTTP 200 (ora 18:20)
+[18:20:38] OK - HTTP 200 (ora 18:20)
+[18:21:08] OK - HTTP 200 (ora 18:21)
+[18:21:38] OK - HTTP 200 (ora 18:21)
+[18:22:09] OK - HTTP 200 (ora 18:22)
+[18:22:39] OK - HTTP 200 (ora 18:22)
+[2025-11-20 18:23:09] ALEPH S-A OPRIT! Eroare: Remote end closed connection without response
+[18:23:09] ESEC - Remote end closed connection without response (ora 18:23) - 1 esecuri consecutive
+[18:23:39] ESEC - Remote end closed connection without response (ora 18:23) - 2 esecuri consecutive
+[2025-11-20 18:24:09] ALEPH S-A REPORNIT! (dupa 2 esecuri consecutive)
+[18:24:09] OK - HTTP 200 (ora 18:24)
+[18:24:39] OK - HTTP 200 (ora 18:24)
+[18:25:09] OK - HTTP 200 (ora 18:25)
+[2025-11-20 18:25:40] ALEPH S-A OPRIT! Eroare: Remote end closed connection without response
+[18:25:40] ESEC - Remote end closed connection without response (ora 18:25) - 1 esecuri consecutive
+[18:26:10] ESEC - Remote end closed connection without response (ora 18:26) - 2 esecuri consecutive
+[2025-11-20 18:26:41] ALEPH S-A REPORNIT! (dupa 2 esecuri consecutive)
+[18:26:41] OK - HTTP 200 (ora 18:26)
+[18:27:11] OK - HTTP 200 (ora 18:27)
+[18:27:41] OK - HTTP 200 (ora 18:27)
+[18:28:11] OK - HTTP 200 (ora 18:28)
+[18:28:41] OK - HTTP 200 (ora 18:28)
+[18:29:12] OK - HTTP 200 (ora 18:29)
+[18:29:42] OK - HTTP 200 (ora 18:29)
+[18:30:12] OK - HTTP 200 (ora 18:30)
+[18:30:42] OK - HTTP 200 (ora 18:30)
+[18:31:12] OK - HTTP 200 (ora 18:31)
+[18:31:42] OK - HTTP 200 (ora 18:31)
+[18:32:12] OK - HTTP 200 (ora 18:32)
+[18:32:42] OK - HTTP 200 (ora 18:32)
+[18:33:13] OK - HTTP 200 (ora 18:33)
+[18:33:43] OK - HTTP 200 (ora 18:33)
+[18:34:13] OK - HTTP 200 (ora 18:34)
+[2025-11-20 18:34:43] ALEPH S-A OPRIT! Eroare: Remote end closed connection without response
+[18:34:43] ESEC - Remote end closed connection without response (ora 18:34) - 1 esecuri consecutive
+[18:35:14] ESEC - Remote end closed connection without response (ora 18:35) - 2 esecuri consecutive
+[2025-11-20 18:35:44] ALEPH S-A REPORNIT! (dupa 2 esecuri consecutive)
+[18:35:44] OK - HTTP 200 (ora 18:35)
+[18:36:14] OK - HTTP 200 (ora 18:36)
+[18:36:44] OK - HTTP 200 (ora 18:36)
+[18:37:14] OK - HTTP 200 (ora 18:37)
+[18:37:44] OK - HTTP 200 (ora 18:37)
+[18:38:14] OK - HTTP 200 (ora 18:38)
+[18:38:44] OK - HTTP 200 (ora 18:38)
+[2025-11-20 18:39:15] ALEPH S-A OPRIT! Eroare: Remote end closed connection without response
+[18:39:15] ESEC - Remote end closed connection without response (ora 18:39) - 1 esecuri consecutive
+[2025-11-20 18:39:45] ALEPH S-A REPORNIT! (dupa 1 esecuri consecutive)
+[18:39:45] OK - HTTP 200 (ora 18:39)
