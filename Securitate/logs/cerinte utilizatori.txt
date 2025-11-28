@@ -1,0 +1,20 @@
+http://localhost/index.php
+
+in primul rand cand dau refresh la pagina, trebuie sa dispara ultimele datele despre cititor sau despre carte. Apoi,trebuie sa fie un buton X care sa le anuleze pe amandoua in caz de ceva. Deci amandoua segmentele user si carte sa fie incadrate cu acelasi design intr-un segment care sa le poata anula vizibilitatea pe pagina.
+
+Iar, atat la carte, cat si la utilizator, indata ce este scris sau scanat, dupa 2 secunde automat enter.
+
+
+Sa nu mai apara pop-upul" Confirm form resubmission. The page that you're looking for used information that you entered. Returning to that page might cause any action you took to be repeated. Do you want to continue?" Asta inseamna ca are o sesiune deschisa, exemplu, am scamat un utilizator, dar utilizatorul nu apare si nu am cum sa-l inchid. Deci, la refresh, trebuie anulat orice potential utilizator scanat sau carte scanata, ca sa nu mai dea conflicte din astea.
+
+
+bun, acuma, sesiunea. Cum spuneam. Uite ordinea model:
+
+Deci pot scana un utilizator sau o carte.
+
+1. Daca scanez o carte barcod sau cota, o afiseaza, detalii despre ea: Titlul si Autorul. Cartea se poate afla in Aleph sau in baza de date imprumuturi, o vom recunoaste dupa cota sau barcodul scanat.
+2. Daca scanez un utilizator, si daca el exista in baza de date, imi apare referinta ok despre el: Nume, Prenume, Code User. Daca acesta are imprumuturi intarziate si nereturnate, imi va aparea cu rosu si mesaj "Intarzieri" sau "Are carti Nereturnate"
+3. daca scanez un utilizator care nu exista, 
+
+
+
