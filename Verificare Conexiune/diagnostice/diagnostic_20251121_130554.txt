@@ -1,0 +1,110 @@
+================================================================================
+DIAGNOSTIC AUTOMAT - Aleph s-a oprit
+Data/Ora: 2025-11-21 13:05:54
+================================================================================
+
+[1] UPTIME SI LOAD AVERAGE
+--------------------------------------------------------------------------------
+ 13:06:54 up 108 days,  5:34,  0 users,  load average: 0.11, 0.11, 0.09
+
+
+[2] MEMORIE
+--------------------------------------------------------------------------------
+             total       used       free     shared    buffers     cached
+Mem:          8095       7979        116          0         39       5719
+-/+ buffers/cache:       2220       5875
+Swap:         8096       4045       4051
+
+
+Analiza: Total=8095MB, Folosita=7979MB, Disponibila=5719MB
+
+[3] PROCESE ALEPH
+--------------------------------------------------------------------------------
+Numar procese Aleph: 1324
+
+Primele 10 procese Aleph:
+aleph      317  0.0  0.0  3296  708 ?        S    Sep29   0:00 csh -f /exlibris/aleph/a20_2/aleph/proc/p_file_03 USR00,all,go,,DLM
+aleph      394  0.0  0.0  3296  708 ?        S    Sep29   0:00 csh -f /exlibris/aleph/a20_2/aleph/proc/p_file_03 USR00,all,go,,DLM
+aleph      396  0.0  0.0  3672  704 ?        S    Sep29   0:00 csh -f /exlibris/aleph/a20_2/aleph/proc/p_file_03 USR00,all,go,,DLM
+aleph      419  0.0  0.0  3604  692 ?        S    Oct16   0:00 csh -f /exlibris/aleph/a20_2/aleph/proc/p_file_03 USR00,all,go,,DLM
+aleph      465  0.0  0.0  3496  716 ?        S    Sep29   0:00 csh -f /exlibris/aleph/a20_2/aleph/proc/p_file_03 USR00,all,go,,DLM
+aleph      474  0.0  0.0  3296  708 ?        S    Sep29   0:00 csh -f /exlibris/aleph/a20_2/aleph/proc/p_file_03 USR00,all,go,,DLM
+aleph      484  0.0  0.0  2824  708 ?        S    Sep29   0:00 csh -f /exlibris/aleph/a20_2/aleph/proc/p_file_03 USR00,all,go,,DLM
+aleph      502  0.0  0.0  3604  696 ?        S    Oct16   0:00 csh -f /exlibris/aleph/a20_2/aleph/proc/p_file_03 USR00,all,go,,DLM
+aleph      523  0.0  0.0  3492  708 ?        S    Sep29   0:00 csh -f /exlibris/aleph/a20_2/aleph/proc/p_file_03 USR00,all,go,,DLM
+aleph      553  0.0  0.0  3300  712 ?        S    Sep29   0:00 csh -f /exlibris/aleph/a20_2/aleph/proc/p_file_03 USR00,all,go,,DLM
+
+
+[4] PORT 8991
+--------------------------------------------------------------------------------
+tcp        0      0 :::8991                     :::*                        LISTEN      
+
+
+[5] TOP 15 PROCESE DUPA CPU
+--------------------------------------------------------------------------------
+USER       PID %CPU %MEM   VSZ  RSS TTY      STAT START   TIME COMMAND
+aleph    25785  0.3  1.8 210880 152224 ?     S    08:29   1:06 /exlibris/aleph/a20_2/aleph/exe/pc_server_main 0 6992
+aleph     8032  0.1  1.1 158236 99364 ?      S    Nov20   1:03 /exlibris/aleph/a20_2/aleph/exe/rts32 ue_01_a RAI01.a20_2
+oracle   25817  0.0  1.2 1728508 107028 ?    Ss   08:29   0:15 oraclealeph20 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+root      4155  0.0  0.0  1820  268 ?        Ss   Aug05  75:02 cpuspeed -d -n
+oracle    7368  0.0  0.2 1725212 18456 ?     Ss   Nov20   0:22 ora_dia0_aleph20
+root      4154  0.0  0.0  1820  268 ?        Ss   Aug05  63:19 cpuspeed -d -n
+root      7795  0.0  0.1 11240 8348 ?        S    Aug05  60:49 /usr/X11R6/bin/X -auth /var/run/xauth/A:0-3VRz1E vt7
+oracle    7376  0.0  0.3 1739252 26340 ?     Ss   Nov20   0:18 ora_lgwr_aleph20
+aleph     7689  0.0  0.0 66616 7972 ?        S    Nov20   0:13 /exlibris/aleph/a20_2/aleph/exe/www_server_main -p 4992 -v
+aleph     8034  0.0  1.0 146120 87280 ?      S    Nov20   0:10 /exlibris/aleph/a20_2/aleph/exe/rts32 ue_01_word_parallel RAI01.a20_2
+root       143  0.0  0.0     0    0 ?        S    Aug05  27:59 [kswapd0]
+oracle    7386  0.0  0.2 1723708 23404 ?     Ss   Nov20   0:06 ora_mmnl_aleph20
+oracle    8039  0.0  1.0 1725436 84960 ?     Ss   Nov20   0:06 oraclealeph20 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+aleph     7766  0.0  0.0 11564 8208 ?        S    13:01   0:00 /exlibris/aleph/a20_2/product/local/apache/bin/httpd -d /exlibris/aleph/u20_2/alephe/apache
+aleph     2147  0.0  0.0 11564 8216 ?        S    12:13   0:00 /exlibris/aleph/a20_2/product/local/apache/bin/httpd -d /exlibris/aleph/u20_2/alephe/apache
+
+
+[6] TOP 15 PROCESE DUPA MEMORIE
+--------------------------------------------------------------------------------
+USER       PID %CPU %MEM   VSZ  RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  2292  548 ?        S    Aug05   1:36 init [5]                   
+root         2  0.0  0.0     0    0 ?        S    Aug05   0:01 [migration/0]
+root         3  0.0  0.0     0    0 ?        SN   Aug05   0:00 [ksoftirqd/0]
+root         4  0.0  0.0     0    0 ?        S    Aug05   0:00 [migration/1]
+root         5  0.0  0.0     0    0 ?        SN   Aug05   0:00 [ksoftirqd/1]
+root         6  0.0  0.0     0    0 ?        S    Aug05   0:00 [migration/2]
+root         7  0.0  0.0     0    0 ?        SN   Aug05   0:00 [ksoftirqd/2]
+root         8  0.0  0.0     0    0 ?        S    Aug05   0:00 [migration/3]
+root         9  0.0  0.0     0    0 ?        SN   Aug05   0:00 [ksoftirqd/3]
+root        10  0.0  0.0     0    0 ?        S    Aug05   0:00 [migration/4]
+root        11  0.0  0.0     0    0 ?        SN   Aug05   0:00 [ksoftirqd/4]
+root        12  0.0  0.0     0    0 ?        S    Aug05   0:00 [migration/5]
+root        13  0.0  0.0     0    0 ?        SN   Aug05   0:00 [ksoftirqd/5]
+root        14  0.0  0.0     0    0 ?        S    Aug05   0:00 [migration/6]
+root        15  0.0  0.0     0    0 ?        SN   Aug05   0:00 [ksoftirqd/6]
+
+
+[7] PROCESE TELNET
+--------------------------------------------------------------------------------
+Nu exista procese telnet
+
+[8] OOM KILLS (Out of Memory)
+--------------------------------------------------------------------------------
+oom-killer: gfp_mask=0xd0
+Fixed up OOM kill of mm-less task
+
+
+ATENTIE: S-au gasit OOM kills! Aceasta este probabil cauza!
+
+[9] ERORI RECENTE IN LOGURI (ultimele 20)
+--------------------------------------------------------------------------------
+Out of Memory: Killed process 13628 (swapoff).
+Fixed up OOM kill of mm-less task
+
+
+[10] SERVICII SYSTEMD ALEPH
+--------------------------------------------------------------------------------
+
+[11] CRON JOBS
+--------------------------------------------------------------------------------
+# Backup jobs
+00 22 * * * /exlibris/backup/scripts/exec_backup_main a5 >> /exlibris/backup/logs/cron_a5.log 2>&1
+00 23 * * * /exlibris/backup/scripts/exec_backup_main a1 >> /exlibris/backup/logs/cron_a1.log 2>&1
+10 3 * * * /usr/local/bin/backup_summary_ntfy.sh >/dev/null 2>&1
+
