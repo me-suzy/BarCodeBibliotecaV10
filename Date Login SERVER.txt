@@ -1,0 +1,9 @@
+# Configurații server (CRITICE - fără acestea nu funcționează nimic!)
+SERVER_IP = "YOUR-IP-or-http://WEBSITE"
+SSH_PORT = 22
+SSH_USER = "root"
+SSH_PASS = "YOUR-SERVER-PASSWORD"  # PAROLA CRITICĂ pentru SSH - fără ea nu poți accesa serverul!
+CATALOG_URL = f"http://{SERVER_IP}:8991/F"
+CATALOG_EXE = r"C:\AL500\catalog\bin\Catalog.exe"
+CHECK_INTERVAL = 30
+TEMP_DATE = "12 JAN 2012 08:00:00"
