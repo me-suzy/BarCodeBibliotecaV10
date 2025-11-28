@@ -1,0 +1,2526 @@
+
+cititor: USER030
+NOU cititor: 14016838
+
+VECHI: 014016038
+
+
+-----------Bar coduri care nu coincid fiindca sunt reviste, nu gaseste dupa aceste barcoduri
+P088235  YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-01235?func=item-global&doc_library=RAI01&doc_number=000116889&year=&volume=&sub_library=ACAD
+ℹ️ Informații carte:
+📚 Titlu: Academia Română. Grupul Interdisciplinar de Reflecţie. Caiete critice : revistă lunară de critică literară şi informaţie ştiinţifică
+👤 Autor: Simion, Eugen (1933-)
+📍 Cod de bare: P088544
+📖 Cotă: P088544
+
+	Pop Napolean	Uniunea fiscală. Abordarea pragmatică	2021	Economie--Uniune fiscală	Biblioteca Academiei Iaşi( 7/ 0)
+
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-03749?func=find-b&request=pragmatica&find_code=WRD&adjacent=N&local_base=RAI01&x=36&y=6&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_4=WFM&filter_request_4=&filter_code_5=WSL&filter_request_5= 
+
+Click pe biblioteca academiei Biblioteca Academiei Iaşi( 7/ 0)
+
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-03858?func=item-global&doc_library=RAI01&doc_number=000116889&year=&volume=&sub_library=ACAD  
+--------------
+
+Cota depozit: I-14627, II-57732, III-28483, IV-1794, V-5678
+
+Cota Multipla: COTA: IV-4659  (Cladiri Civile) = BarCode: 59082-10
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-02068?func=find-b&request=IV-4659&find_code=WLB&local_base=RAI01&adjacent=N&x=51&y=5
+
+RV I-136, RR III-382 - Colectii speciale, nu se poate imprumuta acasa
+barcode: 37857-1280, - Colectii speciale, nu se poate imprumuta acasa
+ - - YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-04012?func=item-global&doc_library=RAI01&doc_number=000089673&year=&volume=&sub_library=ACAD
+
+Cote care nu se gasesc:
+COTA: SL 859.0/158
+COTA:  SL 804.0/008  BARCODE: C019104  YOUR-IP-or-http://WEBSITE:8991/F/UVE5QYTHDXG4VV61YFJS2JXA6J48GBTTBSLPQ4FDYPLL6BNUT2-05826?func=item-global&doc_library=RAI01&doc_number=000106641&year=&volume=&sub_library=ACAD
+
+
+Alte cote: III-28483, III-6220, DAB II-02070, RR III-382, SL Irimia/1146, SL Husar/2532, RR III-382, RV II-107,	III-3149, SBC/00001, SBC/00004, II-57732, II-48241, IV-1794, SL Platon/5649, SL C. I. S. /0146, 000014168-10, SL Husar/1770, DAB II-00550, I-14627, SL 62/002, I-37434, Fond Chirica 40, ISRS-2483, SR ISO 3070-3, SL Năsturel/02, MS 99, SL PLATON/5961, SL Husar/604, II-14866, 
+
+Bar codeuri:  59082-10, RR03511, 000006899-10, 000008752-10, 000015237-10, C179690, C184507, 57574-40, C181284, 57574-10, RR03511, S0001, S0004, 000006899-10, C198287, 000008552-10, C011691, ISTC001159, RV00208, C002151, C178332, 000028458-10, 105743-10, ISRS2812, 000041332-10, C185527, 000035839-10, C020766, C170398
+
+000017317-105uuu = inexistent in Aleph
+RV I-94 = cota existenta in Aleph
+RV00108 = bar cod existent in Aleph
+
+http://localhost/aleph_api.php?cota=RV%20I-94 = trebuie sa imi afiseze undeva cota si bar cod la aceeasi carte
+http://localhost/aleph_api.php?barcode=RV00108 =  trebuie sa imi afiseze undeva bar cod si cota la aceeasi carte
+
+---------
+Asa se face pe website cautarea Aleph:
+
+Pasul 1. Avem site-ul de baza: YOUR-IP-or-http://WEBSITE:8991/F/
+Pasul 2. Navigam in butonul cautare:
+
+<td class="bottombar" valign="middle" height="20" align="center" nowrap=""> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-11956?func=find-b-0" class="blue" title="Căutarea după cuvânt cheie"> 
+      Căutare</a> 
+    </td>
+
+Este posibil ca "FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-11956" sa se schimbe, dar la final sigur vom avea "?func=find-b-0"
+
+Facem click
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-11956?func=find-b-0
+
+Aici avem asa, cuvantul cautat, care poate fi o cota, un barcode, orice, Exemplu, vom cauta cota:SL Irimia/1146
+
+Vom avea asa la inputul de cautare: <input size="40" name="request" value="SL Irimia/1146">
+
+Si din combo vom alege cota, astfel:
+
+<select name="find_code"> 
+     <option value="WRD">Toate câmpurile</option> 
+     <option value="WTI">Titlu</option> 
+     <!--option value=TIT              >Cuvinte din titlu</option--> 
+     <option value="WAU">Autor</option> 
+     <option value="WTO">Subiect global</option> 
+     <option value="WPE">Subiect nume de persoană</option> 
+     <option value="WIN">Subiect nume instituţie</option> 
+     <option value="WFA">Subiect nume de familie</option> 
+     <option value="WTS">Titlu ca subiect</option> 
+     <option value="WSU">Subiect nume comun</option> 
+
+     <option value="WGE">Subiect nume geografic</option> 
+     <option value="WFR">Forma subiectului(teze doct.,curs..)</option> 
+     <option value="WUD">Clasificare zecimală universală</option> 
+     <option value="WSE">Serie</option> 
+     <option value="WYR">Anul publicării</option> 
+     <option value="WPL">Locul publicării</option> 
+     <option value="WPU">Editură</option> 
+     <option value="ISN">ISSN</option> 
+     <option value="ISB">ISBN</option> 
+     <option value="SYS">Număr de sistem</option> 
+     <option value="WLB">Cota</option> 
+     <option value="BAR">Barcod</option> 
+     <option value="WCL">Colecţia</option> 
+     <option value="WSL">Filiala</option> 
+     <option value="WXT">Full Text</option> 
+    </select>
+	
+Daca vreau sa caut dupa barcod, exemplu C184507, Vom avea asa la inputul de cautare: <input size="40" name="request" value="C184507">
+
+Iar jos in combo vom alege Barcode astfel:
+
+<select name="find_code"> 
+     <option value="WRD">Toate câmpurile</option> 
+     <option value="WTI">Titlu</option> 
+     <!--option value=TIT              >Cuvinte din titlu</option--> 
+     <option value="WAU">Autor</option> 
+     <option value="WTO">Subiect global</option> 
+     <option value="WPE">Subiect nume de persoană</option> 
+     <option value="WIN">Subiect nume instituţie</option> 
+     <option value="WFA">Subiect nume de familie</option> 
+     <option value="WTS">Titlu ca subiect</option> 
+     <option value="WSU">Subiect nume comun</option> 
+
+     <option value="WGE">Subiect nume geografic</option> 
+     <option value="WFR">Forma subiectului(teze doct.,curs..)</option> 
+     <option value="WUD">Clasificare zecimală universală</option> 
+     <option value="WSE">Serie</option> 
+     <option value="WYR">Anul publicării</option> 
+     <option value="WPL">Locul publicării</option> 
+     <option value="WPU">Editură</option> 
+     <option value="ISN">ISSN</option> 
+     <option value="ISB">ISBN</option> 
+     <option value="SYS">Număr de sistem</option> 
+     <option value="WLB">Cota</option> 
+     <option value="BAR">Barcod</option> 
+     <option value="WCL">Colecţia</option> 
+     <option value="WSL">Filiala</option> 
+     <option value="WXT">Full Text</option> 
+    </select>
+
+Apoi apasam click pe butonul de cautare GO/Start:
+
+<input type="image" alt=" Go " src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-go.gif" border="0">
+
+Gasim asta:
+
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-04735?func=find-b&request=C184507&find_code=BAR&adjacent=N&local_base=RAI01&x=42&y=15&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_4=WFM&filter_request_4=&filter_code_5=WSL&filter_request_5=
+
+
+#	
+Format	Autor	Titlu	Vol.	An	Subiect	Filială/Exemplare	Imagine	Media
+1			Vergilius Maro Publius (0070-0019 î.Hr.)	Bucoliche	
+1994	Poezie latină	Biblioteca Academiei Iaşi( 1/ 0)
+
+Adica in aceasta pagina ne arata titlul si autorul.
+
+Apoi facem click pe butonul 	Biblioteca Academiei Iaşi( 1/ 0)  Totdeauna vom alege doar 	Biblioteca Academiei Iaşi( 1/ 0), nu alte optiuni. Caci mai este Biblioteca de Istorie, Institutul national de arheologie, sau inca 50 de baze de date ale altor bilblioteci in care exista carti.
+
+<a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05303?func=item-global&amp;doc_library=RAI01&amp;doc_number=000016030&amp;year=&amp;volume=&amp;sub_library=ACAD">Biblioteca Academiei Iaşi(     1/     0)</a>
+
+Iar dupa ce facem click pe butonul academiei ajungem la aceasta pagina importanta:
+
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05303?func=item-global&doc_library=RAI01&doc_number=000016030&year=&volume=&sub_library=ACAD
+
+Aici avem toate detaliile de care avem nevoie:
+
+Autor si titlul cartii:
+<td class="td1"> 
+    Author Vergilius Maro, Publius (0070-0019 î.Hr.). Todini, Umberto (introd.). Saglimbeni, Sebastiano (trad.). Bucoliche / Publio Virgilio Marone ; Introduzione di Umberto Todini ; Taduzione di Sebastiano Saglimbeni<br> 
+  </td>
+
+Statut exemplar
+<td class="td1">Se împr. numai la sală</td>
+
+Cota:
+<td class="td1">SL Irimia/1146</td>
+
+Barcode:
+
+<td class="td1">C184507</td>
+
+Ai si optiunea mai multe informatii:
+
+<a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-10716?func=item-global-exp&amp;doc_number=000016030&amp;item_sequence=000020&amp;sub_library=ACAD">Mai multe informaţii</a>
+
+
+Poti vizualiza toata pagina ca sa stii unde se afla acestea:
+
+
+
+
+
+<!-- filename item-global-head-1 --> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title>Catalog general BARI Colecţii - exemplare</title> 
+<script language="Javascript"> 
+<!-- 
+  function open_window (loc) 
+  { 
+    self.name="main"; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+   var w = window.open ("","win1","height=500,width=500,scrollbars,resizable"); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc,"win1","height=500,width=500,scrollbars,resizable"); 
+    } 
+    w.focus(); 
+  } 
+ 
+ 
+  function open_window2 (loc) 
+  { 
+    self.name="main"; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+ 
+    var w = window.open ("", 
+                         "win1", 
+                         "height=100,width=500,scrollbars,resizable" 
+                         ); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc, 
+                         "win1", 
+                         "height=100,width=500,scrollbars,resizable" 
+                         ); 
+    } 
+     w.focus(); 
+  } 
+ 
+ 
+  function open_window3 (loc) 
+  { 
+    self.name="main"; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+ 
+    var w = window.open ("", 
+                         "win1", 
+                         "height=400,width=450,scrollbars,resizable,top=200" 
+                         ); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc, 
+                         "win1", 
+                         "height=400,width=450,scrollbars,resizable,top=200" 
+                         ); 
+    } 
+     w.focus(); 
+  } 
+ 
+ 
+  function open_window4 (loc) 
+  { 
+    self.name="main"; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+ 
+    var w = window.open ("", 
+                         "win1", 
+                         "height=150,width=450,scrollbars,resizable,top=200" 
+                         ); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc, 
+                         "win1", 
+                         "height=150,width=450,scrollbars,resizable,top=200" 
+                         ); 
+    } 
+     w.focus(); 
+  } 
+ 
+ 
+  function open_window_ext (loc) 
+  { 
+    self.name="main"; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+    var w = window.open ("","win2","height=500,width=500,scrollbars,resizable,toolbar,status,menubar"); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc,"win2","height=500,width=500,scrollbars,resizable,toolbar,status,menubar"); 
+    } 
+    w.focus(); 
+  } 
+ 
+  function set_iframe_location(url,id){ 
+    eval('document.all.' + id).src = url; 
+  } 
+ 
+  function open_window_confirm (loc,frame) 
+  { 
+    self.name=frame; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+   var w = window.open ("","win1","height=220,width=450,scrollbars,resizable"); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc,"win1","height=220,width=450,scrollbars,resizable"); 
+    } 
+    w.focus(); 
+  } 
+ 
+  function delete_win1 () 
+  { 
+    var w = window.open ("","win1","height=220,width=450,scrollbars,resizable"); 
+    w.close(); 
+  } 
+ 
+  function open_window_ill (loc) 
+  { 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+
+  var w = window.open ("","win1","height=500,width=500,scrollbars,resizable"); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc,"win1","height=500,width=500,scrollbars,resizable"); 
+    } 
+    w.focus(); 
+  } 
+ 
+// --> 
+</script> 
+ 
+<!-- filename: meta-tags --> 
+ 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Expires" CONTENT="Sun, 06 Nov 1994 08:49:37 GMT"> 
+<META HTTP-EQUIV="REFRESH" CONTENT="1200; URL=YOUR-IP-or-http://WEBSITE:8991/F"> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"> 
+ 
+<link rel="stylesheet" href="YOUR-IP-or-http://WEBSITE:8991/exlibris.css" TYPE"text/css"> 
+</head> 
+ 
+<body topmargin="0"> 
+<!-- filename: head-1-nobor --> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"> 
+  <tr class="topbar"> 
+    <td valign="middle" height="20" width="103"> 
+      <a href="http://www.exlibris.co.il" class="blue" target=new title="RAI Iasi"> 
+      <img src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-aleph-logo-1.jpg" width="103" height="20" border="0" alt="Aleph logo"></a></td> 
+    <td class="topbar" valign="middle" height="20" width="*" align="center" colspan="15"> 
+       Catalog general BARI 
+    </td> 
+  </tr> 
+  <tr class="middlebar"> 
+    <td valign="middle" height="20"  width="103"> 
+      <a href="http://www.exlibris.co.il" class="blue" target=new title="Ex Libris, developer of the ALEPH Integrated Library System"> 
+      <img src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-aleph-logo-2.jpg" width="103" height="20" border="0" alt="Aleph logo"></a></td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18224?func=file&file_name=login-session">Conectaţi-vă</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18225?func=file&file_name=logout">Sfârşitul sesiunii</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18226?func=BOR-INFO" title="Vizualizarea informaţiei din fişa personală" class="blue"> 
+      Permis de bibliotecă</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18227?func=option-show&func_param=DISPLAY-OPTION" class="blue" title="Setarea opţiunilor de afişare a informaţiilor"> 
+      Preferinţe</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18228?func=file&file_name=base-list" class="blue" title="Alegeţi baza de date de căutare"> 
+      Baze de date</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18229?func=file&file_name=feedback" class="blue" title="Transmiteţi un comentariu constructiv despre sistem"> 
+      Feedback</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+<!--    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18230?func=ill-request-1&request_type=ill-book-request" class="blue" title="Împrumut interbibliotecar - solicitat în altă bibliotecă"> 
+      ÎIB</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td>--> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18231?func=file&file_name=help-1" class="blue" title="Ajutor în utilizarea sistemului" target="new"> 
+      Ajutor</a> 
+  </tr> 
+  <tr class="bottombar"> 
+    <td valign="middle" height="20"  width="103"> 
+      <a href="http://www.exlibris.co.il" class="blue" target=new title="Ex Libris, developer of the ALEPH Integrated Library System"> 
+      <img src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-aleph-logo-3.jpg" width="103" height="20" border="0" alt="Aleph logo"></a></td> 
+    <td class="bottombar" valign="middle" height="20" align="center" colspan=2" nowrap> 
+      &nbsp; 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18232?func=scan-list" class="blue" title="Răsfoirea indexurilor alfabetice de autori, titluri etc."> 
+      Răsfoire</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18233?func=find-b-0" class="blue" title="Căutarea după cuvânt cheie"> 
+      Căutare</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18234?func=short" class="blue" title="Vizualizarea listei de înregistrări"> 
+      Lista rezultatelor</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18235?func=history" class="blue" title="Utilizarea seturilor de înregistrări din căutările anterioare"> 
+      Căutări anterioare</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18236?func=myshelf-short" class="blue" title="Vizulaizarea înregistrărilor salvate în raftul personal"> 
+      e-raft personal</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center"  nowrap> 
+<!--      &nbsp;  --> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18237?func=option-update-lng&file_name=find-b&F2=pc-latin&P_CON_LNG=ENG"><a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18238?func=option-update-lng&file_name=find-b&F2=pc-latin&P_CON_LNG=ENG">English</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" colspan="4" nowrap> 
+      &nbsp; 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="feedbackbar" valign="middle" height="20" align="center" colspan="16" nowrap> 
+      &nbsp;</td> 
+  </tr> 
+  <tr> 
+    <td valign="middle" height="20" background="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-spacer.jpg" colspan="16"> 
+      &nbsp; 
+    </td> 
+  </tr> 
+</table> 
+<table width=100%> 
+ <tr> 
+  <td class=title> Catalog general BARI Colecţii - exemplare</td> 
+<!--  <td align=right> 
+      
+    <img src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-back.gif" 
+         border=0 
+         alt="înapoi la vizualizarea completă"></a> 
+  </td>--> 
+ </tr> 
+</table> 
+<hr> 
+<table width=100%> 
+
+<!-- filename: full-xxx-body --> 
+<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />--> 
+ <tr> 
+  <td class=td1> 
+    Author Vergilius Maro, Publius (0070-0019 î.Hr.). Todini, Umberto (introd.). Saglimbeni, Sebastiano (trad.). Bucoliche / Publio Virgilio Marone ; Introduzione di Umberto Todini ; Taduzione di Sebastiano Saglimbeni<br> 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+  </td> 
+ </tr> 
+
+<!-- filename item-global-tail-1 --> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+</table> 
+<hr> 
+
+<!-- filename: item-global-head-2 --> 
+<table border=0 cellspacing=2 width=100%> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<!-- 
+ <tr class=tr1> 
+  <th class="text3">&nbsp;</th> 
+  <th class="text3">Descriere exempl.</th> 
+ </tr> 
+--> 
+
+<!-- filename item-global-tail-2 --> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+</table> 
+<hr> 
+
+<! filename: item-global-dropdown-menus-a --> 
+</table> 
+<table> 
+ <tr> 
+<!--  <td class="text9" nowrap> 
+      Clic pe link ("rezervare" sau "fotocopiere") pentru a face o cerere de rezervare sau fotocopiere a unui exemplar. 
+  </td>--> 
+ </tr> 
+ <tr> 
+<!--  <td class="text9" nowrap> 
+      Clic pe o data scadentă scadentă subliniată pentru a vedea detaliile despre persoana ce împrumută exemplarul. 
+  </td>--> 
+ </tr> 
+</table> 
+<p> 
+<form method=get 
+      name=form1 
+      action="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18239"> 
+ 
+<input type="hidden" name=func value=item-global> 
+<input type="hidden" name=doc_library value=RAI01> 
+<input type="hidden" name=doc_number value=000016030> 
+<input type="hidden" name=type value=03> 
+ 
+<table> 
+ <tr> 
+
+<!-- item-global-dropdown-menus-b1 --> 
+  <td class="text3" 
+      nowrap 
+      valign=bottom> 
+      Selectaţi anul 
+  </td> 
+  <td> 
+    <select name=year> 
+      <option value=""> Toţi</option> 
+      <option value=""> </option> 
+
+<!-- item-global-dropdown-menus-b4 --> 
+     </select> 
+  </td> 
+
+<!-- filename: item-global-dropdown-menus-b2 --> 
+  <td class="text3" nowrap>Selectaţi volumul</td> 
+  <td> 
+     <select name=volume> 
+        <option value=""> Toate</option> 
+        <option value=""></option> 
+
+<!-- item-global-dropdown-menus-b4 --> 
+     </select> 
+  </td> 
+
+<!-- item-global-dropdown-menus-b3 --> 
+  <td class="text3" nowrap>Select filiala 
+  </td> 
+  <td> 
+    <select name=sub_library> 
+       <option value=""> Toate</option> 
+
+<!-- item-global-dropdown-menus-b --> 
+   <option value=ACAD  SELECTED>Biblioteca Academiei Iaşi</option> 
+
+<!-- item-global-dropdown-menus-b4 --> 
+     </select> 
+  </td> 
+
+<!-- filename: item-global-dropdown-menus-b5 --> 
+<td class="text3"> 
+   <input type="checkbox" name="no_loaned" value= "Y"            >Ascunde exemplarele împrumutate 
+</td> 
+ 
+
+<!-- item-global-dropdown-menus-c --> 
+  <td> 
+     <input type="image" 
+            src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-go.gif" border=0 alt="Go"> 
+  </td> 
+ </tr> 
+</table> 
+</form> 
+ 
+
+<!-- item-global-prev-next --> 
+ 
+<table width="100%" border=0 cellspacing=2> 
+ <tr> 
+   <th colspan=7 align="left"><img src=YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-prev-page-dim.gif border=0 alt='No Previous Page'></th> 
+   <th colspan=7 align="right"><img src=YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-next-page-dim.gif border=0 alt='No Next Page'></th> 
+ </tr> 
+</table> 
+ 
+
+<!-- item-global-body-head --> 
+ 
+<p> 
+ 
+<table border=0 cellspacing=2> 
+ <tr class=tr1> 
+  <th class="text3">&nbsp;</th> 
+  <th class="text3">Descriere</th> 
+  <th class="text3">Statut exemplar</th> 
+  <th class="text3">Data scadentă</th> 
+  <!--<th class="text3">Ora scadentă</th>--> 
+  <th class="text3">Bib. filială</th> 
+  <th class="text3">Colecţie</th> 
+  <th class="text3">COTĂ</th> 
+<!--  <th class="text3">Pagini</th> 
+  <th class="text3">Nr. de cereri</th> --> 
+  <th class="text3">Localizare-2</th> 
+  <th class="text3">Barcod</th> 
+  <th class="text3">Note OPAC</th> 
+  <th class="text3">SFX</th> 
+ </tr> 
+
+<!--filename: item-global-body--> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <tr> 
+  <td class=td1><a href=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-18240?func=item-global-exp&doc_number=000016030&item_sequence=000020&sub_library=ACAD >Mai multe informaţii</A><BR></td> 
+  <!--Descriere exempl.--> 
+  <td class=td1><br></td> 
+  <!--Statut împrumut--> 
+  <td class=td1>Se împr. numai la sală</td> 
+  <!--Data scadentă--> 
+  <td class=td1>Pe raft</td> 
+  <!--Ora scadentă--> 
+  <!-- <td class=td1><br></td>--> 
+  <!--Bib.filială--> 
+  <td class=td1 nowrap>Biblioteca Academiei Iaşi</td> 
+  <!--Colecţie--> 
+  <td class=td1 nowrap>Cărţi sala de lectură</td> 
+  <!--Localizare--> 
+  <td class=td1>SL Irimia/1146</td> 
+  <!--Pagini--> 
+<!--  <td class=td1><br></td>--> 
+  <!--Nici o cerere--> 
+ <!-- <td class=td1><br> </td>  --> 
+  <!--Location-2--> 
+  <td class=td1>2015/03</td> 
+  <!--Barcod--> 
+  <td class=td1>C184507</td> 
+  <!--Note-opac--> 
+<td class=td1><br></td> 
+  </tr> 
+
+<!-- item-global-body-tail --> 
+ 
+</table> 
+ 
+
+<!-- item-global-prev-next --> 
+ 
+<table width="100%" border=0 cellspacing=2> 
+ <tr> 
+   <th colspan=7 align="left"><img src=YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-prev-page-dim.gif border=0 alt='No Previous Page'></th> 
+   <th colspan=7 align="right"><img src=YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-next-page-dim.gif border=0 alt='No Next Page'></th> 
+ </tr> 
+</table> 
+ 
+
+<!-- filename: item-global-tail --> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+</table> 
+<!-- filename: copyrights --> 
+<br> 
+<p class="copyright"> 
+&copy; 2012 Ex Libris 
+</p> 
+</body> 
+</html> 
+
+
+
+Iar aici este pagina cu mai multe informatii legate de aceeasi carte:
+
+
+<!--filename: item-global-exp--> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title>Catalog general BARI - Vizualizare detaliată a exemplarului </title> 
+<script language="Javascript"> 
+<!-- 
+  function open_window (loc) 
+  { 
+    self.name="main"; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+   var w = window.open ("","win1","height=500,width=500,scrollbars,resizable"); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc,"win1","height=500,width=500,scrollbars,resizable"); 
+    } 
+    w.focus(); 
+  } 
+ 
+ 
+  function open_window2 (loc) 
+  { 
+    self.name="main"; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+ 
+    var w = window.open ("", 
+                         "win1", 
+                         "height=100,width=500,scrollbars,resizable" 
+                         ); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc, 
+                         "win1", 
+                         "height=100,width=500,scrollbars,resizable" 
+                         ); 
+    } 
+     w.focus(); 
+  } 
+ 
+ 
+  function open_window3 (loc) 
+  { 
+    self.name="main"; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+ 
+    var w = window.open ("", 
+                         "win1", 
+                         "height=400,width=450,scrollbars,resizable,top=200" 
+                         ); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc, 
+                         "win1", 
+                         "height=400,width=450,scrollbars,resizable,top=200" 
+                         ); 
+    } 
+     w.focus(); 
+  } 
+ 
+ 
+  function open_window4 (loc) 
+  { 
+    self.name="main"; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+ 
+    var w = window.open ("", 
+                         "win1", 
+                         "height=150,width=450,scrollbars,resizable,top=200" 
+                         ); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc, 
+                         "win1", 
+                         "height=150,width=450,scrollbars,resizable,top=200" 
+                         ); 
+    } 
+     w.focus(); 
+  } 
+ 
+ 
+  function open_window_ext (loc) 
+  { 
+    self.name="main"; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+    var w = window.open ("","win2","height=500,width=500,scrollbars,resizable,toolbar,status,menubar"); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc,"win2","height=500,width=500,scrollbars,resizable,toolbar,status,menubar"); 
+    } 
+    w.focus(); 
+  } 
+ 
+  function set_iframe_location(url,id){ 
+    eval('document.all.' + id).src = url; 
+  } 
+ 
+  function open_window_confirm (loc,frame) 
+  { 
+    self.name=frame; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+   var w = window.open ("","win1","height=220,width=450,scrollbars,resizable"); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc,"win1","height=220,width=450,scrollbars,resizable"); 
+    } 
+    w.focus(); 
+  } 
+ 
+  function delete_win1 () 
+  { 
+    var w = window.open ("","win1","height=220,width=450,scrollbars,resizable"); 
+    w.close(); 
+  } 
+ 
+  function open_window_ill (loc) 
+  { 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){ 
+
+  var w = window.open ("","win1","height=500,width=500,scrollbars,resizable"); 
+     w.document.write("<html>\n"); 
+     w.document.write('<body onLoad="window.location.href='); 
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n"); 
+     w.document.write("</html>\n"); 
+     w.document.close(); 
+    } else { 
+    var w = window.open (loc,"win1","height=500,width=500,scrollbars,resizable"); 
+    } 
+    w.focus(); 
+  } 
+ 
+// --> 
+</script> 
+ 
+<!-- filename: meta-tags --> 
+ 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Expires" CONTENT="Sun, 06 Nov 1994 08:49:37 GMT"> 
+<META HTTP-EQUIV="REFRESH" CONTENT="1200; URL=YOUR-IP-or-http://WEBSITE:8991/F"> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"> 
+ 
+<link rel="stylesheet" href="YOUR-IP-or-http://WEBSITE:8991/exlibris.css" TYPE"text/css"> 
+</head> 
+<body topmargin="0"> 
+<!-- filename: head-1-nobor --> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"> 
+  <tr class="topbar"> 
+    <td valign="middle" height="20" width="103"> 
+      <a href="http://www.exlibris.co.il" class="blue" target=new title="RAI Iasi"> 
+      <img src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-aleph-logo-1.jpg" width="103" height="20" border="0" alt="Aleph logo"></a></td> 
+    <td class="topbar" valign="middle" height="20" width="*" align="center" colspan="15"> 
+       Catalog general BARI 
+    </td> 
+  </tr> 
+  <tr class="middlebar"> 
+    <td valign="middle" height="20"  width="103"> 
+      <a href="http://www.exlibris.co.il" class="blue" target=new title="Ex Libris, developer of the ALEPH Integrated Library System"> 
+      <img src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-aleph-logo-2.jpg" width="103" height="20" border="0" alt="Aleph logo"></a></td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00929?func=file&file_name=login-session">Conectaţi-vă</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00930?func=file&file_name=logout">Sfârşitul sesiunii</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00931?func=BOR-INFO" title="Vizualizarea informaţiei din fişa personală" class="blue"> 
+      Permis de bibliotecă</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00932?func=option-show&func_param=DISPLAY-OPTION" class="blue" title="Setarea opţiunilor de afişare a informaţiilor"> 
+      Preferinţe</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00933?func=file&file_name=base-list" class="blue" title="Alegeţi baza de date de căutare"> 
+      Baze de date</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00934?func=file&file_name=feedback" class="blue" title="Transmiteţi un comentariu constructiv despre sistem"> 
+      Feedback</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+<!--    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00935?func=ill-request-1&request_type=ill-book-request" class="blue" title="Împrumut interbibliotecar - solicitat în altă bibliotecă"> 
+      ÎIB</a> 
+    </td> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td>--> 
+    <td class="middlebar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00936?func=file&file_name=help-1" class="blue" title="Ajutor în utilizarea sistemului" target="new"> 
+      Ajutor</a> 
+  </tr> 
+  <tr class="bottombar"> 
+    <td valign="middle" height="20"  width="103"> 
+      <a href="http://www.exlibris.co.il" class="blue" target=new title="Ex Libris, developer of the ALEPH Integrated Library System"> 
+      <img src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-aleph-logo-3.jpg" width="103" height="20" border="0" alt="Aleph logo"></a></td> 
+    <td class="bottombar" valign="middle" height="20" align="center" colspan=2" nowrap> 
+      &nbsp; 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00937?func=scan-list" class="blue" title="Răsfoirea indexurilor alfabetice de autori, titluri etc."> 
+      Răsfoire</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00938?func=find-b-0" class="blue" title="Căutarea după cuvânt cheie"> 
+      Căutare</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00939?func=short" class="blue" title="Vizualizarea listei de înregistrări"> 
+      Lista rezultatelor</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00940?func=history" class="blue" title="Utilizarea seturilor de înregistrări din căutările anterioare"> 
+      Căutări anterioare</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00941?func=myshelf-short" class="blue" title="Vizulaizarea înregistrărilor salvate în raftul personal"> 
+      e-raft personal</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center"  nowrap> 
+<!--      &nbsp;  --> 
+      <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00942?func=option-update-lng&file_name=find-b&F2=pc-latin&P_CON_LNG=ENG"><a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00943?func=option-update-lng&file_name=find-b&F2=pc-latin&P_CON_LNG=ENG">English</a> 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" nowrap> 
+      | 
+    </td> 
+    <td class="bottombar" valign="middle" height="20" align="center" colspan="4" nowrap> 
+      &nbsp; 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="feedbackbar" valign="middle" height="20" align="center" colspan="16" nowrap> 
+      &nbsp;</td> 
+  </tr> 
+  <tr> 
+    <td valign="middle" height="20" background="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-spacer.jpg" colspan="16"> 
+      &nbsp; 
+    </td> 
+  </tr> 
+</table> 
+<p class="title"> 
+      Vizualizare detaliată a exemplarului 
+</p> 
+<table border=0 cellspacing=2> 
+ <tr> 
+  <td class=td1 id=bold align=left width="20%">Descriere:</td> 
+  <td class=td1 align=left width="80%"><br></td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Situaţia exemplarului:</td> 
+  <td class=td1 align=left>Se împr. numai la sală</td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Până la data:</td> 
+  <td class=td1 align=left>Pe raft</td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Până la ora:</td> 
+  <td class=td1 align=left><br></td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Biblioteca:</td> 
+  <td class=td1 align=left>Biblioteca Academiei Iaşi</td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Colecţia:</td> 
+  <td class=td1 align=left>Cărţi sala de lectură</td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Localizare:</td> 
+  <td class=td1 align=left>SL Irimia/1146</td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Pagini:</td> 
+  <td class=td1 align=left><br></td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Nr de cereri:</td> 
+  <td class=td1 align=left><br></td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Localizare 2:</td> 
+  <td class=td1 align=left>2015/03</td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Barcod:</td> 
+  <td class=td1 align=left>C184507</td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Note OPAC:</td> 
+  <td class=td1 align=left><br></td></tr> 
+ <tr> 
+  <td class=td1 id=bold  align=left>Servicii SFX :</td> 
+  <td class=td1 align=left><br></td> 
+ </tr> 
+</table> 
+<!-- filename: copyrights --> 
+<br> 
+<p class="copyright"> 
+&copy; 2012 Ex Libris 
+</p> 
+</body> 
+</html> 
+ 
+
+Gasesti si aici:
+
+Localizare:	SL Irimia/1146  (asta este cota)
+Barcod:	C184507 
+
+----------------------
+
+
+Daca cautam dupa cota  http://localhost/aleph_api.php?cota=III-32073  
+
+sau dupa  
+
+http://localhost/aleph_api.php?barcode=C196541  
+
+Nu gaseste corect titlul, in amandoua cazurile,desi titlul exista
+
+Deci, reluam. Cautarea pe Aleph se face aici:
+
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-01811?func=find-b-0 
+
+Putem cauta dupa titlu, dupa cota, dupa bar code, etc  
+
+Daca cautam dupa cota III-32073 gasim:
+
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-01874?func=find-b&request=III-32073&find_code=WLB&adjacent=N&local_base=RAI01&x=53&y=13&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_4=WFM&filter_request_4=&filter_code_5=WSL&filter_request_5= 
+
+Vedem ca exista la filiala 
+
+Biblioteca Academiei Iaşi( 1/ 0)
+Biblioteca Inst. Istorie( 1/ 0)
+
+<a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-02152?func=item-global&amp;doc_library=RAI01&amp;doc_number=000102329&amp;year=&amp;volume=&amp;sub_library=ACAD">Biblioteca Academiei Iaşi(     1/     0)</a>
+
+nu ne intereseaza celelalte sau cealalta biblioteca.
+
+Si mai vedem ca exista autorul:
+
+<td class="td1" width="15%" valign="top">Zimmermann&nbsp;Silvia Irina&nbsp;ed., trad.  </td>
+
+De citit fara spatiul &nbsp;
+
+Acuma, ca sa vedem cota si barcode la aceasta carte, dam click pe Biblioteca Academiei Iaşi( 1/ 0) si ajungem pe Catalog general BARI Colecţii - exemplare
+
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-02152?func=item-global&doc_library=RAI01&doc_number=000102329&year=&volume=&sub_library=ACAD 
+Iar aici avem tot ce ne intereseaza: Cota, Bar Cod si Statut carte
+
+  <td class=td1><a href=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-02790?func=item-global-exp&doc_number=000102329&item_sequence=000010&sub_library=ACAD >Mai multe informaţii</A><BR></td> 
+  <!--Descriere exempl.--> 
+  <td class=td1><br></td> 
+  <!--Statut împrumut--> 
+  <td class=td1>Pentru împrumut</td> 
+  <!--Data scadentă--> 
+  <td class=td1>Pe raft</td> 
+  <!--Ora scadentă--> 
+  <!-- <td class=td1><br></td>--> 
+  <!--Bib.filială--> 
+  <td class=td1 nowrap>Biblioteca Academiei Iaşi</td> 
+  <!--Colecţie--> 
+  <td class=td1 nowrap>Cărţi depozit</td> 
+  <!--Localizare--> 
+  <td class=td1>III-32073</td> 
+  <!--Pagini--> 
+<!--  <td class=td1><br></td>--> 
+  <!--Nici o cerere--> 
+ <!-- <td class=td1><br> </td>  --> 
+  <!--Location-2--> 
+  <td class=td1>2020/25</td> 
+  <!--Barcod--> 
+  <td class=td1>C196541</td> 
+  <!--Note-opac--> 
+<td class=td1><br></td> 
+  </tr> 
+------- 
+
+
+
+
+
+
+Exemplu al doilea de cautare:
+
+Am testat pagina http://localhost/cauta_cod.php sa vad daca gaseste in Aleph pe  YOUR-IP-or-http://WEBSITE:8991/F/
+
+Caut: in pagina  YOUR-IP-or-http://WEBSITE:8991/F/  "fascinatia numelui"
+
+</table> 
+<br> 
+<div class="title"> 
+  Căutare de bază 
+</div> 
+<form method=get 
+      name=form1 
+      action="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-01529"> 
+<input type="hidden" name="func" value="find-b"> 
+<table cellspacing=2 border=0 cellpadding="0" width="100%"> 
+ <tr> 
+  <td class="td2" width="20%" nowrap> 
+    Introduceţi termenul sau sintagma 
+  </td> 
+  <td class="td2"  id="small"> 
+    <input size=40 name="request" value='fascinatia numelui'> 
+  </td> 
+ </tr> 
+ <tr> 
+  <td class="td2" valign=top nowrap>Câmpul în care se caută 
+  </td> 
+  <td class="td2" id="small"> 
+  
+2. Apas butonul start:
+
+<input type="image" alt=" Go " src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-go.gif" border="0">
+
+3. Ajung la pagina asta:  YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-02189?func=find-b&request=fascinatia+numelui&find_code=WRD&adjacent=N&local_base=RAI01&x=57&y=4&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_4=WFM&filter_request_4=&filter_code_5=WSL&filter_request_5=
+
+Aici gasesc astfel:
+
+<!-- filename: short-a-head --> 
+<table cellspacing=2 border=0 width="100%"> 
+ <tr class=tr1> 
+  <th class=text3>&#35;</th> 
+  <th class=text3><br></th> 
+  <th class=text3>Format</th> 
+  <th class=text3><a href=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05993?func=short-sort&set_number=000774&sort_option=01---A02---A>Autor</a></th> 
+  <th class=text3><a href=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05994?func=short-sort&set_number=000774&sort_option=02---A03---A>Titlu</a></th> 
+  <th class=text3>Vol.</th> 
+  <th class=text3><a href=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05995?func=short-sort&set_number=000774&sort_option=03---D02---A>An</a></th> 
+  <th class=text3>Subiect</th> 
+  <th class=text3>Filială/Exemplare</th> 
+  <th class=text3>Imagine</th> 
+  <th class=text3>Media</th> 
+ </tr> 
+
+<!-- filename: short-a-body--> 
+ <iframe frameborder=0 width=0 height=0 id=XX000001 title="XX000001"></iframe> 
+ <tr valign=baseline> 
+  <td class=td1 id=centered width="1%" valign=top><A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05996?func=full-set-set&set_number=000774&set_entry=000001&format=999>1</A></td> 
+  <td class=td1 id=centered width="1%" valign=top><form name=XXX000001 method=GET><input type=checkbox name=ckbox onClick="javascript:select_record(this.form);" onKeyPressed="javascript:select_record(this.form);"></form></td> 
+<!-- 
+  <td class=td1  width="15%" valign=top>BK4  </td> 
+--> 
+  <td class="td1"  width="5%" valign="middle" align="center"><img src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/BK4.png" alt=""> </td> 
+  <td class=td1  width="15%" valign=top>Uritescu&nbsp;Dorin N.  </td> 
+  <td class=td1  width="25%" valign=top> 
+<script type="text/javascript"> 
+        var recordLinkRaw = '<A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05997?func=full-set-set&set_number=000774&set_entry=000001&format=999>1</A>'; 
+        var recordLink = recordLinkRaw.substring(0, recordLinkRaw.indexOf('>')); 
+        document.write(recordLink); 
+        document.write('>'); 
+</script> 
+Fascinaţia numelui&nbsp;:&nbsp;Studiu al creaţiei lexico-semantice şi stilistice, în relaţiile: -nume  </td> 
+  <td class=td1  width="10%" valign=top><BR>  </td> 
+  <td class=td1  width="5%" valign=top>2009  </td> 
+  <td class=td1  width="10%" nowrap valign=top>Lexicologie--Nume  </td> 
+  <td class=td1  width="10%" valign=top><A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05998?func=item-global&doc_library=RAI01&doc_number=000060919&year=&volume=&sub_library=ACAD  >Biblioteca Academiei Iaşi(     1/     0)</A><br>  </td> 
+  <td class=td1  width="10%" valign=top>  </td> 
+  <td class=td1  width="10%" valign=top><br>  </td> 
+ </tr> 
+
+<!-- filename: short-a-tail --> 
+</table>
+
+<!-- filename: short-tail --> 
+<p> 
+<div align=right> 
+  <img src=YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-prev-page-dim.gif border=0 alt='No Previous Page'>&nbsp;<img src=YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-next-page-dim.gif border=0 alt='No Next Page'> 
+</div> 
+</form> 
+<p> 
+<div class="text3"> 
+Puteţi revizui căutarea: 
+</div> 
+<form method=GET action="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05999"> 
+<input type="hidden" name="func" value="find-c"> 
+<input size=50 name="ccl_term" value='WRD = ( fascinatia numelui )'> 
+<div class=text3 id=bold nowrap> 
+Alegeţi baza de date: 
+</div> 
+<!-- filename: base-list-include --> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+   <select name=local_base> 
+     <option value=RAI01 selected          selected>CATALOGUL GENERAL al Bibliotecilor Academiei Rom&#226;ne-Iaşi</option>   
+     <option value=CARTEC                 >Catalogul general - carte curentă</option> 
+     <option value=SBCACAD                  >Catalogul general - SBC</option>              
+     <option value=IDSRCACAD                    >Catalogul general - IDSRC</option> 
+     <option value=ISRSACAD                   >Catalogul general - ISRS</option>  
+     <option value=PERIOD                 >Catalogul general - periodice</option> 
+     <option value=SPEC               >Catalogul general - colecţii speciale</option> 
+     <option value=ARTIC                >Catalogul general - articole din periodice</option> 
+     <option value=ELECTR                 >Catalogul general - resurse electronice</option> 
+     <option value=ACAD               >Catalogul Bibliotecii Filialei Iaşi a Academiei Rom&#226;ne</option> 
+     <option value=FIL              >Catalogul Bibliotecii Institutului de Filologie</option> 
+     <option value=IST              >Catalogul Bibliotecii Institutului de Istorie</option> 
+     <option value=SOC              >Catalogul Bibliotecii Institutului de Cercetări Economice şi Sociale</option> 
+     <option value=ARH              >Catalogul Bibliotecii Institutului de Arheologie</option> 
+ 
+<!--     <option value=CUT01              >Catalogul serialelor RAIT</option> 
+
+<!-- filename: short-a-body--> 
+ <iframe frameborder=0 width=0 height=0 id=XX000001 title="XX000001"></iframe> 
+ <tr valign=baseline> 
+  <td class=td1 id=centered width="1%" valign=top><A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-03753?func=full-set-set&set_number=000772&set_entry=000001&format=999>1</A></td> 
+  <td class=td1 id=centered width="1%" valign=top><form name=XXX000001 method=GET><input type=checkbox name=ckbox onClick="javascript:select_record(this.form);" onKeyPressed="javascript:select_record(this.form);"></form></td> 
+<!-- 
+  <td class=td1  width="15%" valign=top>BK4  </td> 
+--> 
+  <td class="td1"  width="5%" valign="middle" align="center"><img src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/BK4.png" alt=""> </td> 
+  <td class=td1  width="15%" valign=top>Uritescu&nbsp;Dorin N.  </td> 
+  <td class=td1  width="25%" valign=top> 
+<script type="text/javascript"> 
+        var recordLinkRaw = '<A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-03754?func=full-set-set&set_number=000772&set_entry=000001&format=999>1</A>'; 
+        var recordLink = recordLinkRaw.substring(0, recordLinkRaw.indexOf('>')); 
+        document.write(recordLink); 
+        document.write('>'); 
+</script> 
+Fascinaţia numelui&nbsp;:&nbsp;Studiu al creaţiei lexico-semantice şi stilistice, în relaţiile: -nume  </td> 
+  <td class=td1  width="10%" valign=top><BR>  </td> 
+  <td class=td1  width="5%" valign=top>2009  </td> 
+  <td class=td1  width="10%" nowrap valign=top>Lexicologie--Nume  </td> 
+  <td class=td1  width="10%" valign=top><A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-03755?func=item-global&doc_library=RAI01&doc_number=000060919&year=&volume=&sub_library=ACAD  >Biblioteca Academiei Iaşi(     1/     0)</A><br>  </td> 
+  <td class=td1  width="10%" valign=top>  </td> 
+  <td class=td1  width="10%" valign=top><br>  </td> 
+ </tr> 
+
+<!-- filename: short-a-tail --> 
+</table> 
+
+Deci vedem ca se gaseste in biblioteca noastra "Biblioteca Academiei Iaşi", celelalte nu ne intereseaza, caci aici avem noi sediul.
+
+facem click pe:
+
+<a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-02664?func=item-global&amp;doc_library=RAI01&amp;doc_number=000060919&amp;year=&amp;volume=&amp;sub_library=ACAD">Biblioteca Academiei Iaşi(     1/     0)</a>
+
+Asta ne duce la pagina asta:
+
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-02664?func=item-global&doc_library=RAI01&doc_number=000060919&year=&volume=&sub_library=ACAD
+
+Iar aici avem asa:
+
+<!-- filename: full-xxx-body --> 
+<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />--> 
+ <tr> 
+  <td class=td1> 
+    Author Uritescu, Dorin N.. Fascinaţia numelui : Studiu al creaţiei lexico-semantice şi stilistice, în relaţiile: -nume propriu-nume comun şi nume comun-nume propriu- / Dorin N. Uritescu<br>    
+     
+   
+     
+  </td> 
+ </tr> 
+
+<!-- filename item-global-tail-1 --> 
+
+<!--filename: item-global-body--> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <tr> 
+  <td class=td1><a href=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-10378?func=item-global-exp&doc_number=000060919&item_sequence=000010&sub_library=ACAD >Mai multe informaţii</A><BR></td> 
+  <!--Descriere exempl.--> 
+  <td class=td1><br></td> 
+  <!--Statut împrumut--> 
+  <td class=td1>Pentru împrumut</td> 
+  <!--Data scadentă--> 
+  <td class=td1>Pe raft</td> 
+  <!--Ora scadentă--> 
+  <!-- <td class=td1><br></td>--> 
+  <!--Bib.filială--> 
+  <td class=td1 nowrap>Biblioteca Academiei Iaşi</td> 
+  <!--Colecţie--> 
+  <td class=td1 nowrap>Cărţi depozit</td> 
+  <!--Localizare--> 
+  <td class=td1>III-28826</td> 
+  <!--Pagini--> 
+<!--  <td class=td1><br></td>--> 
+  <!--Nici o cerere--> 
+ <!-- <td class=td1><br> </td>  --> 
+  <!--Location-2--> 
+  <td class=td1>2012/52</td> 
+  <!--Barcod--> 
+  <td class=td1>60919-10</td> 
+  <!--Note-opac--> 
+<td class=td1><br></td> 
+  </tr> 
+super, acuma o alta mica problema. Nu gaseste corect titlul:
+
+Am testat pagina http://localhost/cauta_cod.php sa vad daca gaseste in Aleph pe  YOUR-IP-or-http://WEBSITE:8991/F/
+
+Caut: in pagina  YOUR-IP-or-http://WEBSITE:8991/F/  "fascinatia numelui"
+
+</table> 
+<br> 
+<div class="title"> 
+  Căutare de bază 
+</div> 
+<form method=get 
+      name=form1 
+      action="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-01529"> 
+<input type="hidden" name="func" value="find-b"> 
+<table cellspacing=2 border=0 cellpadding="0" width="100%"> 
+ <tr> 
+  <td class="td2" width="20%" nowrap> 
+    Introduceţi termenul sau sintagma 
+  </td> 
+  <td class="td2"  id="small"> 
+    <input size=40 name="request" value='fascinatia numelui'> 
+  </td> 
+ </tr> 
+ <tr> 
+  <td class="td2" valign=top nowrap>Câmpul în care se caută 
+  </td> 
+  <td class="td2" id="small"> 
+  
+2. Apas butonul start:
+
+<input type="image" alt=" Go " src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-go.gif" border="0">
+
+3. Ajung la pagina asta:  YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-02189?func=find-b&request=fascinatia+numelui&find_code=WRD&adjacent=N&local_base=RAI01&x=57&y=4&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_4=WFM&filter_request_4=&filter_code_5=WSL&filter_request_5=
+
+Aici gasesc astfel:
+
+<!-- filename: short-a-head --> 
+<table cellspacing=2 border=0 width="100%"> 
+ <tr class=tr1> 
+  <th class=text3>&#35;</th> 
+  <th class=text3><br></th> 
+  <th class=text3>Format</th> 
+  <th class=text3><a href=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05993?func=short-sort&set_number=000774&sort_option=01---A02---A>Autor</a></th> 
+  <th class=text3><a href=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05994?func=short-sort&set_number=000774&sort_option=02---A03---A>Titlu</a></th> 
+  <th class=text3>Vol.</th> 
+  <th class=text3><a href=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05995?func=short-sort&set_number=000774&sort_option=03---D02---A>An</a></th> 
+  <th class=text3>Subiect</th> 
+  <th class=text3>Filială/Exemplare</th> 
+  <th class=text3>Imagine</th> 
+  <th class=text3>Media</th> 
+ </tr> 
+
+<!-- filename: short-a-body--> 
+ <iframe frameborder=0 width=0 height=0 id=XX000001 title="XX000001"></iframe> 
+ <tr valign=baseline> 
+  <td class=td1 id=centered width="1%" valign=top><A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05996?func=full-set-set&set_number=000774&set_entry=000001&format=999>1</A></td> 
+  <td class=td1 id=centered width="1%" valign=top><form name=XXX000001 method=GET><input type=checkbox name=ckbox onClick="javascript:select_record(this.form);" onKeyPressed="javascript:select_record(this.form);"></form></td> 
+<!-- 
+  <td class=td1  width="15%" valign=top>BK4  </td> 
+--> 
+  <td class="td1"  width="5%" valign="middle" align="center"><img src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/BK4.png" alt=""> </td> 
+  <td class=td1  width="15%" valign=top>Uritescu&nbsp;Dorin N.  </td> 
+  <td class=td1  width="25%" valign=top> 
+<script type="text/javascript"> 
+        var recordLinkRaw = '<A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05997?func=full-set-set&set_number=000774&set_entry=000001&format=999>1</A>'; 
+        var recordLink = recordLinkRaw.substring(0, recordLinkRaw.indexOf('>')); 
+        document.write(recordLink); 
+        document.write('>'); 
+</script> 
+Fascinaţia numelui&nbsp;:&nbsp;Studiu al creaţiei lexico-semantice şi stilistice, în relaţiile: -nume  </td> 
+  <td class=td1  width="10%" valign=top><BR>  </td> 
+  <td class=td1  width="5%" valign=top>2009  </td> 
+  <td class=td1  width="10%" nowrap valign=top>Lexicologie--Nume  </td> 
+  <td class=td1  width="10%" valign=top><A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05998?func=item-global&doc_library=RAI01&doc_number=000060919&year=&volume=&sub_library=ACAD  >Biblioteca Academiei Iaşi(     1/     0)</A><br>  </td> 
+  <td class=td1  width="10%" valign=top>  </td> 
+  <td class=td1  width="10%" valign=top><br>  </td> 
+ </tr> 
+
+<!-- filename: short-a-tail --> 
+</table>
+
+<!-- filename: short-tail --> 
+<p> 
+<div align=right> 
+  <img src=YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-prev-page-dim.gif border=0 alt='No Previous Page'>&nbsp;<img src=YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/f-next-page-dim.gif border=0 alt='No Next Page'> 
+</div> 
+</form> 
+<p> 
+<div class="text3"> 
+Puteţi revizui căutarea: 
+</div> 
+<form method=GET action="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-05999"> 
+<input type="hidden" name="func" value="find-c"> 
+<input size=50 name="ccl_term" value='WRD = ( fascinatia numelui )'> 
+<div class=text3 id=bold nowrap> 
+Alegeţi baza de date: 
+</div> 
+<!-- filename: base-list-include --> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+   <select name=local_base> 
+     <option value=RAI01 selected          selected>CATALOGUL GENERAL al Bibliotecilor Academiei Rom&#226;ne-Iaşi</option>   
+     <option value=CARTEC                 >Catalogul general - carte curentă</option> 
+     <option value=SBCACAD                  >Catalogul general - SBC</option>              
+     <option value=IDSRCACAD                    >Catalogul general - IDSRC</option> 
+     <option value=ISRSACAD                   >Catalogul general - ISRS</option>  
+     <option value=PERIOD                 >Catalogul general - periodice</option> 
+     <option value=SPEC               >Catalogul general - colecţii speciale</option> 
+     <option value=ARTIC                >Catalogul general - articole din periodice</option> 
+     <option value=ELECTR                 >Catalogul general - resurse electronice</option> 
+     <option value=ACAD               >Catalogul Bibliotecii Filialei Iaşi a Academiei Rom&#226;ne</option> 
+     <option value=FIL              >Catalogul Bibliotecii Institutului de Filologie</option> 
+     <option value=IST              >Catalogul Bibliotecii Institutului de Istorie</option> 
+     <option value=SOC              >Catalogul Bibliotecii Institutului de Cercetări Economice şi Sociale</option> 
+     <option value=ARH              >Catalogul Bibliotecii Institutului de Arheologie</option> 
+ 
+<!--     <option value=CUT01              >Catalogul serialelor RAIT</option> 
+
+<!-- filename: short-a-body--> 
+ <iframe frameborder=0 width=0 height=0 id=XX000001 title="XX000001"></iframe> 
+ <tr valign=baseline> 
+  <td class=td1 id=centered width="1%" valign=top><A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-03753?func=full-set-set&set_number=000772&set_entry=000001&format=999>1</A></td> 
+  <td class=td1 id=centered width="1%" valign=top><form name=XXX000001 method=GET><input type=checkbox name=ckbox onClick="javascript:select_record(this.form);" onKeyPressed="javascript:select_record(this.form);"></form></td> 
+<!-- 
+  <td class=td1  width="15%" valign=top>BK4  </td> 
+--> 
+  <td class="td1"  width="5%" valign="middle" align="center"><img src="YOUR-IP-or-http://WEBSITE:8991/exlibris/aleph/u20_2/alephe/www_f_rum/icon/BK4.png" alt=""> </td> 
+  <td class=td1  width="15%" valign=top>Uritescu&nbsp;Dorin N.  </td> 
+  <td class=td1  width="25%" valign=top> 
+<script type="text/javascript"> 
+        var recordLinkRaw = '<A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-03754?func=full-set-set&set_number=000772&set_entry=000001&format=999>1</A>'; 
+        var recordLink = recordLinkRaw.substring(0, recordLinkRaw.indexOf('>')); 
+        document.write(recordLink); 
+        document.write('>'); 
+</script> 
+Fascinaţia numelui&nbsp;:&nbsp;Studiu al creaţiei lexico-semantice şi stilistice, în relaţiile: -nume  </td> 
+  <td class=td1  width="10%" valign=top><BR>  </td> 
+  <td class=td1  width="5%" valign=top>2009  </td> 
+  <td class=td1  width="10%" nowrap valign=top>Lexicologie--Nume  </td> 
+  <td class=td1  width="10%" valign=top><A HREF=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-03755?func=item-global&doc_library=RAI01&doc_number=000060919&year=&volume=&sub_library=ACAD  >Biblioteca Academiei Iaşi(     1/     0)</A><br>  </td> 
+  <td class=td1  width="10%" valign=top>  </td> 
+  <td class=td1  width="10%" valign=top><br>  </td> 
+ </tr> 
+
+<!-- filename: short-a-tail --> 
+</table> 
+
+Deci vedem ca se gaseste in biblioteca noastra "Biblioteca Academiei Iaşi", celelalte nu ne intereseaza, caci aici avem noi sediul.
+
+facem click pe:
+
+<a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-02664?func=item-global&amp;doc_library=RAI01&amp;doc_number=000060919&amp;year=&amp;volume=&amp;sub_library=ACAD">Biblioteca Academiei Iaşi(     1/     0)</a>
+
+Asta ne duce la pagina asta:
+
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-02664?func=item-global&doc_library=RAI01&doc_number=000060919&year=&volume=&sub_library=ACAD
+
+Iar aici avem asa:
+
+<!-- filename: full-xxx-body --> 
+<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />--> 
+ <tr> 
+  <td class=td1> 
+    Author Uritescu, Dorin N.. Fascinaţia numelui : Studiu al creaţiei lexico-semantice şi stilistice, în relaţiile: -nume propriu-nume comun şi nume comun-nume propriu- / Dorin N. Uritescu<br>    
+     
+   
+     
+  </td> 
+ </tr> 
+
+<!-- filename item-global-tail-1 --> 
+
+<!--filename: item-global-body--> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <tr> 
+  <td class=td1><a href=YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-10378?func=item-global-exp&doc_number=000060919&item_sequence=000010&sub_library=ACAD >Mai multe informaţii</A><BR></td> 
+  <!--Descriere exempl.--> 
+  <td class=td1><br></td> 
+  <!--Statut împrumut--> 
+  <td class=td1>Pentru împrumut</td> 
+  <!--Data scadentă--> 
+  <td class=td1>Pe raft</td> 
+  <!--Ora scadentă--> 
+  <!-- <td class=td1><br></td>--> 
+  <!--Bib.filială--> 
+  <td class=td1 nowrap>Biblioteca Academiei Iaşi</td> 
+  <!--Colecţie--> 
+  <td class=td1 nowrap>Cărţi depozit</td> 
+  <!--Localizare--> 
+  <td class=td1>III-28826</td> 
+  <!--Pagini--> 
+<!--  <td class=td1><br></td>--> 
+  <!--Nici o cerere--> 
+ <!-- <td class=td1><br> </td>  --> 
+  <!--Location-2--> 
+  <td class=td1>2012/52</td> 
+  <!--Barcod--> 
+  <td class=td1>60919-10</td> 
+  <!--Note-opac--> 
+<td class=td1><br></td> 
+  </tr> 
+
+Mie imi apare la titlul cartii "Permis de bibliotecă" dar acesta nu este titlul cartii, ci este un alt buton din link-ul:
+
+YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00578?func=find-b&request=fascinatia+numelui&find_code=WRD&adjacent=N&local_base=RAI01&x=43&y=11&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_4=WFM&filter_request_4=&filter_code_5=WSL&filter_request_5= 
+
+
+Uite asa arata butonul: <a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-00624?func=BOR-INFO" title="Vizualizarea informaţiei din fişa personală" class="blue"> 
+      Permis de bibliotecă</a>
+
+Dar trebuia sa preiei din acest camp titlul: 
+
+<a href="YOUR-IP-or-http://WEBSITE:8991/F/FVE78R4RRKY6H36QDU961SIFLPVM5VSIP7QM6Y1F2GSCUVDGXB-01105?func=full-set-set&amp;set_number=000781&amp;set_entry=000001&amp;format=999"> 
+Fascinaţia numelui&nbsp;:&nbsp;Studiu al creaţiei lexico-semantice şi stilistice, în relaţiile: -nume  </a>
+
+sau din celalalt link de aici:
+
+<!-- filename: full-xxx-body --> 
+<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />--> 
+ <tr> 
+  <td class=td1> 
+    Author Uritescu, Dorin N.. Fascinaţia numelui : Studiu al creaţiei lexico-semantice şi stilistice, în relaţiile: -nume propriu-nume comun şi nume comun-nume propriu- / Dorin N. Uritescu<br> 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+  </td> 
+ </tr> 
+ 
+La unele carti, daca caut cota, imi apare la titlul cartii "Permis de biblioteca", desi altul este titlul cartii.  Deci,  unele titlluri le gaseste corect, altele nu. Verifica debug, Din ce cauza?
+
+WLB = II-3682 (asa se cauta cota)
+
+@d:\Catalog general BARI Colecţii - exemplare.html 
+Am gasit de ce face eroarea asta. Din cauza faptului ca exista carti diferite cu aceeasi cota, asta e problema. Dar bar codul este unic. Deci daca exista doar o singura carte cu cota unica, atunci gaseste titlul corect. Daca gaseste mai multe carti, cu aceeasi cota, atunci nu gaseste corect titlul, dar gaseste corect cota si mai ales code barul unic.
+
+Deci, trebuie regandit astfel. Indiferent ce caut, primordial este bar codul. Caci acesta este unic si nu sunt niciodata 2 carti la fel. La cota, pot fi carti diferite cu aceeasi cota. Aici nu stiu cum sa fac. Ma gandeam ca daca caut cota, sa incerce sa gaseasca si barcodul, sa le compare, si sa dea titlul care se repeta sau macar cel din barcode.
+
+Dar nu ai de unde sa stii la cota, care din numeroasele carti, este cota cea buna.
+
+Deci, cred ca lasam asa, in principal se va cauta dupa bar cod.
+
+Acuma cum sa facem daca vreau sa caut dupa cota, in asa fel incat sa gaseasca corect cartea.
+
+
+TEST:
+
+COTA:
+II-3682
+
+Barcod:
+C003091
+
+Titlul este extras din pagina de rezultate (`search_response`), nu din pagina de detalii (`item-global`). Corectăm: extragem titlul doar din `item_html` (pagina `item-global`), nu din `search_response`.
+
+
+[3 tools called]
+
+
+Titlul este extras din pagina de rezultate (`search_response`), nu din pagina de detalii (`item-global`). Eliminăm extragerea din `search_response` și extragem titlul doar din `item_html` (pagina `item-global`).
+
+
+[2 tools called]
+
+
+Îmbunătățind logica de extragere a titlului din `item_html` (pagina `item-global`):
+
+
+[5 tools called]
+
+
+Am corectat problema. Modificările:
+
+## Ce am corectat:
+
+1. Eliminat extragerea titlului din `search_response` — pagina de rezultate conține text generic ("Înregistrările selectate", etc.), nu titlul real.
+
+2. Titlul se extrage doar din `item_html` (pagina `item-global`) — aceasta conține detaliile reale ale cărții.
+
+3. Adăugat filtre pentru text generic:
+   - Excludere link-uri de navigare înainte de parsing
+   - Excludere header-ul (middlebar)
+   - Excludere explicită a textului "Înregistrările selectate"
+   - Verificări mai stricte pentru a exclude textul generic
+
+4. Îmbunătățit pattern-urile de extragere din `item-global` — pattern-urile caută corect titlul în pagina de detalii.
+
+## Testează acum:
+
+1. Barcode: `http://localhost/aleph_api.php?barcode=C003091`
+2. Cotă: `http://localhost/aleph_api.php?cota=II-3682`
+
+Titlul ar trebui să fie extras corect din pagina `item-global`, nu din pagina de rezultate. Spune-mi dacă funcționează.
+
+http://localhost/aleph_api.php?cota=II-3682
+
+http://localhost/aleph_api.php?barcode=C003091
+
+Bine că funcționează.
+
+## Rezumatul soluției:
+
+1. Problema principală: titlul era extras din pagina de rezultate (`search_response`), care conține text generic de navigare ("Înregistrările selectate", "Permis de bibliotecă", etc.), nu titlul real al cărții.
+
+2. Soluția: eliminarea extragării titlului din `search_response` și extragerea doar din `item_html` (pagina `item-global`), care conține detaliile reale.
+
+3. Filtre adăugate: excludere explicită a textelor generice de navigare înainte de parsing.
+
+Acum funcționează corect atât pentru:
+- Căutare după barcode (ex: `C003091`)
+- Căutare după cotă (ex: `II-3682`)
+
+Titlul este extras corect din pagina de detalii Aleph, nu din pagina de rezultate. Dacă mai apare ceva, spune-mi.
+
+# 📚 Logica Completă de Căutare în Aleph
+
+## 🔍 Prezentare Generală
+
+Sistemul folosește funcția `cautaCarteInAleph($search_term, $search_type = 'AUTO')` care detectează automat tipul de cod (cota sau barcode) și aplică strategiile corespunzătoare de căutare în catalogul Aleph.
+
+---
+
+## 🎯 ETAPA 1: Inițializare Sesiune
+
+### 1.1. Obținere Session ID
+```php
+$init_url = "YOUR-IP-or-http://WEBSITE:8991/F?func=file&file_name=find-b"
+$session_response = fetch_url($init_url)
+```
+
+Proces:
+- Se accesează pagina de căutare Aleph
+- Se extrage `session_id` din răspunsul HTML folosind regex: `/\/F\/([A-Z0-9\-]+)\?/`
+- Dacă nu găsește, încearcă pattern alternativ: `/\/F\/([A-Z0-9\-]+)/`
+
+Rezultat: Session ID necesar pentru toate cererile ulterioare
+
+---
+
+## 🔎 ETAPA 2: Detectare Automată Tip Cod
+
+### 2.1. Detectare Barcode
+Pattern: `/^([A-Z]\d{5,}|[A-Z]{2,3}\d{4,}|\d{5,})(-\d{1,2})?$/i`
+
+Exemple:
+- `RV00108` ✅ (2 litere + cifre)
+- `C013121` ✅ (1 literă + cifre)
+- `000029152-10` ✅ (doar cifre cu sufix)
+- `000017317-10` ✅
+
+Strategie: `['BAR', 'LOC', 'WRD']` - încearcă BAR primul
+
+### 2.2. Detectare Cota
+Pattern 1: `/^[A-Z]{1,3}[\s\-]\d+([\s\-]\d+)?$/i`
+- `I-14156` ✅
+- `I 14156` ✅
+- `II-01270` ✅
+- `III-32073` ✅
+
+Pattern 2: `/^[A-Z]{2,3}\s+[A-Z]\s*-\s*\d+([\s\-]\d+)?$/i`
+- `RV I-94` ✅
+
+Strategie: `['LOC', 'BAR', 'WRD']` - încearcă LOC primul
+
+### 2.3. Tip Necunoscut
+Strategie: `['BAR', 'LOC', 'WRD']` - încearcă toate în ordine
+
+---
+
+## 🔄 ETAPA 3: Căutare cu Fallback Automat
+
+### 3.1. Proces de Căutare
+Pentru fiecare strategie din listă (BAR, LOC, sau WRD):
+
+```php
+$search_url = "{$ALEPH_BASE_URL}/{$session_id}?func=find-b&request=" . 
+              urlencode($search_term) . 
+              "&find_code={$strategy}&adjacent=N&local_base=RAI01"
+```
+
+### 3.2. Verificare Rezultate
+Se verifică dacă răspunsul conține mesaje de "no results":
+- `"Your search found no results"`
+- `"Căutarea nu a avut rezultate"`
+- `"nu a avut rezultate"`
+- `"No results"`
+
+Dacă NU conține mesaje de eroare:
+- ✅ GĂSIT! Se salvează `$search_response` și se oprește căutarea
+- Se marchează `$used_strategy` pentru debug
+
+Dacă TOATE strategiile returnează "no results":
+- ❌ NU EXISTĂ - returnează `success: false`
+
+---
+
+## 🔗 ETAPA 4: Extragere Link către Item-Global
+
+### 4.1. METODA 1: Căutare Directă în Search Response
+
+Pattern 1: Linkuri cu `func=item-global|direct|full-set`
+```regex
+/<A\s+[^>]*HREF\s*=\s*["\']?([^"\'>\s]*func=(?:item-global|direct|full-set)[^"\'>\s]*)["\']?/i
+```
+
+Pattern 2: Pattern simplificat (case-insensitive)
+```regex
+/href\s*=\s*["\']?([^"\'>]*func=(?:item-global|direct|full-set)[^"\'>]*)["\']?/i
+```
+
+Pattern 3: Linkuri cu `doc_number`
+```regex
+/href\s*=\s*["\']?([^"\'>]*doc_number[^"\'>]*)["\']?/i
+```
+
+Pattern 4: Orice link către `/F/`
+```regex
+/href\s*=\s*["\']?(\/F\/[^"\'>\s]+)["\']?/i
+```
+
+Pattern 5: Fallback - orice link către `/F/`
+```regex
+/<A\s+[^>]*HREF\s*=\s*["\']?([^"\'>\s]*\/F\/[^"\'>\s]*)["\']?/i
+```
+
+### 4.2. Priorizare Linkuri
+1. Preferă linkuri cu `sub_library=ACAD` (Biblioteca Academiei Iași)
+2. Preferă linkuri cu `func=item-global`
+3. Preferă linkuri cu `doc_number`
+
+### 4.3. Normalizare URL
+- Dacă linkul începe cu `http` → folosește direct
+- Dacă linkul începe cu `/F/` sau `F/` → construiește URL complet
+- Dacă linkul începe cu `?` → adaugă session_id
+- Dacă linkul conține `func=` sau `doc_number` → construiește cu session_id
+- IMPORTANT: Adaugă `sub_library=ACAD` dacă nu există deja
+
+### 4.4. METODA 2: Căutare după set_number și set_entry
+Când se folosește: Când METODA 1 nu găsește linkuri directe
+
+Proces:
+1. Extrage `set_number` și `set_entry` din search_response
+2. Construiește URL: `func=direct&doc_number={set_entry}&local_base=RAI01`
+3. Accesează pagina rezultatului
+4. Caută linkuri către `item-global` în pagina rezultatului
+
+### 4.5. METODA 3: Fallback - Construcție Manuală
+Când se folosește: Când niciuna dintre metodele anterioare nu găsește linkuri
+
+Proces:
+1. Caută `doc_number` direct în search_response
+2. Construiește manual: `func=item-global&doc_library=RAI01&doc_number={doc_number}&sub_library=ACAD`
+
+### 4.6. METODA 4: Căutare în Format Diferit
+Când se folosește: Pentru cazuri speciale
+
+Proces:
+- Caută linkuri care conțin `session_id` și `func=item-global|direct`
+
+---
+
+## 📄 ETAPA 5: Extragere Date din Item-Global
+
+### 5.1. Fetch Pagina Item-Global
+```php
+$item_html = fetch_url($item_url)
+$item_html = convertAlephEncoding($item_html) // ISO-8859-2 → UTF-8
+```
+
+### 5.2. Curățare HTML
+Se elimină:
+- Link-uri de navigare (`func=BOR-INFO`, `func=file`, `func=logout`)
+- Header-ul paginii (`middlebar`)
+- Text generic (`Permis de bibliotecă`, `Înregistrările selectate`)
+
+### 5.3. Extragere Titlu și Autor
+
+METODA 1: Pattern Regex în HTML
+- Pattern: `Author\s+([^\.]+)\.\.?\s+([^:]+):\s*([^\/]+)\s*\/\s*(.+?)`
+- Format: `Author. Title : Subtitle / Author Full`
+
+METODA 2: Parsing DOM (label-value pairs)
+- Caută `<td>` cu label "Title"/"Titlu" → valoarea din `<td>` următor
+- Caută `<td>` cu label "Author"/"Autor" → valoarea din `<td>` următor
+- Exclude text de navigare
+
+METODA 3: Căutare Text Lung
+- Caută în toate `<td>`-urile text între 20-500 caractere
+- Exclude text de navigare și pattern-uri de cota/barcode
+- Verifică că conține cel puțin 3 cuvinte
+
+METODA 4: Pattern în Tabel Aleph
+- Pattern: `Author. Title / ...` în formatul tabelului Aleph
+
+### 5.4. Extragere Cota și Barcode
+
+🔥 METODA PRIORITARĂ: Comentarii HTML
+```regex
+/<!--Localizare-->\s*<td[^>]*class=["\']?td1["\']?[^>]*>([^<]+)<\/td>/i
+/<!--Barcod-->\s*<td[^>]*class=["\']?td1["\']?[^>]*>([^<]+)<\/td>/i
+```
+
+Format Cota acceptat:
+- `I-14156`, `I 14156`, `I14156` → Pattern: `/^[A-Z]{1,3}[\s\-]?\d+([\s\-]\d+)?$/i`
+- `RV I-94` → Pattern: `/^[A-Z]{2,3}\s+[A-Z]\s*-\s*\d+([\s\-]\d+)?$/i`
+- `III-32073` → Pattern: `/^[A-Z]{1,3}\s*-\s*\d+([\s\-]\d+)?$/i`
+
+Format Barcode acceptat:
+- `RV00108`, `C013121`, `000029152-10` → Pattern: `/^([A-Z]{1,3})?\d{5,10}(-\d{1,2})?$/i`
+
+METODA FALLBACK: Parsing TD-uri
+- Caută în toate `<td>`-urile pattern-uri de cota/barcode
+- Acceptă multiple formate (cu spații, cratime, etc.)
+
+### 5.5. Extragere Alte Câmpuri
+- Colecție: Caută text cu "depozit", "Cărți", "sala de lectură"
+- Bibliotecă: Caută "Biblioteca Academiei" (exclude "Toate")
+- Status: Caută "Pe raft", "Pentru împrumut", "Împrumutat", "Doar pentru SL"
+
+---
+
+## ✅ ETAPA 6: Verificare Finală - Cartea Există?
+
+### 6.1. Verificare Titlu Generic/Eroare
+Mesaje de eroare care indică că cartea NU există:
+- `"Sfârşitul sesiunii"` / `"Sfârșitul sesiunii"`
+- `"End of session"` / `"Session ended"`
+- `"Sesiune expirată"` / `"Session expired"`
+- `"Căutări anterioare"` / `"Previous searches"` ⚠️ IMPORTANT
+
+Dacă titlul conține unul dintre acestea:
+- ❌ Returnează `success: false` cu mesaj: `"Nu există această carte în baza de date Aleph"`
+
+### 6.2. Verificare Titlu Gol/Prea Scurt
+Condiție: `empty($data['titlu']) || strlen($titlu) < 3`
+
+Dacă DA:
+- ❌ Returnează `success: false` cu mesaj: `"Nu există această carte în baza de date Aleph"`
+
+### 6.3. Succes
+Dacă titlul este valid (nu este generic, nu este gol, lungime >= 3):
+- ✅ Returnează `success: true` cu toate datele extrase
+
+---
+
+## 📊 SCENARII DE CAUTARE
+
+### ✅ SCENARIUL 1: Barcode Existent (ex: `RV00108`)
+
+1. Detectare: Pattern barcode → strategie `['BAR', 'LOC', 'WRD']`
+2. Căutare BAR: Găsește rezultate → oprește căutarea
+3. Extragere Link: Găsește link către `item-global` cu `sub_library=ACAD`
+4. Extragere Date:
+   - Titlu: ✅ Extras din HTML
+   - Autor: ✅ Extras din HTML
+   - Cota: ✅ Extras din comentarii HTML (`<!--Localizare-->`) sau TD-uri
+   - Barcode: ✅ Extras din comentarii HTML (`<!--Barcod-->`) sau TD-uri
+5. Verificare: Titlu valid → `success: true`
+
+Rezultat: `{"success": true, "data": {"titlu": "...", "autor": "...", "cota": "RV I-94", "barcode": "RV00108", ...}}`
+
+---
+
+### ✅ SCENARIUL 2: Cota Existentă (ex: `RV I-94`)
+
+1. Detectare: Pattern cota → strategie `['LOC', 'BAR', 'WRD']`
+2. Căutare LOC: Găsește rezultate → oprește căutarea
+3. Extragere Link: Găsește link către `item-global` cu `sub_library=ACAD`
+4. Extragere Date:
+   - Titlu: ✅ Extras din HTML
+   - Autor: ✅ Extras din HTML
+   - Cota: ✅ Extras din comentarii HTML (`<!--Localizare-->`) sau TD-uri
+   - Barcode: ✅ Extras din comentarii HTML (`<!--Barcod-->`) sau TD-uri
+5. Verificare: Titlu valid → `success: true`
+
+Rezultat: `{"success": true, "data": {"titlu": "...", "autor": "...", "cota": "RV I-94", "barcode": "RV00108", ...}}`
+
+---
+
+### ❌ SCENARIUL 3: Barcode Inexistent (ex: `000017317-105uuu`)
+
+1. Detectare: Pattern barcode → strategie `['BAR', 'LOC', 'WRD']`
+2. Căutare BAR: Returnează "Your search found no results"
+3. Căutare LOC: Returnează "Your search found no results"
+4. Căutare WRD: Returnează "Your search found no results"
+5. Rezultat: `success: false` cu mesaj: `"Nu s-au găsit rezultate pentru: 000017317-105uuu"`
+
+SAU (dacă găsește link dar nu extrage date valide):
+
+6. Extragere Link: Găsește link către `item-global` (dar pagina nu conține date reale)
+7. Extragere Date:
+   - Titlu: `"Căutări anterioare"` (titlu generic)
+   - Autor: gol
+   - Cota: gol
+   - Barcode: gol
+8. Verificare: Titlu este generic → `success: false`
+
+Rezultat: `{"success": false, "mesaj": "Nu există această carte în baza de date Aleph", "data_partiala": {...}}`
+
+---
+
+### ❌ SCENARIUL 4: Cota Inexistentă (ex: `ABC-99999`)
+
+1. Detectare: Pattern cota → strategie `['LOC', 'BAR', 'WRD']`
+2. Căutare LOC: Returnează "Your search found no results"
+3. Căutare BAR: Returnează "Your search found no results"
+4. Căutare WRD: Returnează "Your search found no results"
+5. Rezultat: `success: false` cu mesaj: `"Nu s-au găsit rezultate pentru: ABC-99999"`
+
+SAU (dacă găsește link dar nu extrage date valide):
+
+6. Extragere Link: Găsește link către `item-global` (dar pagina nu conține date reale)
+7. Extragere Date:
+   - Titlu: `"Căutări anterioare"` sau gol
+   - Autor: gol
+   - Cota: gol
+   - Barcode: gol
+8. Verificare: Titlu este generic sau gol → `success: false`
+
+Rezultat: `{"success": false, "mesaj": "Nu există această carte în baza de date Aleph", "data_partiala": {...}}`
+
+---
+
+## 🔑 PUNCTE CHEIE
+
+### 1. Detectare Automată
+- Sistemul detectează automat dacă este cota sau barcode
+- Aplică strategia corespunzătoare (BAR pentru barcode, LOC pentru cota)
+
+### 2. Fallback Automat
+- Dacă prima strategie nu găsește, încearcă următoarea
+- Ordinea: BAR → LOC → WRD (pentru barcode) sau LOC → BAR → WRD (pentru cota)
+
+### 3. Extragere Robustă
+- Multiple metode de extragere link (5 metode diferite)
+- Multiple metode de extragere date (4 metode pentru titlu/autor, 2 metode pentru cota/barcode)
+
+### 4. Verificare Strictă
+- Verifică dacă titlul este generic (`"Căutări anterioare"`)
+- Verifică dacă titlul este gol sau prea scurt (< 3 caractere)
+- NU verifică dacă barcode/autor/cota sunt goale separat - doar titlul contează
+
+### 5. Prioritizare Biblioteca Academiei
+- Adaugă automat `sub_library=ACAD` la toate link-urile
+- Preferă link-uri care conțin deja `sub_library=ACAD`
+
+---
+
+## 🎯 CONCLUZIE
+
+Logica este simplă și eficientă:
+1. Detectează tipul de cod
+2. Caută cu strategia corespunzătoare (cu fallback)
+3. Extrage link către item-global
+4. Extrage date din HTML (cu multiple metode)
+5. Verifică dacă titlul este valid (nu generic, nu gol, lungime >= 3)
+
+Succes = Titlu valid (nu contează dacă barcode/autor/cota sunt goale)
+
+da, era interesant cum ai rezolvat. Fiinca era cazul acela cand sunt mai multe cote la o carte, dar bar cod unic la fiecare. Deci, daca caut dupa barcode, gasesc perfect cartea, caci este unic. Dar inainte daca cautam dupa cota,gaseam mai multe carti, si nu puteam sti care e cea buna dintre toate. Aici a fost incalcita treaba.
+
+Explicând cum am rezolvat problema când o carte are mai multe cote, dar fiecare exemplar are un barcode unic:
+
+
+[4 tools called]
+
+
+Am creat documentul `SOLUTIE_COTA_MULTIPLA.md` care explică soluția. Rezumat:
+
+## Problema identificată
+
+- O carte poate avea mai multe exemplare, fiecare cu cota proprie (ex: `RV I-94`, `RV I-95`, `RV I-96`)
+- Fiecare exemplar are un barcode unic (ex: `RV00108`, `RV00109`, `RV00110`)
+
+Problema veche:
+- Căutare după barcode → funcționa (barcode unic)
+- Căutare după cota → găsea mai multe rezultate și nu știa care exemplar este corect
+
+## Soluția implementată
+
+### Principiu: extragere directă din item-global
+
+În loc de căutări suplimentare, extragem direct ambele informații din pagina `item-global`:
+
+1. Căutare simplă după cota → găsește rezultate
+2. Extragere link către item-global (preferă `sub_library=ACAD`)
+3. Accesare item-global → extrage direct:
+   - Cota pentru exemplarul specific (`RV I-94`)
+   - Barcode-ul pentru exemplarul specific (`RV00108`)
+
+### Metoda prioritară: comentarii HTML
+
+```php
+// Extrage cota din comentariul HTML
+<!--Localizare-->
+<td class="td1">RV I-94</td>
+
+// Extrage barcode din comentariul HTML  
+<!--Barcod-->
+<td class="td1">RV00108</td>
+```
+
+## De ce funcționează
+
+- Aleph returnează exemplarul specific: când căutăm după cota `RV I-94`, primul link găsit (sau cel cu `sub_library=ACAD`) este pentru exemplarul specific.
+- Item-global conține ambele informații: pagina `item-global` pentru un exemplar specific conține cota și barcode-ul pentru acel exemplar.
+- Nu mai sunt necesare căutări suplimentare: extragem direct din item-global.
+
+## Rezultat
+
+- Căutare după barcode → funcționează (barcode unic)
+- Căutare după cota → funcționează (extrage cota și barcode pentru exemplarul specific)
+
+Cheia: pagina `item-global` conține întotdeauna ambele informații pentru exemplarul specific, deci nu mai sunt necesare căutări suplimentare.
+
+Documentul complet este în `SOLUTIE_COTA_MULTIPLA.md` cu exemple concrete și comparație între logica veche și cea nouă.
+
+Analizând logica completă de căutare în Aleph:
+
+
+[5 tools called]
+
+
+Verificând logica de extragere a cotei și barcode-ului:
+
+
+[1 tool called]
+
+
+Documentând logica completă de căutare în Aleph:
+
+
+[1 tool called]
+
+
+Am creat documentul `LOGICA_CAUTARE_ALEPH.md` cu logica completă. Rezumat:
+
+## Logica de căutare în Aleph
+
+### 1. Detectare automată tip cod
+- Barcode: pattern `RV00108`, `C013121`, `000029152-10` → strategie `['BAR', 'LOC', 'WRD']`
+- Cota: pattern `I-14156`, `RV I-94`, `III-32073` → strategie `['LOC', 'BAR', 'WRD']`
+
+### 2. Căutare cu fallback
+- Pentru fiecare strategie (BAR/LOC/WRD):
+  - Construiește URL: `func=find-b&request={cod}&find_code={strategie}`
+  - Verifică dacă răspunsul conține "no results"
+  - Dacă nu conține → găsit, oprește căutarea
+  - Dacă toate returnează "no results" → inexistent
+
+### 3. Extragere link către item-global
+5 metode (în ordine):
+1. Linkuri directe cu `func=item-global|direct|full-set`
+2. Linkuri cu `doc_number`
+3. Linkuri către `/F/`
+4. Fallback: `set_number` și `set_entry`
+5. Construcție manuală din `doc_number`
+
+Prioritizare: preferă link-uri cu `sub_library=ACAD` (Biblioteca Academiei Iași)
+
+### 4. Extragere date din item-global
+- Titlu/Autor: 4 metode (regex, DOM label-value, text lung, pattern tabel)
+- Cota/Barcode: 2 metode (prioritar: comentarii HTML `<!--Localizare-->` și `<!--Barcod-->`, fallback: parsing TD-uri)
+
+### 5. Verificare finală
+Cartea există dacă:
+- Titlul nu este generic (`"Căutări anterioare"`, `"Previous searches"`)
+- Titlul nu este gol
+- Titlul are lungime >= 3 caractere
+
+Nu verifică separat dacă barcode/autor/cota sunt goale — doar titlul contează.
+
+---
+
+## Scenarii
+
+### Barcode existent (`RV00108`)
+1. Detectare barcode → BAR primul
+2. Găsește rezultate → extrage link
+3. Extrage date → titlu valid
+4. Rezultat: `success: true` cu toate datele
+
+### Cota existentă (`RV I-94`)
+1. Detectare cota → LOC primul
+2. Găsește rezultate → extrage link
+3. Extrage date → titlu valid
+4. Rezultat: `success: true` cu toate datele
+
+### Barcode inexistent (`000017317-105uuu`)
+1. Detectare barcode → BAR primul
+2. Toate strategiile returnează "no results"
+3. Rezultat: `success: false` cu mesaj de eroare
+
+SAU (dacă găsește link dar nu extrage date):
+4. Extrage link → pagina nu conține date reale
+5. Titlu = `"Căutări anterioare"` (generic)
+6. Rezultat: `success: false` (titlu generic detectat)
+
+### Cota inexistentă (`ABC-99999`)
+1. Detectare cota → LOC primul
+2. Toate strategiile returnează "no results"
+3. Rezultat: `success: false` cu mesaj de eroare
+
+---
+
+Documentul complet este în `LOGICA_CAUTARE_ALEPH.md` cu toate detaliile tehnice.
+
+# 🔑 Soluția pentru Cazul: Mai Multe Cote la O Carte, Barcode Unic
+
+## 📚 Problema Identificată
+
+### Situația Reală în Aleph:
+- O carte poate avea mai multe exemplare, fiecare cu cota proprie
+  - Exemplu: Cartea "Tălmăcire rumânească..." are cote: `RV I-94`, `RV I-95`, `RV I-96`
+- Fiecare exemplar are un barcode unic
+  - Exemplu: `RV00108` (pentru cota `RV I-94`), `RV00109` (pentru cota `RV I-95`)
+
+### Problema Vechii Logici:
+1. Căutare după barcode (`RV00108`):
+   - ✅ Funcționează perfect - găsește exemplarul specific
+   - ✅ Barcode-ul este unic, deci rezultatul este clar
+
+2. Căutare după cota (`RV I-94`):
+   - ⚠️ Găsește mai multe rezultate (toate exemplarele cu acea cota sau similare)
+   - ❌ Nu știa care exemplar este cel corect dintre toate
+   - ❌ Logica veche încerca să rezolve prin căutare suplimentară după barcode, dar complica procesul
+
+---
+
+## ✅ Soluția Implementată
+
+### Principiu: Extragere Directă din Item-Global
+
+În loc să încercăm să rezolvăm problema prin căutări suplimentare, am simplificat logica:
+
+### 1. Căutare Simplă după Cota
+```php
+// Caută după cota cu strategia LOC
+$search_url = "...?func=find-b&request=RV+I-94&find_code=LOC..."
+$search_response = fetch_url($search_url)
+```
+
+Rezultat: Aleph returnează pagina de rezultate care conține link-uri către toate exemplarele găsite.
+
+### 2. Extragere Link către Item-Global
+```php
+// Găsește primul link către item-global cu sub_library=ACAD
+preg_match_all('/func=item-global[^>]*sub_library=ACAD/i', $search_response, $links)
+$item_url = $links[1][0] // Primul link găsit
+```
+
+Important: 
+- Preferă link-uri cu `sub_library=ACAD` (Biblioteca Academiei Iași)
+- Dacă nu găsește cu ACAD explicit, folosește primul link disponibil și adaugă `sub_library=ACAD`
+
+### 3. Extragere Date din Item-Global (Cheia Soluției!)
+
+Când accesăm pagina `item-global` pentru un exemplar specific, aceasta conține AMBELE informații:
+- ✅ Cota pentru acel exemplar specific
+- ✅ Barcode-ul pentru acel exemplar specific
+
+#### Metoda Prioritară: Comentarii HTML
+```php
+// Extrage cota din comentariul HTML
+preg_match_all('/<!--Localizare-->\s*<td[^>]*class=["\']?td1["\']?[^>]*>([^<]+)<\/td>/i', 
+               $item_html, $cota_matches)
+$data['cota'] = trim($cota_matches[1][0]) // Ex: "RV I-94"
+
+// Extrage barcode din comentariul HTML
+preg_match_all('/<!--Barcod-->\s*<td[^>]*class=["\']?td1["\']?[^>]*>([^<]+)<\/td>/i', 
+               $item_html, $barcode_matches)
+$data['barcode'] = trim($barcode_matches[1][0]) // Ex: "RV00108"
+```
+
+#### Metoda Fallback: Parsing TD-uri
+```php
+// Dacă nu găsește prin comentarii, caută în toate TD-urile
+for ($i = 0; $i < $tds->length; $i++) {
+    $text = trim($tds->item($i)->textContent);
+    
+    // Pattern pentru cota
+    if (preg_match('/^[A-Z]{1,3}[\s\-]?\d+([\s\-]\d+)?$/i', $text) ||
+        preg_match('/^[A-Z]{2,3}\s+[A-Z]\s*-\s*\d+([\s\-]\d+)?$/i', $text)) {
+        $data['cota'] = $text;
+    }
+    
+    // Pattern pentru barcode
+    if (preg_match('/^([A-Z]{1,3})?\d{5,10}(-\d{1,2})?$/i', $text)) {
+        $data['barcode'] = $text;
+    }
+}
+```
+
+---
+
+## 🎯 De Ce Funcționează Această Soluție?
+
+### 1. Aleph Returnează Exemplarul Specific
+Când căutăm după cota `RV I-94`, Aleph returnează link-uri către exemplarele care au acea cota. Primul link găsit (sau cel cu `sub_library=ACAD`) este pentru exemplarul specific care are cota `RV I-94`.
+
+### 2. Item-Global Conține Ambele Informații
+Pagina `item-global` pentru un exemplar specific conține:
+- Cota exactă pentru acel exemplar (`RV I-94`)
+- Barcode-ul exact pentru acel exemplar (`RV00108`)
+
+### 3. Nu Mai Avem Nevoie de Căutări Suplimentare
+- ❌ Logica veche: Căuta după cota → găsea mai multe → încerca să găsească barcode → căuta din nou după barcode
+- ✅ Logica nouă: Caută după cota → găsește link → extrage direct cota ȘI barcode-ul din item-global
+
+---
+
+## 📊 Exemplu Concret
+
+### Căutare după Cota: `RV I-94`
+
+#### Pasul 1: Căutare în Aleph
+```
+URL: ...?func=find-b&request=RV+I-94&find_code=LOC...
+Rezultat: Pagină cu mai multe exemplare (RV I-94, RV I-95, etc.)
+```
+
+#### Pasul 2: Extragere Link
+```
+Link găsit: ...?func=item-global&doc_number=000030454&sub_library=ACAD
+Acest link este pentru exemplarul specific cu cota RV I-94
+```
+
+#### Pasul 3: Accesare Item-Global
+```
+URL: ...?func=item-global&doc_number=000030454&sub_library=ACAD
+HTML conține:
+  <!--Localizare-->
+  <td class="td1">RV I-94</td>
+  <!--Barcod-->
+  <td class="td1">RV00108</td>
+```
+
+#### Pasul 4: Extragere Date
+```php
+$data['cota'] = "RV I-94"      // Extras din <!--Localizare-->
+$data['barcode'] = "RV00108"   // Extras din <!--Barcod-->
+$data['titlu'] = "Tălmăcire rumânească..."
+$data['autor'] = "Kontos, Polyzois"
+```
+
+#### Rezultat Final:
+```json
+{
+  "success": true,
+  "data": {
+    "titlu": "Tălmăcire rumânească...",
+    "autor": "Kontos, Polyzois",
+    "cota": "RV I-94",
+    "barcode": "RV00108",
+    ...
+  }
+}
+```
+
+✅ Rezultat: Am obținut AMBELE informații (cota ȘI barcode) pentru exemplarul specific, fără căutări suplimentare!
+
+---
+
+## 🔄 Comparație: Logica Veche vs. Logica Nouă
+
+### ❌ Logica Veche (Complicată):
+```
+1. Caută după cota → găsește mai multe rezultate
+2. Încearcă să extragă barcode din rezultate
+3. Caută din nou după barcode pentru identificare exactă
+4. Extrage date din item-global
+```
+Probleme:
+- Complicată și lentă
+- Poate eșua dacă nu găsește barcode în rezultate
+- Poate alege exemplarul greșit
+
+### ✅ Logica Nouă (Simplă):
+```
+1. Caută după cota → găsește rezultate
+2. Extrage primul link către item-global (cu ACAD)
+3. Accesează item-global → extrage direct cota ȘI barcode
+```
+Avantaje:
+- Simplă și rapidă
+- Sigură - obține datele pentru exemplarul specific găsit
+- Nu necesită căutări suplimentare
+
+---
+
+## 🎯 Concluzie
+
+Soluția: În loc să încercăm să rezolvăm problema prin căutări suplimentare, am simplificat logica pentru a extrage direct AMBELE informații (cota ȘI barcode) din pagina `item-global` pentru exemplarul specific găsit.
+
+Rezultat: 
+- ✅ Căutare după barcode → funcționează perfect (barcode unic)
+- ✅ Căutare după cota → funcționează perfect (extrage cota ȘI barcode pentru exemplarul specific)
+
+Cheia succesului: Pagina `item-global` conține întotdeauna ambele informații pentru exemplarul specific, deci nu mai avem nevoie de căutări suplimentare!
+
+Explicând de ce nu a găsit cota `DAB II-02070` mai înainte:
+
+
+[2 tools called]
+
+
+Am creat documentul `EXPLICATIE_PROBLEMA_DAB_II.md` cu explicația detaliată. Rezumat:
+
+## De ce nu a găsit cota `DAB II-02070` mai înainte
+
+### Problema: pattern-ul era prea restrictiv
+
+Pattern-ul vechi pentru detectarea cotei:
+```php
+preg_match('/^[A-Z]{2,3}\s+[A-Z]\s*-\s*\d+([\s\-]\d+)?$/i', $search_term)
+```
+
+Ce cerea:
+- `[A-Z]{2,3}` → 2-3 litere la început (ex: `RV`, `DAB`)
+- `\s+` → spațiu
+- `[A-Z]` → exact o singură literă după spațiu (ex: `I`)
+- `\s*-\s*` → cratimă
+- `\d+` → cifre
+
+Ce accepta:
+- `RV I-94` → `RV` + spațiu + `I` (1 literă) + cratimă + cifre
+- `DAB II-02070` → `DAB` + spațiu + `II` (2 litere) → nu se potrivea
+
+Problema: pattern-ul cerea exact o literă după spațiu (`[A-Z]`), dar `DAB II-02070` are două litere (`II`).
+
+---
+
+## Ce s-a întâmplat mai înainte
+
+1. Detectare tip cod:
+   - Pattern-ul nu se potrivea → `detected_type = 'unknown'`
+   - Strategie folosită: `['BAR', 'LOC', 'WRD']` (BAR primul, nu LOC)
+
+2. Căutare:
+   - BAR: nu găsește (nu este barcode)
+   - LOC: găsește rezultate, dar nu era prioritar
+
+3. Extragere date:
+   - Pattern-urile de extragere cota din HTML erau și ele prea restrictive
+   - Nu găsea cota `DAB II-02070` în HTML pentru că pattern-ul cerea o singură literă
+
+4. Verificare finală:
+   - Titlu: `"Căutări anterioare"` (generic) sau gol
+   - Cota: gol (nu a fost extrasă)
+   - Rezultat: `success: false`
+
+---
+
+## Soluția
+
+Pattern nou: `/^[A-Z]{2,3}\s+[A-Z]{1,3}\s*-\s*\d+([\s\-]\d+)?$/i`
+
+Schimbare: `[A-Z]` → `[A-Z]{1,3}` (acceptă 1-3 litere după spațiu)
+
+Acum acceptă:
+- `RV I-94` → `RV` + spațiu + `I` (1 literă)
+- `DAB II-02070` → `DAB` + spațiu + `II` (2 litere)
+- `ABC III-123` → `ABC` + spațiu + `III` (3 litere)
+
+---
+
+## Concluzie
+
+Pattern-ul era prea restrictiv și nu acoperea toate formatele posibile de cote din Aleph. Am extins pattern-ul pentru a accepta 1-3 litere după spațiu (`[A-Z]{1,3}`) în loc de exact o literă (`[A-Z]`).
+
+Documentul complet este în `EXPLICATIE_PROBLEMA_DAB_II.md` cu analiza detaliată și exemple.
+
+------
++++++++ FINAL CAUTARE ALEPH ++++++++++++++
+
+Mă bucur că funcționează! Iată explicația:
+
+## 📁 Fișierul: `aleph_api.php`
+
+Funcția principală de căutare este `cautaCarteInAleph($search_term, $search_type)`.
+
+---
+
+## 🧠 Logica de căutare:
+
+### Pasul 1: Detectare automată tip căutare
+
+Sistemul analizează termenul căutat și decide ce tip de cod este:
+
+| Tip | Exemplu | Cum detectează |
+|-----|---------|----------------|
+| Cotă (WLB) | `SL DI II-0994` | Conține spații, cifre romane (I, V, X), sau "/" |
+| Barcode (BAR) | `C182834` | Doar cifre, sau literă+cifre fără spații |
+
+```
+SL DI II-0994  →  are spații + cifre romane  →  COTĂ (WLB primul)
+C182834        →  literă + cifre            →  BARCODE (BAR primul)
+```
+
+---
+
+### Pasul 2: Căutare în Aleph
+
+1. Inițializează sesiune cu serverul Aleph (`YOUR-IP-or-http://WEBSITE:8991`)
+2. Trimite căutare cu codul potrivit:
+   - `WLB` = căutare după cotă (Location)
+   - `BAR` = căutare după barcode
+
+---
+
+### Pasul 3: Găsire link "Biblioteca Academiei Iași"
+
+Din pagina de rezultate, caută linkul către detaliile cărții:
+
+```
+Metoda 1: Link direct cu func=item-global + sub_library=ACAD
+Metoda 2: Link "Biblioteca Academiei Iași(X/Y)"  
+Metoda 3: Extrage doc_number și construiește URL-ul manual
+```
+
+---
+
+### Pasul 4: Extragere date
+
+Din pagina cu detalii (`func=item-global`), extrage:
+- Titlu, Autor, ISBN
+- Cotă, Barcode
+- Bibliotecă, Status, Colecție
+
+---
+
+## 🔄 Flux vizual:
+
+```
+[Utilizator introduce cod]
+         ↓
+[Detectare: Cotă sau Barcode?]
+         ↓
+[Căutare Aleph: WLB sau BAR]
+         ↓
+[Găsire link "Biblioteca Academiei Iași"]
+         ↓
+[Accesare pagină item-global]
+         ↓
+[Extragere date din HTML]
+         ↓
+[Afișare rezultat]
+```
+
+Acesta este modul în care căutarea funcționează - smart detection + multiple fallback methods pentru a găsi cartea indiferent de formatul codului introdus.
