@@ -1,0 +1,59 @@
+{
+  "data_raport": "2025-11-15T08:24:43.062692",
+  "statistici": {
+    "total_coduri": 100,
+    "folosite": 1,
+    "libere": 99,
+    "procent_utilizare": 1.0
+  },
+  "duplicate": [
+    {
+      "cod": "BOOK00001",
+      "aparitii": 2
+    },
+    {
+      "cod": "BOOK00002",
+      "aparitii": 1
+    },
+    {
+      "cod": "BOOK00003",
+      "aparitii": 1
+    },
+    {
+      "cod": "BOOK00004",
+      "aparitii": 1
+    },
+    {
+      "cod": "BOOK00005",
+      "aparitii": 1
+    },
+    {
+      "cod": "BOOK00006",
+      "aparitii": 1
+    },
+    {
+      "cod": "BOOK00007",
+      "aparitii": 1
+    },
+    {
+      "cod": "BOOK00008",
+      "aparitii": 1
+    },
+    {
+      "cod": "BOOK00009",
+      "aparitii": 1
+    },
+    {
+      "cod": "BOOK00010",
+      "aparitii": 1
+    }
+  ],
+  "asocieri_recente": [
+    {
+      "cod": "BOOK00001",
+      "titlu": "Amintiri din copilărie",
+      "autor": "Ion Creangă",
+      "data": "2025-11-15 06:24:43"
+    }
+  ]
+}
