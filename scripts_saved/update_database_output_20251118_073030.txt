@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizare Baza de Date - Sesiuni</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #28a745;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #dc3545;
+        }
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #17a2b8;
+        }
+        .sql-code {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        button {
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #5568d3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>≡ƒöä Actualizare Baza de Date - Sistem Sesiuni</h1>
+
+        <div class='info'>1. Verificare ╚Öi ad─âugare c├ómpuri ├«n tabelul cititori...</div><div class='info'>Γä╣∩╕Å C├ómpul 'blocat' exist─â deja ├«n tabelul cititori</div><div class='info'>2. Verificare ╚Öi ad─âugare c├ómp data_scadenta ├«n tabelul imprumuturi...</div><div class='info'>Γä╣∩╕Å C├ómpul 'data_scadenta' exist─â deja ├«n tabelul imprumuturi</div><div class='info'>3. Verificare ╚Öi creare tabel sesiuni_utilizatori...</div><div class='info'>Γä╣∩╕Å Tabelul 'sesiuni_utilizatori' exist─â deja</div><div class='info'>4. Verificare ╚Öi creare tabel tracking_sesiuni...</div><div class='info'>5. Verificare final─â...</div><div class='success'>Γ£à Tabelul 'tracking_sesiuni' a fost creat cu succes</div><div class='success'>Γ£à Toate c├ómpurile necesare exist─â ├«n tabelul cititori</div><div class='success'>Γ£à Toate c├ómpurile necesare exist─â ├«n tabelul imprumuturi</div><div class='success'>Γ£à Tabelul sesiuni_utilizatori exist─â</div><div class='success'>Γ£à Tabelul tracking_sesiuni exist─â</div><div class='success'><strong>≡ƒÄë Actualizarea bazei de date a fost finalizat─â cu succes!</strong></div><p>Baza de date este acum preg─âtit─â pentru sistemul de sesiuni.</p>
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #eee;">
+            <h3>≡ƒôï Structura Actualizat─â:</h3>
+            <div class="sql-code">
+                <strong>Tabel cititori:</strong><br>
+                - blocat (TINYINT) - Status blocare utilizator<br>
+                - motiv_blocare (VARCHAR) - Motivul bloc─ârii<br><br>
+                
+                <strong>Tabel imprumuturi:</strong><br>
+                - data_scadenta (DATE) - Data scaden╚¢ei (14 zile de la ├«mprumut)<br><br>
+                
+                <strong>Tabel nou: sesiuni_utilizatori</strong><br>
+                - id (INT) - ID sesiune<br>
+                - cod_cititor (VARCHAR) - Codul cititorului<br>
+                - timestamp_start (TIMESTAMP) - Momentul scan─ârii utilizatorului<br>
+                - timestamp_ultima_actiune (TIMESTAMP) - Ultima ac╚¢iune<br>
+                - status (ENUM) - Status sesiune (activ/expirat/inchis)<br>
+                - numar_carti_scanate (INT) - Num─âr c─âr╚¢i scanate ├«n sesiune<br><br>
+                
+                <strong>Tabel nou: tracking_sesiuni</strong><br>
+                - id (INT) - ID tracking<br>
+                - cod_cititor (VARCHAR) - Codul cititorului<br>
+                - tip_actiune (ENUM) - Tip ac╚¢iune (scanare_permis, scanare_carte_imprumut, scanare_carte_returnare, etc.)<br>
+                - cod_carte (VARCHAR) - Codul c─âr╚¢ii (NULL pentru scanare permis)<br>
+                - data_ora (TIMESTAMP) - Data ╚Öi ora exact─â<br>
+                - data (DATE) - Data generat─â automat<br>
+                - ora (TIME) - Ora generat─â automat<br>
+                - sesiune_id (INT) - ID sesiune<br>
+                - detalii (TEXT) - Detalii suplimentare (JSON)
+            </div>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <a href="scanare_rapida.php" style="text-decoration: none;">
+                <button>Γ₧í∩╕Å Mergi la Scanare Rapid─â</button>
+            </a>
+            <a href="index.php" style="text-decoration: none; margin-left: 10px;">
+                <button style="background: #6c757d;">≡ƒÅá Acas─â</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
