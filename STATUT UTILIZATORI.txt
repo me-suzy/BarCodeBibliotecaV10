@@ -1,0 +1,64 @@
+
+Iată tabelul cu limitele pentru fiecare statut:
+
+## Tabel limite împrumut pe statut
+
+| Cod | Nume Statut | Limita Cărți | Descriere |
+|-----|-------------|--------------|-----------|
+| 17 | ILL - Împrumut interbibliotecar | 20 cărți | Împrumut interbibliotecar |
+| 12 | Bibliotecari BARI | 15 cărți | Bibliotecari din rețeaua BARI |
+| 11 | Personal Științific Academie | 10 cărți | Personal științific al Academiei Române |
+| 13 | Angajați ARFI | 8 cărți | Angajați ARFI |
+| 16 | Personal departamente | 6 cărți | Personal din departamente |
+| 14 | Nespecifici cu domiciliu în Iași | 4 cărți | Cititori nespecificați cu domiciliu în Iași (implicit pentru USER) |
+| 15 | Nespecifici fără domiciliu în Iași | 2 cărți | Cititori nespecificați fără domiciliu în Iași |
+
+---
+
+## Exemple practice
+
+### Exemplu 1: Bibliotecar BARI (cod `120000001060`)
+- Statut: 12
+- Limită: 15 cărți
+- Poate împrumuta: 0/15 → 1/15 → ... → 15/15
+- Nu poate împrumuta: 16/15
+
+### Exemplu 2: Cod USER (ex: `USER011`)
+- Statut: 14 (implicit)
+- Limită: 4 cărți
+- Poate împrumuta: 0/4 → 1/4 → ... → 4/4
+- Nu poate împrumuta: 5/4
+
+### Exemplu 3: Cititor fără domiciliu (cod `150000001000`)
+- Statut: 15
+- Limită: 2 cărți
+- Poate împrumuta: 0/2 → 1/2 → 2/2
+- Nu poate împrumuta: 3/2
+
+### Exemplu 4: Cercetător (cod `110000001000`)
+- Statut: 11
+- Limită: 10 cărți
+- Poate împrumuta: 0/10 → 1/10 → ... → 10/10
+- Nu poate împrumuta: 11/10
+
+---
+
+## Rezumat rapid
+
+- Cel mai mult: Statut 17 → 20 cărți (ILL)
+- Cel mai puțin: Statut 15 → 2 cărți (fără domiciliu)
+- Implicit: Coduri USER → Statut 14 → 4 cărți
+
+---
+
+## Verificare în aplicație
+
+Când scanezi un cod:
+1. Sistemul detectează statutul (din cod Aleph sau implicit pentru USER)
+2. Aplică limita corespunzătoare
+3. Afișează: "X/Y cărți împrumutate" (unde Y = limita pentru statut)
+4. Blochează împrumutul dacă limita este depășită
+
+Am creat și documentația completă în `TABEL_LIMITE_IMPRUMUT.md` cu toate detaliile.
+
+Totul funcționează corect. Sistemul aplică automat limitele corecte pentru fiecare tip de utilizator.
