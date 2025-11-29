@@ -171,10 +171,12 @@ $numar_livrate = count(array_filter($istoric, function($i) { return $i['status_d
             background: #f8f9fa;
             border-left: 6px solid #17a2b8;
             padding: 20px;
+            padding-left: 50px;
             margin: 15px 0;
             border-radius: 8px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
             transition: all 0.3s;
+            position: relative;
         }
 
         .istoric-item:hover {
@@ -470,8 +472,17 @@ $numar_livrate = count(array_filter($istoric, function($i) { return $i['status_d
                 <p>Nu au fost preluate cărți din depozit încă.</p>
             </div>
             <?php else: ?>
+            <form id="exportForm" method="POST" action="">
+                <div style="display: flex; gap: 10px; margin-bottom: 20px; align-items: center;">
+                    <button type="button" onclick="selectAll()" class="btn" style="background: #17a2b8; color: white;">☑ Selectează toate</button>
+                    <button type="button" onclick="deselectAll()" class="btn" style="background: #6c757d; color: white;">☐ Deselectează toate</button>
+                    <button type="submit" formaction="export_excel_istoric.php" class="btn" style="background: #28a745; color: white;">📊 Export Excel</button>
+                    <button type="submit" formaction="export_pdf_istoric.php" class="btn" style="background: #dc3545; color: white;">📄 Export PDF</button>
+                </div>
             <?php foreach ($istoric as $item): ?>
             <div class="istoric-item <?php echo $item['status_depozit']; ?>">
+                <input type="checkbox" name="selected_ids[]" value="<?php echo $item['id']; ?>" 
+                       style="position: absolute; top: 20px; left: 20px; width: 20px; height: 20px; cursor: pointer; z-index: 10; accent-color: #667eea;">
                 <div class="istoric-header">
                     <h3>📚 <?php echo htmlspecialchars($item['titlu']); ?></h3>
                     <span class="istoric-status status-<?php echo $item['status_depozit']; ?>">
@@ -539,6 +550,7 @@ $numar_livrate = count(array_filter($istoric, function($i) { return $i['status_d
                 </div>
             </div>
             <?php endforeach; ?>
+            </form>
             <?php endif; ?>
 
             <div style="display: flex; gap: 10px; margin-top: 20px;">
@@ -547,6 +559,47 @@ $numar_livrate = count(array_filter($istoric, function($i) { return $i['status_d
             </div>
         </div>
     </div>
+
+    <script>
+        function selectAll() {
+            const checkboxes = document.querySelectorAll('input[name="selected_ids[]"]');
+            checkboxes.forEach(cb => cb.checked = true);
+        }
+
+        function deselectAll() {
+            const checkboxes = document.querySelectorAll('input[name="selected_ids[]"]');
+            checkboxes.forEach(cb => cb.checked = false);
+        }
+
+        // Trimite și parametrii de căutare la export
+        document.getElementById('exportForm').addEventListener('submit', function(e) {
+            const form = e.target;
+            const searchParams = new URLSearchParams(window.location.search);
+            
+            // Adaugă parametrii de căutare ca hidden inputs
+            if (searchParams.get('search')) {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'search';
+                input.value = searchParams.get('search');
+                form.appendChild(input);
+            }
+            if (searchParams.get('data_start')) {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'data_start';
+                input.value = searchParams.get('data_start');
+                form.appendChild(input);
+            }
+            if (searchParams.get('data_end')) {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'data_end';
+                input.value = searchParams.get('data_end');
+                form.appendChild(input);
+            }
+        });
+    </script>
 </body>
 </html>
 
