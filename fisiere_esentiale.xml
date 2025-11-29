@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aplicatie nume="BarCode Biblioteca" data_scanare="2025-11-28 18:24:30">
+<aplicatie nume="BarCode Biblioteca" data_scanare="2025-11-29 12:29:10">
   <pagini_principale>
     <pagina exista="da">index.php</pagina>
     <pagina exista="da">login.php</pagina>
@@ -37,50 +37,50 @@
     <pagina exista="da">scanare_inregistrare.php</pagina>
     <pagina exista="da">scanare_inregistrare_monitor_principal_v1.php</pagina>
     <pagina exista="da">scan_barcode.php</pagina>
-    <pagina exista="nu">scan_barcode v.1.php</pagina>
-    <pagina exista="nu">scanare_mini (cu cititor profesional) minimalizat.php</pagina>
-    <pagina exista="nu">scanare_rapida (cu cititor profesional).php</pagina>
+    <pagina exista="da">scan_barcode v.1.php</pagina>
+    <pagina exista="da">scanare_mini (cu cititor profesional) minimalizat.php</pagina>
+    <pagina exista="da">scanare_rapida (cu cititor profesional).php</pagina>
     <pagina exista="da">trimite_notificare.php</pagina>
-    <pagina exista="nu">trimite_rapoarte_zilnice.php</pagina>
+    <pagina exista="da">trimite_rapoarte_zilnice.php</pagina>
     <pagina exista="da">cron_notificari.php</pagina>
-    <pagina exista="nu">cron_notificari_intarzieri.php</pagina>
+    <pagina exista="da">cron_notificari_intarzieri.php</pagina>
     <pagina exista="da">notificare_imprumut.php</pagina>
-    <pagina exista="nu">send_email.php</pagina>
+    <pagina exista="da">send_email.php</pagina>
     <pagina exista="da">import_carte_aleph.php</pagina>
-    <pagina exista="nu">curatare_imprumuturi.php</pagina>
-    <pagina exista="nu">curatare_completa.php</pagina>
-    <pagina exista="nu">curatare_finala.php</pagina>
-    <pagina exista="nu">executa_curatare.php</pagina>
-    <pagina exista="nu">sterge_dubluri_imprumuturi.php</pagina>
-    <pagina exista="nu">sterge_dubluri_final.php</pagina>
+    <pagina exista="da">curatare_imprumuturi.php</pagina>
+    <pagina exista="da">curatare_completa.php</pagina>
+    <pagina exista="da">curatare_finala.php</pagina>
+    <pagina exista="da">executa_curatare.php</pagina>
+    <pagina exista="da">sterge_dubluri_imprumuturi.php</pagina>
+    <pagina exista="da">sterge_dubluri_final.php</pagina>
     <pagina exista="da">adauga_imprumuturi_mai_multe.php</pagina>
     <pagina exista="da">check_vizare_an_nou.php</pagina>
     <pagina exista="da">afiseaza_utilizatori.php</pagina>
     <pagina exista="da">afiseaza_limite_statute.php</pagina>
     <pagina exista="da">actualizeaza_statuturi_cititori.php</pagina>
     <pagina exista="da">actualizeaza_coduri_biblioteca_academiei.php</pagina>
-    <pagina exista="nu">update_database.php</pagina>
-    <pagina exista="nu">update_database_script.php</pagina>
-    <pagina exista="nu">instaleaza_statute.php</pagina>
+    <pagina exista="da">update_database.php</pagina>
+    <pagina exista="da">update_database_script.php</pagina>
+    <pagina exista="da">instaleaza_statute.php</pagina>
     <pagina exista="da">instaleaza_statute_carti.php</pagina>
     <pagina exista="da">instaleaza_statute_carti_simplu.php</pagina>
     <pagina exista="da">instaleaza_autentificare.php</pagina>
     <pagina exista="da">repara_autentificare.php</pagina>
-    <pagina exista="nu">setup.php</pagina>
-    <pagina exista="nu">setup_modele_email.php</pagina>
+    <pagina exista="da">setup.php</pagina>
+    <pagina exista="da">setup_modele_email.php</pagina>
     <pagina exista="da">protejeaza_toate_paginile.php</pagina>
     <pagina exista="nu">verificare_securitate.php</pagina>
     <pagina exista="da">verifica_protectie_completa.php</pagina>
     <pagina exista="da">verifica_utilizatori_bd.php</pagina>
-    <pagina exista="nu">verifica_instalare_statute.php</pagina>
-    <pagina exista="nu">verifica_instalare_xampp.php</pagina>
-    <pagina exista="nu">verifica_imprumuturi.php</pagina>
-    <pagina exista="nu">verifica_encoding.php</pagina>
+    <pagina exista="da">verifica_instalare_statute.php</pagina>
+    <pagina exista="da">verifica_instalare_xampp.php</pagina>
+    <pagina exista="da">verifica_imprumuturi.php</pagina>
+    <pagina exista="da">verifica_encoding.php</pagina>
     <pagina exista="nu">verifica_encoding_db.php</pagina>
-    <pagina exista="nu">verifica_detaliata.php</pagina>
-    <pagina exista="nu">verifica_final.php</pagina>
-    <pagina exista="nu">verifica_status.php</pagina>
-    <pagina exista="nu">verifica_server.php</pagina>
+    <pagina exista="da">verifica_detaliata.php</pagina>
+    <pagina exista="da">verifica_final.php</pagina>
+    <pagina exista="da">verifica_status.php</pagina>
+    <pagina exista="da">verifica_server.php</pagina>
     <pagina exista="nu">verifica_mysql_running.php</pagina>
     <pagina exista="nu">verifica_mysql_xampp.php</pagina>
     <pagina exista="nu">verifica_my_ini.php</pagina>
@@ -88,11 +88,11 @@
     <pagina exista="nu">verifica_ready_connections.php</pagina>
     <pagina exista="nu">fix_mysql_xampp.php</pagina>
     <pagina exista="nu">fix_bind_address.php</pagina>
-    <pagina exista="nu">fix_modele_email_encoding.php</pagina>
-    <pagina exista="nu">diagnosticare_mysql.php</pagina>
-    <pagina exista="nu">diagnosticare_avansata_mysql.php</pagina>
-    <pagina exista="nu">analiza_crash_mysql.php</pagina>
-    <pagina exista="nu">citeste_log_mysql.php</pagina>
+    <pagina exista="da">fix_modele_email_encoding.php</pagina>
+    <pagina exista="da">diagnosticare_mysql.php</pagina>
+    <pagina exista="da">diagnosticare_avansata_mysql.php</pagina>
+    <pagina exista="da">analiza_crash_mysql.php</pagina>
+    <pagina exista="da">citeste_log_mysql.php</pagina>
     <pagina exista="nu">view_debug.php</pagina>
   </pagini_principale>
   <fisiere_config>
@@ -104,7 +104,7 @@
     <fisier exista="da">functions_coduri_aleph.php</fisier>
     <fisier exista="da">functions_csrf.php</fisier>
     <fisier exista="da">functions_email_templates.php</fisier>
-    <fisier exista="nu">functions_sesiuni.php</fisier>
+    <fisier exista="da">functions_sesiuni.php</fisier>
     <fisier exista="da">functions_statute.php</fisier>
     <fisier exista="da">functions_statute_carti.php</fisier>
     <fisier exista="da">functions_vizare.php</fisier>
@@ -143,23 +143,16 @@
     <fisier exista="nu">test_aleph_wlb_2.php</fisier>
     <fisier exista="da">test_autentificare.php</fisier>
     <fisier exista="da">test_direct_aleph.php</fisier>
-    <fisier exista="nu">test_encoding.php</fisier>
-    <fisier exista="nu">test_encoding_db.php</fisier>
+    <fisier exista="da">test_encoding.php</fisier>
+    <fisier exista="da">test_encoding_db.php</fisier>
     <fisier exista="nu">test_final_mysql.php</fisier>
     <fisier exista="nu">test_ipv6_mysql.php</fisier>
-    <fisier exista="nu">test_modele_email.php</fisier>
+    <fisier exista="da">test_modele_email.php</fisier>
     <fisier exista="nu">test_mysql.php</fisier>
     <fisier exista="nu">test_mysql_simple.php</fisier>
     <fisier exista="da">test_parola_secreta.php</fisier>
     <fisier exista="nu">test_port_only.php</fisier>
     <fisier exista="nu">test BUN cu titlu FULL 8 (cauta in toate bibliotecile).php</fisier>
   </fisiere_test>
-  <fisiere_duplicate>
-    <duplicat fisier="scanare_aplicatie.php" folder_duplicat="BackUp" locatie_root="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/scanare_aplicatie.php" locatie_duplicat="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/BackUp/scanare_aplicatie.php"/>
-    <duplicat fisier="test.php" folder_duplicat="BackUp" locatie_root="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/test.php" locatie_duplicat="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/BackUp/test.php"/>
-    <duplicat fisier="test_aleph_search.php" folder_duplicat="BackUp" locatie_root="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/test_aleph_search.php" locatie_duplicat="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/BackUp/test_aleph_search.php"/>
-    <duplicat fisier="test_autentificare.php" folder_duplicat="BackUp" locatie_root="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/test_autentificare.php" locatie_duplicat="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/BackUp/test_autentificare.php"/>
-    <duplicat fisier="test_direct_aleph.php" folder_duplicat="BackUp" locatie_root="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/test_direct_aleph.php" locatie_duplicat="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/BackUp/test_direct_aleph.php"/>
-    <duplicat fisier="test_parola_secreta.php" folder_duplicat="BackUp" locatie_root="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/test_parola_secreta.php" locatie_duplicat="E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\BarCode Biblioteca/BackUp/test_parola_secreta.php"/>
-  </fisiere_duplicate>
+  <fisiere_duplicate/>
 </aplicatie>

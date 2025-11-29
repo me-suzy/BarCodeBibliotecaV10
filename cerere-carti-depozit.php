@@ -31,12 +31,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['actiune'])) {
         }
     }
     
-    // Redirect pentru a evita re-submit
     header('Location: cerere-carti-depozit.php');
     exit;
 }
 
-// Obține cererile active de depozit (status_depozit = 'cerere' sau 'preluata', EXCLUZÂND 'livrata')
 $query = "
     SELECT 
         i.id,
@@ -91,12 +89,6 @@ $numar_cereri_noi = count(array_filter($cereri, function($c) { return $c['status
             background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
             min-height: 100vh;
             padding: 20px;
-            animation: pulseBackground 3s infinite;
-        }
-
-        @keyframes pulseBackground {
-            0%, 100% { background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); }
-            50% { background: linear-gradient(135deg, #ff8c42 0%, #ffa64d 100%); }
         }
 
         .container {
@@ -111,31 +103,12 @@ $numar_cereri_noi = count(array_filter($cereri, function($c) { return $c['status
             margin-bottom: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             text-align: center;
-            animation: slideDown 0.5s ease-out;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         .header h1 {
             color: #ff6b35;
             font-size: 3em;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-            animation: blink 2s infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
         }
 
         .alert-badge {
@@ -168,11 +141,6 @@ $numar_cereri_noi = count(array_filter($cereri, function($c) { return $c['status
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-5px);
         }
 
         .stat-card h3 {
@@ -200,19 +168,6 @@ $numar_cereri_noi = count(array_filter($cereri, function($c) { return $c['status
             margin: 15px 0;
             border-radius: 8px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            animation: slideIn 0.5s ease-out;
-            transition: all 0.3s;
-        }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
         }
 
         .cerere-item.noua {
@@ -307,41 +262,24 @@ $numar_cereri_noi = count(array_filter($cereri, function($c) { return $c['status
             color: white;
         }
 
-        .btn-preluata:hover {
-            background: #138496;
-        }
-
         .btn-livrata {
             background: #28a745;
             color: white;
         }
 
-        .btn-livrata:hover {
-            background: #218838;
+        .home-btn {
+            background: #28a745;
+            color: white;
         }
 
         .btn-back {
             background: #6c757d;
             color: white;
-            margin-top: 20px;
         }
 
-        .btn-back:hover {
-            background: #5a6268;
-        }
-
-        .home-btn {
-            background: #28a745;
+        .btn-istoric {
+            background: #17a2b8;
             color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-
-        .home-btn:hover {
-            background: #218838;
         }
 
         .empty-state {
@@ -356,12 +294,6 @@ $numar_cereri_noi = count(array_filter($cereri, function($c) { return $c['status
             color: #ff6b35;
         }
 
-        .timer {
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 5px;
-        }
-
         .sound-indicator {
             position: fixed;
             top: 20px;
@@ -372,13 +304,12 @@ $numar_cereri_noi = count(array_filter($cereri, function($c) { return $c['status
             border-radius: 10px;
             font-weight: bold;
             z-index: 1000;
-            animation: pulse 1s infinite;
         }
     </style>
 </head>
 <body>
     <?php if ($numar_cereri_noi > 0): ?>
-    <div class="sound-indicator" id="soundIndicator">
+    <div class="sound-indicator">
         🔊 ALERTĂ: <?php echo $numar_cereri_noi; ?> cereri noi!
     </div>
     <?php endif; ?>
@@ -421,8 +352,7 @@ $numar_cereri_noi = count(array_filter($cereri, function($c) { return $c['status
                     <h3>📚 <?php echo htmlspecialchars($cerere['titlu']); ?></h3>
                     <span class="cerere-status <?php echo $cerere['status_depozit'] === 'cerere' ? 'status-cerere' : 'status-preluata'; ?>">
                         <?php 
-                        echo $cerere['status_depozit'] === 'cerere' ? '🆕 CERERE NOUĂ' : 
-                             ($cerere['status_depozit'] === 'preluata' ? '📦 PRELUATĂ' : '✅ LIVRATĂ');
+                        echo $cerere['status_depozit'] === 'cerere' ? '🆕 CERERE NOUĂ' : '📦 PRELUATĂ';
                         ?>
                     </span>
                 </div>
@@ -489,174 +419,92 @@ $numar_cereri_noi = count(array_filter($cereri, function($c) { return $c['status
             <div style="display: flex; gap: 10px; margin-top: 20px;">
                 <a href="index.php" class="btn home-btn">🏠 Acasă</a>
                 <a href="imprumuturi.php" class="btn btn-back">← Înapoi la Împrumuturi</a>
+                <a href="istoric-depozit.php" class="btn btn-istoric">📋 Istoric</a>
             </div>
         </div>
     </div>
 
     <script>
-        // Salvează numărul de cereri noi în sessionStorage pentru comparație
         const numarCereriNoi = <?php echo $numar_cereri_noi; ?>;
-        const numarCereriNoiAnterior = parseInt(sessionStorage.getItem('numarCereriNoi') || '0');
-        const timpUltimaCerere = parseInt(sessionStorage.getItem('timpUltimaCerere') || '0');
-        const timpCurent = Date.now();
-        
-        // Verifică dacă a apărut o cerere nouă (numărul a crescut)
-        const cerereNouaApare = numarCereriNoi > numarCereriNoiAnterior;
-        
-        // Salvează starea actuală
-        sessionStorage.setItem('numarCereriNoi', numarCereriNoi.toString());
-        
-        // Dacă apare o cerere nouă, salvează timpul
-        if (cerereNouaApare) {
-            sessionStorage.setItem('timpUltimaCerere', timpCurent.toString());
-        }
-        
-        // Calculează cât timp a trecut de la ultima cerere nouă
-        const timpDeLaUltimaCerere = timpCurent - timpUltimaCerere;
-        const timpRamasPanaLaFocus = 15000 - timpDeLaUltimaCerere; // 15 secunde = 15000ms
-        
-        // Funcție pentru a aduce pagina în prim plan
-        function aduceInPrimPlan() {
-            // Forțează focus-ul pe fereastră
-            window.focus();
-            
-            // Încearcă să deschidă în fullscreen (dacă este permis)
-            const elem = document.documentElement;
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen().catch(err => {
-                    console.log('Fullscreen nu este permis:', err);
-                });
-            } else if (elem.webkitRequestFullscreen) {
-                elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) {
-                elem.msRequestFullscreen();
-            }
-            
-            // NU mai redăm sunet aici - va fi redat la fiecare 20 secunde
-            
-            // Actualizează titlul pentru a atrage atenția
-            document.title = '⚠️ ' + numarCereriNoi + ' CERERI NOI - Depozit';
-        }
-        
-        // Variabilă globală pentru AudioContext (pentru a evita crearea multiplă)
         let audioContext = null;
-        
-        // Funcție pentru a obține sau crea AudioContext
-        function getAudioContext() {
-            if (!audioContext) {
-                audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            }
-            return audioContext;
-        }
-        
-        // Funcție pentru sunet de alertă (mai lung și mai strident)
-        function playAlertSound() {
-            try {
-                const ctx = getAudioContext();
-                
-                // Resuspendă contextul dacă este suspendat (pentru browser-uri care blochează audio)
-                if (ctx.state === 'suspended') {
-                    ctx.resume().then(() => {
-                        redaSunetul(ctx);
-                    }).catch(err => {
-                        console.log('Eroare la resumarea audio context:', err);
-                    });
-                } else {
-                    redaSunetul(ctx);
+        let sunetRedat = false;
+
+        function playBeepSound() {
+            return new Promise((resolve) => {
+                try {
+                    if (!audioContext) {
+                        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                    }
+                    
+                    if (audioContext.state === 'suspended') {
+                        audioContext.resume();
+                    }
+                    
+                    const oscillator = audioContext.createOscillator();
+                    const gainNode = audioContext.createGain();
+                    
+                    oscillator.connect(gainNode);
+                    gainNode.connect(audioContext.destination);
+                    
+                    oscillator.frequency.value = 800;
+                    oscillator.type = 'sine';
+                    
+                    gainNode.gain.setValueAtTime(0.5, audioContext.currentTime);
+                    gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+                    
+                    oscillator.start(audioContext.currentTime);
+                    oscillator.stop(audioContext.currentTime + 0.5);
+                    
+                    setTimeout(resolve, 500);
+                } catch (e) {
+                    console.log('Eroare beep:', e);
+                    resolve();
                 }
-            } catch (e) {
-                console.log('Nu se poate reda sunet:', e);
-            }
+            });
         }
-        
-        // Funcție helper pentru a reda efectiv sunetul
-        function redaSunetul(ctx) {
-            const oscillator = ctx.createOscillator();
-            const gainNode = ctx.createGain();
-            
-            oscillator.connect(gainNode);
-            gainNode.connect(ctx.destination);
-            
-            // Frecvență mai înaltă pentru sunet mai strident
-            oscillator.frequency.value = 1200;
-            oscillator.type = 'sine';
-            
-            // Sunet mai lung (1.2 secunde) și mai puternic
-            gainNode.gain.setValueAtTime(0.5, ctx.currentTime);
-            gainNode.gain.exponentialRampToValueAtTime(0.3, ctx.currentTime + 0.6);
-            gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 1.2);
-            
-            oscillator.start(ctx.currentTime);
-            oscillator.stop(ctx.currentTime + 1.2);
-            
-            // După 2 secunde de la începutul sunetului, redă fișierul audio
-            setTimeout(function() {
-                playVoiceFile();
-            }, 2000); // 2 secunde = 2000ms
-        }
-        
-        // Funcție pentru a reda fișierul audio Voce_1.mp3
+
         function playVoiceFile() {
-            try {
+            return new Promise((resolve) => {
                 const audio = new Audio('Voce_1.mp3');
-                audio.volume = 1.0; // Volum maxim
-                audio.play().catch(err => {
-                    console.log('Eroare la redarea fișierului audio:', err);
-                });
-            } catch (e) {
-                console.log('Nu se poate reda fișierul audio:', e);
-            }
+                audio.volume = 1.0;
+                audio.onended = resolve;
+                audio.onerror = resolve;
+                audio.play().catch(() => resolve());
+            });
         }
-        
-        // Dacă a apărut o cerere nouă și au trecut deja 15 secunde, aduce imediat în prim plan
-        if (cerereNouaApare && timpRamasPanaLaFocus <= 0) {
-            aduceInPrimPlan();
-        }
-        // Dacă a apărut o cerere nouă dar nu au trecut 15 secunde, așteaptă
-        else if (cerereNouaApare && timpRamasPanaLaFocus > 0) {
-            setTimeout(function() {
-                aduceInPrimPlan();
-            }, timpRamasPanaLaFocus);
-        }
-        // Dacă există cereri noi dar nu e o cerere nouă (deja există), verifică dacă au trecut 15 secunde
-        else if (numarCereriNoi > 0 && timpRamasPanaLaFocus <= 0 && timpDeLaUltimaCerere > 0) {
-            // Nu face nimic - deja a fost procesat
-        }
-        
-        // Auto-refresh la fiecare 5 secunde pentru actualizare rapidă  5 secunde = 5000 , 1 minut = 60000
-        setTimeout(function() {
-            location.reload();
-        }, 60000);   
-        
-        // Actualizează titlul pentru a atrage atenția (doar dacă există cereri noi)
-        if (numarCereriNoi > 0) {
-            let titleBlink = true;
-            setInterval(function() {
-                document.title = titleBlink ? 
-                    '⚠️ ' + numarCereriNoi + ' CERERI NOI - Depozit' : 
-                    '📦 Cereri Depozit';
-                titleBlink = !titleBlink;
-            }, 1000);
-        } else {
-            document.title = '📦 Cereri Depozit';
-        }
-        
-        // Forțează focus-ul la încărcare (doar dacă nu există cereri noi sau dacă au trecut 15 secunde)
-        if (numarCereriNoi === 0 || timpRamasPanaLaFocus <= 0) {
-            window.focus();
-        }
-        
-        // Redă sunet de alertă (doar dacă există cereri noi)
-        if (numarCereriNoi > 0) {
-            // Redă sunetul imediat la încărcarea paginii
-            playAlertSound();
+
+        async function cicluAlerta() {
+            if (numarCereriNoi === 0) return;
             
-            // Apoi redă sunetul la fiecare 1 minut
-            setInterval(function() {
-                playAlertSound();
-            }, 60000); // 1 minut = 60000ms
+            // Beep
+            await playBeepSound();
+            
+            // Pauză 2 secunde
+            await new Promise(r => setTimeout(r, 2000));
+            
+            // Voce
+            await playVoiceFile();
+            
+            // Repetă după 1 minut
+            setTimeout(cicluAlerta, 60000);
+        }
+
+        // Pornește automat la încărcare
+        if (numarCereriNoi > 0) {
+            cicluAlerta();
+        }
+
+        // Auto-refresh la 30 secunde
+        setTimeout(() => location.reload(), 30000);
+
+        // Titlu alternant
+        if (numarCereriNoi > 0) {
+            let blink = true;
+            setInterval(() => {
+                document.title = blink ? '⚠️ ' + numarCereriNoi + ' CERERI NOI!' : '📦 Cereri Depozit';
+                blink = !blink;
+            }, 1000);
         }
     </script>
 </body>
 </html>
-
