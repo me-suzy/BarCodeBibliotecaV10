@@ -40,9 +40,9 @@ debug_log("SESSION before: " . print_r($_SESSION, true));
 $config_email = [
     'smtp_host' => 'smtp.gmail.com',
     'smtp_port' => 587,
-    'smtp_user' => 'YOUR-EMAIL@gmail.com',
-    'smtp_pass' => 'GOOGLE SECRET PASSWORD',
-    'from_email' => 'YOUR-EMAIL@gmail.com',
+    'smtp_user' => 'bbebef@gmail.com',
+    'smtp_pass' => 'rywu jftl tycm webt',
+    'from_email' => 'bbebef@gmail.com',
     'from_name' => 'Biblioteca Academiei Române - Iași'
 ];
 
@@ -1019,95 +1019,58 @@ $carti_imprumutate = $pdo->query("SELECT COUNT(*) FROM imprumuturi WHERE data_re
 
         .btn-add-cititor {
             display: inline-block;
-            margin-top: 0;
-            padding: 12px 24px;
-            background: rgba(255, 255, 255, 0.95);
-            color: #667eea;
-            border: 2px solid rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            font-size: 1.05em;
-            font-weight: 700;
+            margin-top: 8px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
             text-decoration: none;
             cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-            white-space: nowrap;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .btn-add-cititor:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-            background: #ffffff;
-            color: #764ba2;
-            border-color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
 
         /* ===== FEREASTRĂ COMPACTĂ CITITOR NECUNOSCUT ===== */
         .cititor-necunoscut-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: 2px solid #5a67d8;
-            border-radius: 15px;
-            padding: 20px 25px;
-            margin-top: 15px;
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+            border: 1px solid #ffc107;
+            border-radius: 10px;
+            padding: 8px 15px;
+            margin-top: 8px;
+            box-shadow: 0 3px 10px rgba(255, 193, 7, 0.15);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cititor-necunoscut-box::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .cititor-necunoscut-box:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
-        }
-
-        .cititor-necunoscut-box:hover::before {
-            left: 100%;
         }
 
         .cititor-info-wrapper {
             display: flex;
             flex-direction: column;
             text-align: left;
-            flex: 1;
-            position: relative;
-            z-index: 1;
         }
 
         .cititor-necunoscut-box .info-row {
             display: block;
-            margin: 4px 0;
-            font-size: 1em;
-            color: #ffffff;
-            line-height: 1.5;
-            font-weight: 500;
+            margin: 2px 0;
+            font-size: 0.95em;
+            color: #664d03;
+            line-height: 1.4;
         }
 
         .cititor-necunoscut-box .info-row strong {
-            color: #ffffff;
-            font-weight: 700;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            color: #856404;
         }
 
         .cititor-necunoscut-box .btn-container {
             margin-top: 0;
             text-align: right;
-            position: relative;
-            z-index: 1;
-            margin-left: 20px;
         }
 
         .carte-scanata {
@@ -1214,20 +1177,6 @@ $carti_imprumutate = $pdo->query("SELECT COUNT(*) FROM imprumuturi WHERE data_re
             background: #fff3cd;
             color: #856404;
             border: 1px solid #ffeaa7;
-        }
-
-        .alert-warning {
-            font-size: 1.1em;
-            font-weight: 500;
-        }
-
-        .alert-warning .mesaj-cititor-necunoscut {
-            font-size: 1.5em !important;
-            font-weight: 700 !important;
-            letter-spacing: 0.5px;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-            display: block;
-            margin-bottom: 10px;
         }
 
         .alert-danger {
@@ -1573,14 +1522,7 @@ $carti_imprumutate = $pdo->query("SELECT COUNT(*) FROM imprumuturi WHERE data_re
             <?php if (isset($mesaj)): ?>
                 <div class="alert alert-<?php echo $tip_mesaj; ?>" id="alert-message">
                     <button class="btn-close-alert" onclick="inchideAlert()" title="Închide mesajul">✕</button>
-                    <?php 
-                    // Verifică dacă este mesajul de cititor necunoscut pentru a-l face mai expresiv
-                    if ($tip_mesaj === 'warning' && strpos($mesaj, 'Cititorul nu există') !== false) {
-                        echo '<span class="mesaj-cititor-necunoscut">' . $mesaj . '</span>';
-                    } else {
-                        echo $mesaj;
-                    }
-                    ?>
+                    <?php echo $mesaj; ?>
 
                     <!-- BUTON pentru carte necunoscută -->
                     <?php if (isset($_SESSION['carte_necunoscut']) && $tip_mesaj === 'danger'): ?>
@@ -1607,15 +1549,7 @@ $carti_imprumutate = $pdo->query("SELECT COUNT(*) FROM imprumuturi WHERE data_re
                                 <div class="cititor-info-wrapper">
                                     <div class="info-row">
                                         🏷️ <strong>Statut detectat:</strong>
-                                        <?php 
-                                        $statut_nr = isset($info_statut_necunoscut['statut']) ? $info_statut_necunoscut['statut'] : '';
-                                        $statut_nume = htmlspecialchars($info_statut_necunoscut['nume_statut'], ENT_QUOTES, 'UTF-8');
-                                        if (!empty($statut_nr)) {
-                                            echo "[" . htmlspecialchars($statut_nr, ENT_QUOTES, 'UTF-8') . "] " . $statut_nume;
-                                        } else {
-                                            echo $statut_nume;
-                                        }
-                                        ?>
+                                        <?php echo htmlspecialchars($info_statut_necunoscut['nume_statut'], ENT_QUOTES, 'UTF-8'); ?>
                                     </div>
                                     <div class="info-row">
                                         📚 <strong>Limită cărți:</strong> <?php echo (int) $info_statut_necunoscut['limita']; ?>
@@ -1708,15 +1642,7 @@ $carti_imprumutate = $pdo->query("SELECT COUNT(*) FROM imprumuturi WHERE data_re
                         <?php if (isset($_SESSION['cititor_activ']['nume_statut'])): ?>
                             <p style="font-size: 1em; margin-top: 5px; opacity: 0.95;">
                                 🏷️ <strong>Statut:</strong>
-                                <?php 
-                                $statut_nr = isset($_SESSION['cititor_activ']['statut']) ? $_SESSION['cititor_activ']['statut'] : '';
-                                $statut_nume = htmlspecialchars($_SESSION['cititor_activ']['nume_statut'], ENT_QUOTES, 'UTF-8');
-                                if (!empty($statut_nr)) {
-                                    echo "[" . htmlspecialchars($statut_nr, ENT_QUOTES, 'UTF-8') . "] " . $statut_nume;
-                                } else {
-                                    echo $statut_nume;
-                                }
-                                ?>
+                                <?php echo htmlspecialchars($_SESSION['cititor_activ']['nume_statut'], ENT_QUOTES, 'UTF-8'); ?>
                             </p>
                         <?php endif; ?>
                         <?php if (isset($_SESSION['cititor_activ']['numar_carti_imprumutate'])):

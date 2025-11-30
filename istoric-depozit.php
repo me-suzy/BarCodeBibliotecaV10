@@ -422,7 +422,13 @@ $numar_livrate = count(array_filter($istoric, function($i) { return $i['status_d
 <body>
     <div class="container">
         <div class="header">
-            <h1>📋 Istoric Cărți Depozit</h1>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h1 style="margin: 0;">📋 Istoric Cărți Depozit</h1>
+                <div style="display: flex; gap: 10px;">
+                    <a href="index.php" class="btn home-btn">🏠 Acasă</a>
+                    <a href="cerere-carti-depozit.php" class="btn btn-back">← Înapoi la Cereri</a>
+                </div>
+            </div>
             
             <div class="stats">
                 <div class="stat-card">
@@ -473,7 +479,7 @@ $numar_livrate = count(array_filter($istoric, function($i) { return $i['status_d
             </div>
             <?php else: ?>
             <form id="exportForm" method="POST" action="">
-                <div style="display: flex; gap: 10px; margin-bottom: 20px; align-items: center;">
+                <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; align-items: center;">
                     <button type="button" onclick="selectAll()" class="btn" style="background: #17a2b8; color: white;">☑ Selectează toate</button>
                     <button type="button" onclick="deselectAll()" class="btn" style="background: #6c757d; color: white;">☐ Deselectează toate</button>
                     <button type="submit" formaction="export_excel_istoric.php" class="btn" style="background: #28a745; color: white;">📊 Export Excel</button>
@@ -552,11 +558,6 @@ $numar_livrate = count(array_filter($istoric, function($i) { return $i['status_d
             <?php endforeach; ?>
             </form>
             <?php endif; ?>
-
-            <div style="display: flex; gap: 10px; margin-top: 20px;">
-                <a href="index.php" class="btn home-btn">🏠 Acasă</a>
-                <a href="cerere-carti-depozit.php" class="btn btn-back">← Înapoi la Cereri</a>
-            </div>
         </div>
     </div>
 

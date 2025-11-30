@@ -713,7 +713,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label>Nume <span class="required">*</span></label>
                 <input type="text" 
                        name="nume" 
-                       placeholder="Popescu" 
+                       placeholder="" 
                        value="<?php echo htmlspecialchars($form_data['nume']); ?>"
                        required>
             </div>
@@ -722,7 +722,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label>Prenume <span class="required">*</span></label>
                 <input type="text" 
                        name="prenume" 
-                       placeholder="Maria" 
+                       placeholder="" 
                        value="<?php echo htmlspecialchars($form_data['prenume']); ?>"
                        required>
             </div>
@@ -731,7 +731,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label>Telefon</label>
                 <input type="tel" 
                        name="telefon" 
-                       placeholder="0721123456"
+                       placeholder=""
                        value="<?php echo htmlspecialchars($form_data['telefon']); ?>">
             </div>
 

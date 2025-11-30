@@ -236,6 +236,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['delete'])) {
         }
     }
 
+    // Funcție pentru conversie diacritice românești în litere normale
+    function convertesteDiacritice($text) {
+        $diacritice = [
+            'ă' => 'a', 'Ă' => 'A', 'â' => 'a', 'Â' => 'A',
+            'î' => 'i', 'Î' => 'I', 
+            'ș' => 's', 'Ș' => 'S', 'Ṣ' => 'S', 'ṣ' => 's', // S cu virgulă și S cu punct
+            'ț' => 't', 'Ț' => 'T', 'Ṭ' => 'T', 'ṭ' => 't', // T cu virgulă și T cu punct
+            'Ả' => 'A', 'ả' => 'a', 'Ạ' => 'A', 'ạ' => 'a',
+            'Ẩ' => 'A', 'ẩ' => 'a', 'Ậ' => 'A', 'ậ' => 'a',
+            'Ẳ' => 'A', 'ẳ' => 'a', 'Ặ' => 'A', 'ặ' => 'a',
+            'Ẻ' => 'E', 'ẻ' => 'e', 'Ẹ' => 'E', 'ẹ' => 'e',
+            'Ể' => 'E', 'ể' => 'e', 'Ệ' => 'E', 'ệ' => 'e',
+            'Ỉ' => 'I', 'ỉ' => 'i', 'Ị' => 'I', 'ị' => 'i',
+            'Ỏ' => 'O', 'ỏ' => 'o', 'Ọ' => 'O', 'ọ' => 'o',
+            'Ổ' => 'O', 'ổ' => 'o', 'Ộ' => 'O', 'ộ' => 'o',
+            'Ở' => 'O', 'ở' => 'o', 'Ợ' => 'O', 'ợ' => 'o',
+            'Ủ' => 'U', 'ủ' => 'u', 'Ụ' => 'U', 'ụ' => 'u',
+            'Ứ' => 'U', 'ứ' => 'u', 'Ự' => 'U', 'ự' => 'u',
+            'Ỷ' => 'Y', 'ỷ' => 'y', 'Ỵ' => 'Y', 'ỵ' => 'y'
+        ];
+        return strtr($text, $diacritice);
+    }
+
     // Procesare upload imagine dacă există
     $imagine_path = $cititor['imagine'] ?? null; // Păstrează imaginea existentă
     if (isset($_FILES['imagine']) && $_FILES['imagine']['error'] === UPLOAD_ERR_OK) {
@@ -245,9 +268,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['delete'])) {
         
         if (in_array($file['type'], $allowed_types) && $file['size'] <= $max_size) {
             $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
-            $nume_curat = preg_replace('/[^a-zA-Z0-9]/', '_', $nume);
-            $prenume_curat = preg_replace('/[^a-zA-Z0-9]/', '_', $prenume);
-            $cod_curat = preg_replace('/[^a-zA-Z0-9]/', '_', $cod_bare);
+            
+            // Convertește diacriticele în litere normale, apoi curăță caracterele speciale
+            $nume_fara_diacritice = convertesteDiacritice($nume);
+            $prenume_fara_diacritice = convertesteDiacritice($prenume);
+            $cod_fara_diacritice = convertesteDiacritice($cod_bare);
+            
+            // Elimină caracterele speciale (păstrează doar litere, cifre și underscore)
+            $nume_curat = preg_replace('/[^a-zA-Z0-9]/', '_', $nume_fara_diacritice);
+            $prenume_curat = preg_replace('/[^a-zA-Z0-9]/', '_', $prenume_fara_diacritice);
+            $cod_curat = preg_replace('/[^a-zA-Z0-9]/', '_', $cod_fara_diacritice);
+            
             $filename = $cod_curat . '_' . $nume_curat . '_' . $prenume_curat . '.' . $ext;
             $upload_path = 'imagini/' . $filename;
             
